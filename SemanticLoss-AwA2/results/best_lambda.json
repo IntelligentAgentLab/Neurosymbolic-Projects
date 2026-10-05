@@ -1,0 +1,12 @@
+{
+ "semi_ce_attr_ent": 3.0,
+ "semi_ce_attr_eo": 3.0,
+ "semi_ce_attr_r12": 0.3,
+ "semi_ce_attr_r14": 1.0,
+ "semi_ce_attr_all": 0.3,
+ "weak_ce_attr_ent": 1.0,
+ "weak_ce_attr_eo": 0.03,
+ "weak_ce_attr_r12": 0.3,
+ "weak_ce_attr_r14": 1.0,
+ "weak_ce_attr_all": 0.3
+}

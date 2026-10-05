@@ -1,0 +1,401 @@
+=== tune/semi_ce_attr_ent_lam0.03_seed0.json
+    val cls 0.9157 | test cls 0.9114 map 0.8957 attr 0.9563 cons 0.7657  (64s)
+=== tune/semi_ce_attr_ent_lam0.1_seed0.json
+    val cls 0.9186 | test cls 0.9100 map 0.9086 attr 0.9612 cons 0.7600  (64s)
+=== tune/semi_ce_attr_ent_lam0.3_seed0.json
+    val cls 0.9314 | test cls 0.9329 map 0.9314 attr 0.9677 cons 0.7786  (66s)
+=== tune/semi_ce_attr_ent_lam1.0_seed0.json
+    val cls 0.9386 | test cls 0.9200 map 0.9257 attr 0.9675 cons 0.7557  (64s)
+=== tune/semi_ce_attr_ent_lam3.0_seed0.json
+    val cls 0.9400 | test cls 0.9271 map 0.9229 attr 0.9670 cons 0.7586  (64s)
+*** semi ce_attr_ent: {0.03: 0.9157142639160156, 0.1: 0.918571412563324, 0.3: 0.9314285516738892, 1.0: 0.9385714530944824, 3.0: 0.9399999976158142} -> lambda=3.0
+=== tune/semi_ce_attr_eo_lam0.03_seed0.json
+    val cls 0.9057 | test cls 0.9214 map 0.9186 attr 0.9609 cons 0.7671  (64s)
+=== tune/semi_ce_attr_eo_lam0.1_seed0.json
+    val cls 0.9400 | test cls 0.9271 map 0.9257 attr 0.9682 cons 0.7757  (64s)
+=== tune/semi_ce_attr_eo_lam0.3_seed0.json
+    val cls 0.9529 | test cls 0.9514 map 0.9529 attr 0.9766 cons 0.7671  (64s)
+=== tune/semi_ce_attr_eo_lam1.0_seed0.json
+    val cls 0.9629 | test cls 0.9643 map 0.9629 attr 0.9791 cons 0.7671  (64s)
+=== tune/semi_ce_attr_eo_lam3.0_seed0.json
+    val cls 0.9643 | test cls 0.9529 map 0.9457 attr 0.9776 cons 0.7729  (64s)
+*** semi ce_attr_eo: {0.03: 0.9057142734527588, 0.1: 0.9399999976158142, 0.3: 0.9528571367263794, 1.0: 0.9628571271896362, 3.0: 0.9642857313156128} -> lambda=3.0
+=== tune/semi_ce_attr_r12_lam0.03_seed0.json
+    val cls 0.9329 | test cls 0.9300 map 0.9243 attr 0.9688 cons 0.7957  (64s)
+=== tune/semi_ce_attr_r12_lam0.1_seed0.json
+    val cls 0.9557 | test cls 0.9571 map 0.9500 attr 0.9797 cons 0.7971  (64s)
+=== tune/semi_ce_attr_r12_lam0.3_seed0.json
+    val cls 0.9643 | test cls 0.9571 map 0.9529 attr 0.9792 cons 0.8986  (64s)
+=== tune/semi_ce_attr_r12_lam1.0_seed0.json
+    val cls 0.9514 | test cls 0.9386 map 0.9414 attr 0.9744 cons 0.9186  (64s)
+=== tune/semi_ce_attr_r12_lam3.0_seed0.json
+    val cls 0.5571 | test cls 0.5529 map 0.5486 attr 0.7927 cons 0.3700  (64s)
+*** semi ce_attr_r12: {0.03: 0.9328571557998657, 0.1: 0.9557142853736877, 0.3: 0.9642857313156128, 1.0: 0.9514285922050476, 3.0: 0.5571428537368774} -> lambda=0.3
+=== tune/semi_ce_attr_r14_lam0.03_seed0.json
+    val cls 0.9257 | test cls 0.9171 map 0.9129 attr 0.9623 cons 0.9157  (64s)
+=== tune/semi_ce_attr_r14_lam0.1_seed0.json
+    val cls 0.9414 | test cls 0.9429 map 0.9414 attr 0.9675 cons 0.9357  (64s)
+=== tune/semi_ce_attr_r14_lam0.3_seed0.json
+    val cls 0.9529 | test cls 0.9514 map 0.9471 attr 0.9706 cons 0.9171  (64s)
+=== tune/semi_ce_attr_r14_lam1.0_seed0.json
+    val cls 0.9643 | test cls 0.9643 map 0.9629 attr 0.9752 cons 0.9186  (64s)
+=== tune/semi_ce_attr_r14_lam3.0_seed0.json
+    val cls 0.9571 | test cls 0.9471 map 0.9500 attr 0.9511 cons 0.7243  (64s)
+*** semi ce_attr_r14: {0.03: 0.9257143139839172, 0.1: 0.941428542137146, 0.3: 0.9528571367263794, 1.0: 0.9642857313156128, 3.0: 0.9571428298950195} -> lambda=1.0
+=== tune/semi_ce_attr_all_lam0.03_seed0.json
+    val cls 0.9229 | test cls 0.9300 map 0.9243 attr 0.9657 cons 0.9629  (64s)
+=== tune/semi_ce_attr_all_lam0.1_seed0.json
+    val cls 0.9471 | test cls 0.9414 map 0.9429 attr 0.9740 cons 0.9629  (64s)
+=== tune/semi_ce_attr_all_lam0.3_seed0.json
+    val cls 0.9557 | test cls 0.9557 map 0.9543 attr 0.9797 cons 0.9814  (64s)
+=== tune/semi_ce_attr_all_lam1.0_seed0.json
+    val cls 0.9486 | test cls 0.9443 map 0.9400 attr 0.9734 cons 0.9843  (64s)
+=== tune/semi_ce_attr_all_lam3.0_seed0.json
+    val cls 0.4800 | test cls 0.4800 map 0.4729 attr 0.7695 cons 0.9814  (64s)
+*** semi ce_attr_all: {0.03: 0.9228571653366089, 0.1: 0.9471428394317627, 0.3: 0.9557142853736877, 1.0: 0.9485714435577393, 3.0: 0.47999998927116394} -> lambda=0.3
+=== tune/weak_ce_attr_ent_lam0.03_seed0.json
+    val cls 0.9443 | test cls 0.9429 map 0.9414 attr 0.9779 cons 0.7829  (64s)
+=== tune/weak_ce_attr_ent_lam0.1_seed0.json
+    val cls 0.9686 | test cls 0.9571 map 0.9586 attr 0.9838 cons 0.7757  (64s)
+=== tune/weak_ce_attr_ent_lam0.3_seed0.json
+    val cls 0.9614 | test cls 0.9586 map 0.9571 attr 0.9836 cons 0.7786  (64s)
+=== tune/weak_ce_attr_ent_lam1.0_seed0.json
+    val cls 0.9714 | test cls 0.9571 map 0.9571 attr 0.9812 cons 0.7943  (64s)
+=== tune/weak_ce_attr_ent_lam3.0_seed0.json
+    val cls 0.9486 | test cls 0.9543 map 0.9557 attr 0.9812 cons 0.7986  (64s)
+*** weak ce_attr_ent: {0.03: 0.9442856907844543, 0.1: 0.9685714244842529, 0.3: 0.9614285826683044, 1.0: 0.9714285731315613, 3.0: 0.9485714435577393} -> lambda=1.0
+=== tune/weak_ce_attr_eo_lam0.03_seed0.json
+    val cls 0.9771 | test cls 0.9643 map 0.9586 attr 0.9844 cons 0.8300  (64s)
+=== tune/weak_ce_attr_eo_lam0.1_seed0.json
+    val cls 0.9714 | test cls 0.9571 map 0.9586 attr 0.9818 cons 0.7814  (64s)
+=== tune/weak_ce_attr_eo_lam0.3_seed0.json
+    val cls 0.9743 | test cls 0.9671 map 0.9686 attr 0.9856 cons 0.7843  (64s)
+=== tune/weak_ce_attr_eo_lam1.0_seed0.json
+    val cls 0.9714 | test cls 0.9714 map 0.9729 attr 0.9865 cons 0.7829  (64s)
+=== tune/weak_ce_attr_eo_lam3.0_seed0.json
+    val cls 0.9714 | test cls 0.9714 map 0.9700 attr 0.9859 cons 0.7800  (64s)
+*** weak ce_attr_eo: {0.03: 0.977142870426178, 0.1: 0.9714285731315613, 0.3: 0.9742857217788696, 1.0: 0.9714285731315613, 3.0: 0.9714285731315613} -> lambda=0.03
+=== tune/weak_ce_attr_r12_lam0.03_seed0.json
+    val cls 0.9700 | test cls 0.9571 map 0.9529 attr 0.9821 cons 0.7971  (64s)
+=== tune/weak_ce_attr_r12_lam0.1_seed0.json
+    val cls 0.9686 | test cls 0.9614 map 0.9586 attr 0.9825 cons 0.8486  (64s)
+=== tune/weak_ce_attr_r12_lam0.3_seed0.json
+    val cls 0.9771 | test cls 0.9743 map 0.9743 attr 0.9891 cons 0.8743  (64s)
+=== tune/weak_ce_attr_r12_lam1.0_seed0.json
+    val cls 0.9757 | test cls 0.9700 map 0.9700 attr 0.9873 cons 0.9329  (64s)
+=== tune/weak_ce_attr_r12_lam3.0_seed0.json
+    val cls 0.5671 | test cls 0.5671 map 0.5657 attr 0.8016 cons 0.3800  (64s)
+*** weak ce_attr_r12: {0.03: 0.9700000286102295, 0.1: 0.9685714244842529, 0.3: 0.977142870426178, 1.0: 0.9757142663002014, 3.0: 0.5671428442001343} -> lambda=0.3
+=== tune/weak_ce_attr_r14_lam0.03_seed0.json
+    val cls 0.9700 | test cls 0.9586 map 0.9586 attr 0.9818 cons 0.9514  (64s)
+=== tune/weak_ce_attr_r14_lam0.1_seed0.json
+    val cls 0.9686 | test cls 0.9671 map 0.9671 attr 0.9847 cons 0.9771  (64s)
+=== tune/weak_ce_attr_r14_lam0.3_seed0.json
+    val cls 0.9700 | test cls 0.9629 map 0.9600 attr 0.9833 cons 0.9557  (64s)
+=== tune/weak_ce_attr_r14_lam1.0_seed0.json
+    val cls 0.9771 | test cls 0.9771 map 0.9800 attr 0.9867 cons 0.9514  (64s)
+=== tune/weak_ce_attr_r14_lam3.0_seed0.json
+    val cls 0.9657 | test cls 0.9571 map 0.9629 attr 0.9774 cons 0.9157  (64s)
+*** weak ce_attr_r14: {0.03: 0.9700000286102295, 0.1: 0.9685714244842529, 0.3: 0.9700000286102295, 1.0: 0.977142870426178, 3.0: 0.9657142758369446} -> lambda=1.0
+=== tune/weak_ce_attr_all_lam0.03_seed0.json
+    val cls 0.9657 | test cls 0.9700 map 0.9686 attr 0.9862 cons 0.9714  (64s)
+=== tune/weak_ce_attr_all_lam0.1_seed0.json
+    val cls 0.9743 | test cls 0.9714 map 0.9714 attr 0.9859 cons 0.9757  (64s)
+=== tune/weak_ce_attr_all_lam0.3_seed0.json
+    val cls 0.9771 | test cls 0.9729 map 0.9714 attr 0.9881 cons 0.9843  (64s)
+=== tune/weak_ce_attr_all_lam1.0_seed0.json
+    val cls 0.9714 | test cls 0.9543 map 0.9514 attr 0.9778 cons 0.9786  (64s)
+=== tune/weak_ce_attr_all_lam3.0_seed0.json
+    val cls 0.3857 | test cls 0.3857 map 0.3829 attr 0.7537 cons 0.9957  (64s)
+*** weak ce_attr_all: {0.03: 0.9657142758369446, 0.1: 0.9742857217788696, 0.3: 0.977142870426178, 1.0: 0.9714285731315613, 3.0: 0.3857142925262451} -> lambda=0.3
+=== main/semi_ce_lam0.0_seed0.json
+    val cls 0.9200 | test cls 0.9029 map 0.9129 attr 0.4657 cons 0.0000  (61s)
+=== main/semi_ce_attr_lam0.0_seed0.json
+    val cls 0.9029 | test cls 0.8986 map 0.8943 attr 0.9581 cons 0.7714  (64s)
+=== main/semi_ce_attr_ent_lam3.0_seed0.json
+    val cls 0.9443 | test cls 0.9314 map 0.9271 attr 0.9693 cons 0.7586  (64s)
+=== main/semi_ce_attr_eo_lam3.0_seed0.json
+    val cls 0.9643 | test cls 0.9529 map 0.9457 attr 0.9776 cons 0.7729  (64s)
+=== main/semi_ce_attr_r12_lam0.3_seed0.json
+    val cls 0.9643 | test cls 0.9557 map 0.9529 attr 0.9797 cons 0.8786  (64s)
+=== main/semi_ce_attr_r14_lam1.0_seed0.json
+    val cls 0.9643 | test cls 0.9614 map 0.9629 attr 0.9745 cons 0.9129  (64s)
+=== main/semi_ce_attr_all_lam0.3_seed0.json
+    val cls 0.9629 | test cls 0.9586 map 0.9600 attr 0.9808 cons 0.9757  (64s)
+=== main/weak_ce_lam0.0_seed0.json
+    val cls 0.9200 | test cls 0.9029 map 0.9129 attr 0.4657 cons 0.0000  (61s)
+=== main/weak_ce_attr_lam0.0_seed0.json
+    val cls 0.9657 | test cls 0.9514 map 0.9529 attr 0.9813 cons 0.7843  (64s)
+=== main/weak_ce_attr_ent_lam1.0_seed0.json
+    val cls 0.9657 | test cls 0.9614 map 0.9586 attr 0.9823 cons 0.7843  (64s)
+=== main/weak_ce_attr_eo_lam0.03_seed0.json
+    val cls 0.9714 | test cls 0.9629 map 0.9600 attr 0.9841 cons 0.8171  (64s)
+=== main/weak_ce_attr_r12_lam0.3_seed0.json
+    val cls 0.9771 | test cls 0.9743 map 0.9743 attr 0.9891 cons 0.8743  (64s)
+=== main/weak_ce_attr_r14_lam1.0_seed0.json
+    val cls 0.9786 | test cls 0.9757 map 0.9757 attr 0.9860 cons 0.9529  (64s)
+=== main/weak_ce_attr_all_lam0.3_seed0.json
+    val cls 0.9743 | test cls 0.9686 map 0.9671 attr 0.9862 cons 0.9871  (64s)
+=== main/semi_ce_lam0.0_seed1.json
+    val cls 0.9029 | test cls 0.8957 map 0.8886 attr 0.5787 cons 0.0400  (61s)
+=== main/semi_ce_attr_lam0.0_seed1.json
+    val cls 0.9171 | test cls 0.9014 map 0.9057 attr 0.9596 cons 0.8100  (63s)
+=== main/semi_ce_attr_ent_lam3.0_seed1.json
+    val cls 0.9257 | test cls 0.9243 map 0.9243 attr 0.9631 cons 0.7714  (64s)
+=== main/semi_ce_attr_eo_lam3.0_seed1.json
+    val cls 0.9457 | test cls 0.9471 map 0.9471 attr 0.9758 cons 0.7643  (64s)
+=== main/semi_ce_attr_r12_lam0.3_seed1.json
+    val cls 0.9600 | test cls 0.9543 map 0.9529 attr 0.9802 cons 0.9186  (64s)
+=== main/semi_ce_attr_r14_lam1.0_seed1.json
+    val cls 0.9457 | test cls 0.9400 map 0.9371 attr 0.9672 cons 0.9171  (62s)
+=== main/semi_ce_attr_all_lam0.3_seed1.json
+    val cls 0.9614 | test cls 0.9529 map 0.9543 attr 0.9776 cons 0.9729  (64s)
+=== main/weak_ce_lam0.0_seed1.json
+    val cls 0.9029 | test cls 0.8957 map 0.8886 attr 0.5787 cons 0.0400  (61s)
+=== main/weak_ce_attr_lam0.0_seed1.json
+    val cls 0.9557 | test cls 0.9500 map 0.9514 attr 0.9800 cons 0.8386  (63s)
+=== main/weak_ce_attr_ent_lam1.0_seed1.json
+    val cls 0.9543 | test cls 0.9471 map 0.9457 attr 0.9792 cons 0.8271  (64s)
+=== main/weak_ce_attr_eo_lam0.03_seed1.json
+    val cls 0.9671 | test cls 0.9529 map 0.9529 attr 0.9800 cons 0.8271  (64s)
+=== main/weak_ce_attr_r12_lam0.3_seed1.json
+    val cls 0.9814 | test cls 0.9686 map 0.9671 attr 0.9867 cons 0.9214  (64s)
+=== main/weak_ce_attr_r14_lam1.0_seed1.json
+    val cls 0.9657 | test cls 0.9586 map 0.9571 attr 0.9795 cons 0.9429  (64s)
+=== main/weak_ce_attr_all_lam0.3_seed1.json
+    val cls 0.9757 | test cls 0.9614 map 0.9614 attr 0.9828 cons 0.9871  (64s)
+=== main/semi_ce_lam0.0_seed2.json
+    val cls 0.8829 | test cls 0.8929 map 0.8929 attr 0.4620 cons 0.0000  (61s)
+=== main/semi_ce_attr_lam0.0_seed2.json
+    val cls 0.9057 | test cls 0.9014 map 0.9086 attr 0.9630 cons 0.7671  (64s)
+=== main/semi_ce_attr_ent_lam3.0_seed2.json
+    val cls 0.9400 | test cls 0.9329 map 0.9329 attr 0.9708 cons 0.7800  (64s)
+=== main/semi_ce_attr_eo_lam3.0_seed2.json
+    val cls 0.9443 | test cls 0.9343 map 0.9371 attr 0.9734 cons 0.7700  (64s)
+=== main/semi_ce_attr_r12_lam0.3_seed2.json
+    val cls 0.9529 | test cls 0.9500 map 0.9443 attr 0.9774 cons 0.9200  (65s)
+=== main/semi_ce_attr_r14_lam1.0_seed2.json
+    val cls 0.9471 | test cls 0.9314 map 0.9400 attr 0.9721 cons 0.9114  (64s)
+=== main/semi_ce_attr_all_lam0.3_seed2.json
+    val cls 0.9486 | test cls 0.9457 map 0.9471 attr 0.9766 cons 0.9786  (64s)
+=== main/weak_ce_lam0.0_seed2.json
+    val cls 0.8943 | test cls 0.8957 map 0.8943 attr 0.4653 cons 0.0000  (62s)
+=== main/weak_ce_attr_lam0.0_seed2.json
+    val cls 0.9429 | test cls 0.9543 map 0.9529 attr 0.9779 cons 0.8586  (64s)
+=== main/weak_ce_attr_ent_lam1.0_seed2.json
+    val cls 0.9557 | test cls 0.9457 map 0.9486 attr 0.9786 cons 0.8257  (64s)
+=== main/weak_ce_attr_eo_lam0.03_seed2.json
+    val cls 0.9457 | test cls 0.9543 map 0.9529 attr 0.9791 cons 0.8771  (64s)
+=== main/weak_ce_attr_r12_lam0.3_seed2.json
+    val cls 0.9714 | test cls 0.9700 map 0.9657 attr 0.9857 cons 0.9257  (64s)
+=== main/weak_ce_attr_r14_lam1.0_seed2.json
+    val cls 0.9629 | test cls 0.9571 map 0.9614 attr 0.9795 cons 0.9343  (64s)
+=== main/weak_ce_attr_all_lam0.3_seed2.json
+    val cls 0.9657 | test cls 0.9571 map 0.9600 attr 0.9823 cons 0.9743  (64s)
+=== main/semi_ce_lam0.0_seed3.json
+    val cls 0.9243 | test cls 0.9057 map 0.9114 attr 0.4304 cons 0.0000  (62s)
+=== main/semi_ce_attr_lam0.0_seed3.json
+    val cls 0.9329 | test cls 0.9114 map 0.9114 attr 0.9633 cons 0.7886  (64s)
+=== main/semi_ce_attr_ent_lam3.0_seed3.json
+    val cls 0.9200 | test cls 0.9171 map 0.9143 attr 0.9614 cons 0.7971  (64s)
+=== main/semi_ce_attr_eo_lam3.0_seed3.json
+    val cls 0.9686 | test cls 0.9486 map 0.9486 attr 0.9802 cons 0.7714  (64s)
+=== main/semi_ce_attr_r12_lam0.3_seed3.json
+    val cls 0.9671 | test cls 0.9443 map 0.9429 attr 0.9786 cons 0.9171  (64s)
+=== main/semi_ce_attr_r14_lam1.0_seed3.json
+    val cls 0.9629 | test cls 0.9429 map 0.9429 attr 0.9705 cons 0.9043  (64s)
+=== main/semi_ce_attr_all_lam0.3_seed3.json
+    val cls 0.9657 | test cls 0.9400 map 0.9329 attr 0.9724 cons 0.9771  (64s)
+=== main/weak_ce_lam0.0_seed3.json
+    val cls 0.9171 | test cls 0.8943 map 0.8971 attr 0.4135 cons 0.0000  (61s)
+=== main/weak_ce_attr_lam0.0_seed3.json
+    val cls 0.9671 | test cls 0.9471 map 0.9471 attr 0.9805 cons 0.8014  (63s)
+=== main/weak_ce_attr_ent_lam1.0_seed3.json
+    val cls 0.9557 | test cls 0.9386 map 0.9357 attr 0.9758 cons 0.8157  (64s)
+=== main/weak_ce_attr_eo_lam0.03_seed3.json
+    val cls 0.9614 | test cls 0.9414 map 0.9400 attr 0.9765 cons 0.7986  (64s)
+=== main/weak_ce_attr_r12_lam0.3_seed3.json
+    val cls 0.9857 | test cls 0.9686 map 0.9700 attr 0.9894 cons 0.9000  (64s)
+=== main/weak_ce_attr_r14_lam1.0_seed3.json
+    val cls 0.9786 | test cls 0.9686 map 0.9743 attr 0.9843 cons 0.9486  (64s)
+=== main/weak_ce_attr_all_lam0.3_seed3.json
+    val cls 0.9829 | test cls 0.9600 map 0.9600 attr 0.9862 cons 0.9743  (64s)
+=== main/semi_ce_lam0.0_seed4.json
+    val cls 0.9229 | test cls 0.9000 map 0.8929 attr 0.4362 cons 0.0000  (61s)
+=== main/semi_ce_attr_lam0.0_seed4.json
+    val cls 0.9229 | test cls 0.9100 map 0.9014 attr 0.9584 cons 0.8143  (63s)
+=== main/semi_ce_attr_ent_lam3.0_seed4.json
+    val cls 0.9329 | test cls 0.9257 map 0.9214 attr 0.9672 cons 0.8100  (64s)
+=== main/semi_ce_attr_eo_lam3.0_seed4.json
+    val cls 0.9586 | test cls 0.9243 map 0.9271 attr 0.9703 cons 0.8200  (64s)
+=== main/semi_ce_attr_r12_lam0.3_seed4.json
+    val cls 0.9557 | test cls 0.9443 map 0.9457 attr 0.9779 cons 0.9286  (64s)
+=== main/semi_ce_attr_r14_lam1.0_seed4.json
+    val cls 0.9529 | test cls 0.9486 map 0.9486 attr 0.9740 cons 0.9229  (64s)
+=== main/semi_ce_attr_all_lam0.3_seed4.json
+    val cls 0.9486 | test cls 0.9414 map 0.9343 attr 0.9713 cons 0.9629  (64s)
+=== main/weak_ce_lam0.0_seed4.json
+    val cls 0.9200 | test cls 0.9114 map 0.9086 attr 0.4237 cons 0.0000  (61s)
+=== main/weak_ce_attr_lam0.0_seed4.json
+    val cls 0.9700 | test cls 0.9571 map 0.9600 attr 0.9830 cons 0.7929  (64s)
+=== main/weak_ce_attr_ent_lam1.0_seed4.json
+    val cls 0.9557 | test cls 0.9557 map 0.9600 attr 0.9826 cons 0.8414  (64s)
+=== main/weak_ce_attr_eo_lam0.03_seed4.json
+    val cls 0.9700 | test cls 0.9586 map 0.9600 attr 0.9839 cons 0.8071  (64s)
+=== main/weak_ce_attr_r12_lam0.3_seed4.json
+    val cls 0.9771 | test cls 0.9729 map 0.9743 attr 0.9877 cons 0.8843  (64s)
+=== main/weak_ce_attr_r14_lam1.0_seed4.json
+    val cls 0.9743 | test cls 0.9643 map 0.9671 attr 0.9852 cons 0.9543  (64s)
+=== main/weak_ce_attr_all_lam0.3_seed4.json
+    val cls 0.9671 | test cls 0.9571 map 0.9629 attr 0.9862 cons 0.9829  (64s)
+=== zeroshot/h0_zs_attr_lam0.0_seed0.json
+    unseen 0.000 seen 0.986 H 0.000  (64s)
+=== zeroshot/h0_zs_r14_lam1.0_seed0.json
+    unseen 0.000 seen 0.954 H 0.000  (64s)
+=== zeroshot/h0_zs_all_lam0.3_seed0.json
+    unseen 0.029 seen 0.991 H 0.056  (64s)
+=== zeroshot/h1_zs_attr_lam0.0_seed0.json
+    unseen 0.014 seen 0.991 H 0.028  (63s)
+=== zeroshot/h1_zs_r14_lam1.0_seed0.json
+    unseen 0.036 seen 0.991 H 0.069  (64s)
+=== zeroshot/h1_zs_all_lam0.3_seed0.json
+    unseen 0.014 seen 0.988 H 0.028  (64s)
+=== zeroshot/h2_zs_attr_lam0.0_seed0.json
+    unseen 0.000 seen 0.988 H 0.000  (64s)
+=== zeroshot/h2_zs_r14_lam1.0_seed0.json
+    unseen 0.000 seen 0.989 H 0.000  (64s)
+=== zeroshot/h2_zs_all_lam0.3_seed0.json
+    unseen 0.000 seen 0.988 H 0.000  (64s)
+=== zeroshot/h3_zs_attr_lam0.0_seed0.json
+    unseen 0.050 seen 0.996 H 0.095  (63s)
+=== zeroshot/h3_zs_r14_lam1.0_seed0.json
+    unseen 0.007 seen 0.996 H 0.014  (64s)
+=== zeroshot/h3_zs_all_lam0.3_seed0.json
+    unseen 0.014 seen 0.996 H 0.028  (64s)
+=== zeroshot/h4_zs_attr_lam0.0_seed0.json
+    unseen 0.000 seen 0.993 H 0.000  (63s)
+=== zeroshot/h4_zs_r14_lam1.0_seed0.json
+    unseen 0.000 seen 0.989 H 0.000  (64s)
+=== zeroshot/h4_zs_all_lam0.3_seed0.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h0_zs_attr_lam0.0_seed1.json
+    unseen 0.000 seen 0.986 H 0.000  (63s)
+=== zeroshot/h0_zs_r14_lam1.0_seed1.json
+    unseen 0.000 seen 0.952 H 0.000  (64s)
+=== zeroshot/h0_zs_all_lam0.3_seed1.json
+    unseen 0.014 seen 0.991 H 0.028  (64s)
+=== zeroshot/h1_zs_attr_lam0.0_seed1.json
+    unseen 0.000 seen 0.991 H 0.000  (63s)
+=== zeroshot/h1_zs_r14_lam1.0_seed1.json
+    unseen 0.021 seen 0.993 H 0.042  (64s)
+=== zeroshot/h1_zs_all_lam0.3_seed1.json
+    unseen 0.029 seen 0.991 H 0.056  (64s)
+=== zeroshot/h2_zs_attr_lam0.0_seed1.json
+    unseen 0.000 seen 0.995 H 0.000  (63s)
+=== zeroshot/h2_zs_r14_lam1.0_seed1.json
+    unseen 0.000 seen 0.989 H 0.000  (64s)
+=== zeroshot/h2_zs_all_lam0.3_seed1.json
+    unseen 0.000 seen 0.993 H 0.000  (64s)
+=== zeroshot/h3_zs_attr_lam0.0_seed1.json
+    unseen 0.086 seen 0.998 H 0.158  (63s)
+=== zeroshot/h3_zs_r14_lam1.0_seed1.json
+    unseen 0.007 seen 0.996 H 0.014  (64s)
+=== zeroshot/h3_zs_all_lam0.3_seed1.json
+    unseen 0.029 seen 0.993 H 0.056  (64s)
+=== zeroshot/h4_zs_attr_lam0.0_seed1.json
+    unseen 0.000 seen 0.980 H 0.000  (63s)
+=== zeroshot/h4_zs_r14_lam1.0_seed1.json
+    unseen 0.000 seen 0.989 H 0.000  (64s)
+=== zeroshot/h4_zs_all_lam0.3_seed1.json
+    unseen 0.000 seen 0.988 H 0.000  (64s)
+=== zeroshot/h0_zs_attr_lam0.0_seed2.json
+    unseen 0.000 seen 0.991 H 0.000  (63s)
+=== zeroshot/h0_zs_r14_lam1.0_seed2.json
+    unseen 0.000 seen 0.954 H 0.000  (64s)
+=== zeroshot/h0_zs_all_lam0.3_seed2.json
+    unseen 0.021 seen 0.989 H 0.042  (64s)
+=== zeroshot/h1_zs_attr_lam0.0_seed2.json
+    unseen 0.007 seen 0.993 H 0.014  (63s)
+=== zeroshot/h1_zs_r14_lam1.0_seed2.json
+    unseen 0.000 seen 0.995 H 0.000  (64s)
+=== zeroshot/h1_zs_all_lam0.3_seed2.json
+    unseen 0.007 seen 0.993 H 0.014  (64s)
+=== zeroshot/h2_zs_attr_lam0.0_seed2.json
+    unseen 0.000 seen 0.989 H 0.000  (63s)
+=== zeroshot/h2_zs_r14_lam1.0_seed2.json
+    unseen 0.000 seen 0.993 H 0.000  (64s)
+=== zeroshot/h2_zs_all_lam0.3_seed2.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h3_zs_attr_lam0.0_seed2.json
+    unseen 0.100 seen 0.998 H 0.182  (63s)
+=== zeroshot/h3_zs_r14_lam1.0_seed2.json
+    unseen 0.021 seen 0.996 H 0.042  (64s)
+=== zeroshot/h3_zs_all_lam0.3_seed2.json
+    unseen 0.014 seen 0.998 H 0.028  (64s)
+=== zeroshot/h4_zs_attr_lam0.0_seed2.json
+    unseen 0.000 seen 0.986 H 0.000  (63s)
+=== zeroshot/h4_zs_r14_lam1.0_seed2.json
+    unseen 0.000 seen 0.993 H 0.000  (65s)
+=== zeroshot/h4_zs_all_lam0.3_seed2.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h0_zs_attr_lam0.0_seed3.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h0_zs_r14_lam1.0_seed3.json
+    unseen 0.000 seen 0.957 H 0.000  (64s)
+=== zeroshot/h0_zs_all_lam0.3_seed3.json
+    unseen 0.000 seen 0.988 H 0.000  (64s)
+=== zeroshot/h1_zs_attr_lam0.0_seed3.json
+    unseen 0.021 seen 0.993 H 0.042  (64s)
+=== zeroshot/h1_zs_r14_lam1.0_seed3.json
+    unseen 0.007 seen 0.993 H 0.014  (64s)
+=== zeroshot/h1_zs_all_lam0.3_seed3.json
+    unseen 0.064 seen 0.993 H 0.121  (64s)
+=== zeroshot/h2_zs_attr_lam0.0_seed3.json
+    unseen 0.000 seen 0.993 H 0.000  (64s)
+=== zeroshot/h2_zs_r14_lam1.0_seed3.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h2_zs_all_lam0.3_seed3.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h3_zs_attr_lam0.0_seed3.json
+    unseen 0.114 seen 0.996 H 0.205  (63s)
+=== zeroshot/h3_zs_r14_lam1.0_seed3.json
+    unseen 0.014 seen 0.996 H 0.028  (64s)
+=== zeroshot/h3_zs_all_lam0.3_seed3.json
+    unseen 0.043 seen 0.996 H 0.082  (64s)
+=== zeroshot/h4_zs_attr_lam0.0_seed3.json
+    unseen 0.000 seen 0.988 H 0.000  (63s)
+=== zeroshot/h4_zs_r14_lam1.0_seed3.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h4_zs_all_lam0.3_seed3.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h0_zs_attr_lam0.0_seed4.json
+    unseen 0.000 seen 0.988 H 0.000  (63s)
+=== zeroshot/h0_zs_r14_lam1.0_seed4.json
+    unseen 0.000 seen 0.955 H 0.000  (64s)
+=== zeroshot/h0_zs_all_lam0.3_seed4.json
+    unseen 0.014 seen 0.993 H 0.028  (64s)
+=== zeroshot/h1_zs_attr_lam0.0_seed4.json
+    unseen 0.007 seen 0.989 H 0.014  (63s)
+=== zeroshot/h1_zs_r14_lam1.0_seed4.json
+    unseen 0.007 seen 0.993 H 0.014  (64s)
+=== zeroshot/h1_zs_all_lam0.3_seed4.json
+    unseen 0.014 seen 0.991 H 0.028  (64s)
+=== zeroshot/h2_zs_attr_lam0.0_seed4.json
+    unseen 0.000 seen 0.993 H 0.000  (63s)
+=== zeroshot/h2_zs_r14_lam1.0_seed4.json
+    unseen 0.000 seen 0.988 H 0.000  (64s)
+=== zeroshot/h2_zs_all_lam0.3_seed4.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+=== zeroshot/h3_zs_attr_lam0.0_seed4.json
+    unseen 0.143 seen 0.998 H 0.250  (63s)
+=== zeroshot/h3_zs_r14_lam1.0_seed4.json
+    unseen 0.007 seen 0.996 H 0.014  (66s)
+=== zeroshot/h3_zs_all_lam0.3_seed4.json
+    unseen 0.043 seen 0.998 H 0.082  (64s)
+=== zeroshot/h4_zs_attr_lam0.0_seed4.json
+    unseen 0.000 seen 0.989 H 0.000  (63s)
+=== zeroshot/h4_zs_r14_lam1.0_seed4.json
+    unseen 0.000 seen 0.988 H 0.000  (64s)
+=== zeroshot/h4_zs_all_lam0.3_seed4.json
+    unseen 0.000 seen 0.991 H 0.000  (64s)
+ALL DONE

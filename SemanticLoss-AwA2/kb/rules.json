@@ -1,0 +1,656 @@
+{
+ "variables": [
+  "zebra",
+  "tiger",
+  "giraffe",
+  "leopard",
+  "dolphin",
+  "stripes",
+  "spots",
+  "hooves",
+  "paws",
+  "longneck",
+  "flippers",
+  "furry",
+  "quadrapedal",
+  "water",
+  "meatteeth"
+ ],
+ "families": {
+  "R1": [
+   {
+    "clause": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "desc": "at least one class"
+   },
+   {
+    "clause": [
+     -1,
+     -2
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -1,
+     -3
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -1,
+     -4
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -1,
+     -5
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -2,
+     -3
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -2,
+     -4
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -2,
+     -5
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -3,
+     -4
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -3,
+     -5
+    ],
+    "desc": "not two classes"
+   },
+   {
+    "clause": [
+     -4,
+     -5
+    ],
+    "desc": "not two classes"
+   }
+  ],
+  "R2": [
+   {
+    "clause": [
+     -1,
+     6
+    ],
+    "desc": "zebra -> stripes (99)"
+   },
+   {
+    "clause": [
+     -1,
+     -7
+    ],
+    "desc": "zebra -> not spots (0)"
+   },
+   {
+    "clause": [
+     -1,
+     8
+    ],
+    "desc": "zebra -> hooves (76)"
+   },
+   {
+    "clause": [
+     -1,
+     -9
+    ],
+    "desc": "zebra -> not paws (0)"
+   },
+   {
+    "clause": [
+     -1,
+     -11
+    ],
+    "desc": "zebra -> not flippers (0)"
+   },
+   {
+    "clause": [
+     -1,
+     13
+    ],
+    "desc": "zebra -> quadrapedal (89)"
+   },
+   {
+    "clause": [
+     -1,
+     -14
+    ],
+    "desc": "zebra -> not water (0)"
+   },
+   {
+    "clause": [
+     -1,
+     -15
+    ],
+    "desc": "zebra -> not meatteeth (0)"
+   },
+   {
+    "clause": [
+     -2,
+     6
+    ],
+    "desc": "tiger -> stripes (89)"
+   },
+   {
+    "clause": [
+     -2,
+     -7
+    ],
+    "desc": "tiger -> not spots (6)"
+   },
+   {
+    "clause": [
+     -2,
+     -8
+    ],
+    "desc": "tiger -> not hooves (0)"
+   },
+   {
+    "clause": [
+     -2,
+     9
+    ],
+    "desc": "tiger -> paws (61)"
+   },
+   {
+    "clause": [
+     -2,
+     -10
+    ],
+    "desc": "tiger -> not longneck (8)"
+   },
+   {
+    "clause": [
+     -2,
+     -11
+    ],
+    "desc": "tiger -> not flippers (0)"
+   },
+   {
+    "clause": [
+     -2,
+     12
+    ],
+    "desc": "tiger -> furry (66)"
+   },
+   {
+    "clause": [
+     -2,
+     13
+    ],
+    "desc": "tiger -> quadrapedal (77)"
+   },
+   {
+    "clause": [
+     -2,
+     -14
+    ],
+    "desc": "tiger -> not water (4)"
+   },
+   {
+    "clause": [
+     -2,
+     15
+    ],
+    "desc": "tiger -> meatteeth (86)"
+   },
+   {
+    "clause": [
+     -3,
+     -6
+    ],
+    "desc": "giraffe -> not stripes (0)"
+   },
+   {
+    "clause": [
+     -3,
+     7
+    ],
+    "desc": "giraffe -> spots (77)"
+   },
+   {
+    "clause": [
+     -3,
+     -9
+    ],
+    "desc": "giraffe -> not paws (7)"
+   },
+   {
+    "clause": [
+     -3,
+     10
+    ],
+    "desc": "giraffe -> longneck (97)"
+   },
+   {
+    "clause": [
+     -3,
+     -11
+    ],
+    "desc": "giraffe -> not flippers (0)"
+   },
+   {
+    "clause": [
+     -3,
+     13
+    ],
+    "desc": "giraffe -> quadrapedal (77)"
+   },
+   {
+    "clause": [
+     -3,
+     -14
+    ],
+    "desc": "giraffe -> not water (0)"
+   },
+   {
+    "clause": [
+     -3,
+     -15
+    ],
+    "desc": "giraffe -> not meatteeth (0)"
+   },
+   {
+    "clause": [
+     -4,
+     -6
+    ],
+    "desc": "leopard -> not stripes (1)"
+   },
+   {
+    "clause": [
+     -4,
+     7
+    ],
+    "desc": "leopard -> spots (75)"
+   },
+   {
+    "clause": [
+     -4,
+     -8
+    ],
+    "desc": "leopard -> not hooves (0)"
+   },
+   {
+    "clause": [
+     -4,
+     9
+    ],
+    "desc": "leopard -> paws (70)"
+   },
+   {
+    "clause": [
+     -4,
+     -10
+    ],
+    "desc": "leopard -> not longneck (7)"
+   },
+   {
+    "clause": [
+     -4,
+     -11
+    ],
+    "desc": "leopard -> not flippers (0)"
+   },
+   {
+    "clause": [
+     -4,
+     13
+    ],
+    "desc": "leopard -> quadrapedal (78)"
+   },
+   {
+    "clause": [
+     -4,
+     -14
+    ],
+    "desc": "leopard -> not water (2)"
+   },
+   {
+    "clause": [
+     -4,
+     15
+    ],
+    "desc": "leopard -> meatteeth (76)"
+   },
+   {
+    "clause": [
+     -5,
+     -6
+    ],
+    "desc": "dolphin -> not stripes (0)"
+   },
+   {
+    "clause": [
+     -5,
+     -7
+    ],
+    "desc": "dolphin -> not spots (1)"
+   },
+   {
+    "clause": [
+     -5,
+     -8
+    ],
+    "desc": "dolphin -> not hooves (0)"
+   },
+   {
+    "clause": [
+     -5,
+     -9
+    ],
+    "desc": "dolphin -> not paws (0)"
+   },
+   {
+    "clause": [
+     -5,
+     -10
+    ],
+    "desc": "dolphin -> not longneck (0)"
+   },
+   {
+    "clause": [
+     -5,
+     11
+    ],
+    "desc": "dolphin -> flippers (86)"
+   },
+   {
+    "clause": [
+     -5,
+     -12
+    ],
+    "desc": "dolphin -> not furry (1)"
+   },
+   {
+    "clause": [
+     -5,
+     -13
+    ],
+    "desc": "dolphin -> not quadrapedal (5)"
+   },
+   {
+    "clause": [
+     -5,
+     14
+    ],
+    "desc": "dolphin -> water (71)"
+   }
+  ],
+  "R3": [
+   {
+    "clause": [
+     -6,
+     1,
+     2
+    ],
+    "desc": "stripes -> zebra v tiger"
+   },
+   {
+    "clause": [
+     -7,
+     3,
+     4
+    ],
+    "desc": "spots -> giraffe v leopard"
+   },
+   {
+    "clause": [
+     -8,
+     1,
+     3
+    ],
+    "desc": "hooves -> zebra v giraffe"
+   },
+   {
+    "clause": [
+     -9,
+     2,
+     4
+    ],
+    "desc": "paws -> tiger v leopard"
+   },
+   {
+    "clause": [
+     -10,
+     1,
+     3
+    ],
+    "desc": "longneck -> zebra v giraffe"
+   },
+   {
+    "clause": [
+     -11,
+     5
+    ],
+    "desc": "flippers -> dolphin"
+   },
+   {
+    "clause": [
+     -12,
+     1,
+     2,
+     3,
+     4
+    ],
+    "desc": "furry -> zebra v tiger v giraffe v leopard"
+   },
+   {
+    "clause": [
+     -13,
+     1,
+     2,
+     3,
+     4
+    ],
+    "desc": "quadrapedal -> zebra v tiger v giraffe v leopard"
+   },
+   {
+    "clause": [
+     -14,
+     5
+    ],
+    "desc": "water -> dolphin"
+   },
+   {
+    "clause": [
+     -15,
+     2,
+     4,
+     5
+    ],
+    "desc": "meatteeth -> tiger v leopard v dolphin"
+   }
+  ],
+  "R4": [
+   {
+    "clause": [
+     -8,
+     -9
+    ],
+    "desc": "not (hooves and paws) (support 12/50)"
+   },
+   {
+    "clause": [
+     -8,
+     13
+    ],
+    "desc": "hooves -> quadrapedal (support 12/50)"
+   },
+   {
+    "clause": [
+     -8,
+     -14
+    ],
+    "desc": "not (hooves and water) (support 12/50)"
+   },
+   {
+    "clause": [
+     -8,
+     -15
+    ],
+    "desc": "not (hooves and meatteeth) (support 12/50)"
+   },
+   {
+    "clause": [
+     -9,
+     12
+    ],
+    "desc": "paws -> furry (support 27/50)"
+   },
+   {
+    "clause": [
+     -9,
+     13
+    ],
+    "desc": "paws -> quadrapedal (support 27/50)"
+   },
+   {
+    "clause": [
+     -10,
+     8
+    ],
+    "desc": "longneck -> hooves (support 5/50)"
+   },
+   {
+    "clause": [
+     -10,
+     -9
+    ],
+    "desc": "not (longneck and paws) (support 5/50)"
+   },
+   {
+    "clause": [
+     -10,
+     13
+    ],
+    "desc": "longneck -> quadrapedal (support 5/50)"
+   },
+   {
+    "clause": [
+     -10,
+     -14
+    ],
+    "desc": "not (longneck and water) (support 5/50)"
+   },
+   {
+    "clause": [
+     -10,
+     -15
+    ],
+    "desc": "not (longneck and meatteeth) (support 5/50)"
+   },
+   {
+    "clause": [
+     -11,
+     -6
+    ],
+    "desc": "not (flippers and stripes) (support 7/50)"
+   },
+   {
+    "clause": [
+     -11,
+     -8
+    ],
+    "desc": "not (flippers and hooves) (support 7/50)"
+   },
+   {
+    "clause": [
+     -11,
+     -10
+    ],
+    "desc": "not (flippers and longneck) (support 7/50)"
+   },
+   {
+    "clause": [
+     -11,
+     14
+    ],
+    "desc": "flippers -> water (support 7/50)"
+   }
+  ]
+ },
+ "sets": {
+  "R1": {
+   "clauses": 11,
+   "satisfying_worlds": 5120,
+   "class_rows_satisfy": {
+    "zebra": true,
+    "tiger": true,
+    "giraffe": true,
+    "leopard": true,
+    "dolphin": true
+   }
+  },
+  "R1+R2": {
+   "clauses": 55,
+   "satisfying_worlds": 13,
+   "class_rows_satisfy": {
+    "zebra": true,
+    "tiger": true,
+    "giraffe": true,
+    "leopard": true,
+    "dolphin": true
+   }
+  },
+  "R1+R4": {
+   "clauses": 26,
+   "satisfying_worlds": 580,
+   "class_rows_satisfy": {
+    "zebra": true,
+    "tiger": true,
+    "giraffe": true,
+    "leopard": true,
+    "dolphin": true
+   }
+  },
+  "R1+R2+R3+R4": {
+   "clauses": 80,
+   "satisfying_worlds": 10,
+   "class_rows_satisfy": {
+    "zebra": true,
+    "tiger": true,
+    "giraffe": true,
+    "leopard": true,
+    "dolphin": true
+   }
+  }
+ },
+ "thresholds": {
+  "pos": 50.0,
+  "neg": 10.0,
+  "min_support": 5
+ }
+}

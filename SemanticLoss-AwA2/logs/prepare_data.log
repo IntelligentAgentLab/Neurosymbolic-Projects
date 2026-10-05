@@ -1,0 +1,30 @@
+3500 images selected, 7000 files to download
+  250/7000 files, 54 MB, 47s
+  500/7000 files, 111 MB, 92s
+  750/7000 files, 167 MB, 138s
+  1000/7000 files, 219 MB, 183s
+  1250/7000 files, 271 MB, 229s
+  1500/7000 files, 331 MB, 276s
+  1750/7000 files, 383 MB, 321s
+  2000/7000 files, 434 MB, 365s
+  2250/7000 files, 481 MB, 410s
+  2500/7000 files, 538 MB, 456s
+  2750/7000 files, 589 MB, 501s
+  3000/7000 files, 636 MB, 546s
+  3250/7000 files, 685 MB, 590s
+  3500/7000 files, 738 MB, 635s
+  3750/7000 files, 785 MB, 679s
+  4000/7000 files, 837 MB, 724s
+  4250/7000 files, 885 MB, 769s
+  4500/7000 files, 936 MB, 814s
+  4750/7000 files, 990 MB, 858s
+  5000/7000 files, 1039 MB, 904s
+  5250/7000 files, 1088 MB, 950s
+  5500/7000 files, 1133 MB, 994s
+  5750/7000 files, 1176 MB, 1037s
+  6000/7000 files, 1216 MB, 1081s
+  6250/7000 files, 1255 MB, 1124s
+  6500/7000 files, 1294 MB, 1167s
+  6750/7000 files, 1334 MB, 1209s
+  7000/7000 files, 1372 MB, 1252s
+wrote data/awa2_5_96.npz: x (3500, 96, 96, 3), 86 MB, train 2100, val 700, test 700
