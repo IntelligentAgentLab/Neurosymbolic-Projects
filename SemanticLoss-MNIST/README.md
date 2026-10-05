@@ -1,114 +1,105 @@
-# Exactly-one Semantic Loss on semi-supervised MNIST
+# 준지도 MNIST에서의 exactly-one 의미 손실
 
-The most basic semantic-loss example (Xu et al., 2018): with only a few hundred labeled digits, add the
-knowledge "exactly one of the 10 outputs is true" as a loss on **unlabeled** images, and compare it with
-entropy minimisation, which only makes predictions confident.
+한국어 | [English](README_en.md)
 
-## Constraint and loss
+가장 기본적인 의미 손실 예제입니다(Xu et al., 2018). 라벨이 있는 숫자 이미지가 수백 장뿐일 때,
+"10개 출력 중 정확히 하나만 참"이라는 지식을 **라벨 없는** 이미지에 손실로 추가합니다. 그리고 예측을
+확신하게 만들기만 하는 엔트로피 최소화와 비교합니다.
 
-10 sigmoid outputs X₁..X₁₀, constraint α = EO(X₁..X₁₀) (1 + 45 = 46 CNF clauses, 10 satisfying worlds).
+## 제약과 손실
+
+시그모이드 출력 X₁..X₁₀, 제약 α = EO(X₁..X₁₀) (CNF 절 1 + 45 = 46개, 만족 세계 10개).
 
 ```
 log Pr(α) = logsumexp(z) − Σ softplus(z)        L^s = −log Pr(α)
 ```
 
-Derivation: split the satisfying worlds by which output is true (10 disjoint cases, summed); each case is a
-product of independent factors; the common factor ∏(1 − p_j) leaves the odds e^{z_i}.
-Checked against brute-force enumeration (2¹⁰ worlds) in `tests/test_losses.py`.
+유도: 만족 세계를 "어느 출력이 참인가"로 나누면 겹치지 않는 경우 10개가 되고, 그 확률을 더합니다.
+각 경우는 독립 인수의 곱이고, 공통 인수 ∏(1 − p_j)를 빼면 오즈 e^{z_i}만 남습니다.
+`tests/test_losses.py`에서 전수 계산(2¹⁰개 세계)과 대조해 검증합니다.
 
-## Setup
+## 설정
 
-- Data: MNIST, 5,000 training images held out for validation (fixed), 55,000 for training, 10,000 test.
-  Labeled budgets 100 / 500 / 1,000 (balanced per class, chosen by seed); all other training images unlabeled.
-- Model: MLP 784-1000-500-250-250-250-10, batch norm, ReLU, Gaussian input noise σ = 0.3 (ladder-network setup).
-- Training: each step = 100 labeled (sampled with replacement) + 250 unlabeled images; 30 passes over the
-  unlabeled stream (6,600 steps); Adam, one-cycle LR (max 2e-3); λ warm-up over the first 10 % of steps.
+- 데이터: MNIST. 학습 이미지 중 5,000장을 고정 검증셋으로 떼고, 학습 55,000장, 테스트 10,000장을 씁니다.
+  라벨 수는 100 / 500 / 1,000장(클래스별 같은 수, 시드에 따라 선택)이고, 나머지 학습 이미지는 라벨이 없습니다.
+- 모형: MLP 784-1000-500-250-250-250-10, 배치 정규화, ReLU, 입력 가우시안 잡음 σ = 0.3 (사다리 네트워크 설정).
+- 학습: 스텝마다 라벨 있는 100장(복원 추출) + 라벨 없는 250장. 라벨 없는 이미지 기준 30회 순회(6,600 스텝).
+  Adam, one-cycle 학습률(최대 2e-3), 처음 10% 스텝 동안 λ 웜업.
 
-| method | loss |
+| 방법 | 손실 |
 |---|---|
-| `ce` | CE on labeled images |
-| `ce_eo` | + λ · exactly-one semantic loss on every image (sigmoid reading of the logits) |
-| `ce_ent` | + λ · entropy of softmax(z) on every image (control) |
+| `ce` | 라벨 있는 이미지에 CE |
+| `ce_eo` | + 모든 이미지에 λ · exactly-one 의미 손실 (로짓을 시그모이드로 해석) |
+| `ce_ent` | + 모든 이미지에 λ · softmax(z)의 엔트로피 (대조군) |
 
-λ ∈ {0.01, 0.03, 0.1, 0.3, 1, 3} chosen per (budget, method) on validation with seed 0; then 5 seeds on test.
+λ ∈ {0.01, 0.03, 0.1, 0.3, 1, 3}는 (라벨 수, 방법)마다 검증셋(시드 0)에서 고르고, 테스트는 시드 5개로 합니다.
 
-## Results (test, mean ± std over 5 seeds)
+## 결과 (테스트, 시드 5개 평균 ± 표준편차)
 
-Fully supervised reference (55,000 labels): **98.80 ± 0.10 %**.
+전체 라벨(55,000장) 기준: **98.80 ± 0.10 %**.
 
-| labels | ce | ce_eo (λ) | ce_ent (λ) |
+| 라벨 수 | ce | ce_eo (λ) | ce_ent (λ) |
 |---|---|---|---|
 | 100 | 76.19 ± 2.22 | **80.59 ± 3.10** (0.1) | 79.60 ± 3.32 (0.3) |
 | 500 | 90.85 ± 0.55 | **93.00 ± 0.53** (1) | 92.60 ± 0.66 (0.3) |
 | 1,000 | 93.90 ± 0.22 | **94.98 ± 0.20** (3) | 94.80 ± 0.14 (0.3) |
 
-| labels | mean Pr(exactly-one): ce / ce_eo / ce_ent | one-hot rate %: ce / ce_eo / ce_ent |
+| 라벨 수 | 평균 Pr(exactly-one): ce / ce_eo / ce_ent | 원-핫 비율 %: ce / ce_eo / ce_ent |
 |---|---|---|
 | 100 | 0.26 / 0.97 / 0.81 | 64 / 99.2 / 85 |
 | 500 | 0.40 / 0.99 / 0.80 | 76 / 99.8 / 87 |
 | 1,000 | 0.43 / 0.99 / 0.78 | 78 / 99.9 / 87 |
 
-Observations:
-- The semantic loss beats CE in every budget and every seed (+4.4, +2.2, +1.1 points); the gain shrinks as labels grow.
-- Against entropy minimisation the edge is small (+1.0, +0.4, +0.2 points; ahead in 4/5, 5/5, 4/5 seeds) and,
-  at 100 labels, well inside the seed spread. Most of the accuracy gain is shared with "be confident".
-- The two regularisers make different things confident: entropy minimisation acts on the softmax distribution,
-  which ignores the absolute logit level, so the sigmoid outputs still violate exactly-one on ~13–15 % of test
-  images; the semantic loss drives exactly-one compliance to > 99 %.
-- Our 100-label semantic-loss result is far below the 98.38 % reported by Xu et al. (2018); see
-  "Reproducing the paper's protocol" below.
+관찰:
+- 의미 손실은 모든 라벨 수, 모든 시드에서 CE보다 높습니다(+4.4, +2.2, +1.1%p). 라벨이 많을수록 이득이 줄어듭니다.
+- 엔트로피 최소화 대비 우위는 작습니다(+1.0, +0.4, +0.2%p, 시드별로 4/5, 5/5, 4/5에서 앞섬). 라벨 100장에서는
+  시드 간 편차 안에 들어갑니다. 정확도 이득의 대부분은 "확신하게 만들기"와 겹칩니다.
+- 두 정규화 항은 서로 다른 것을 확신하게 만듭니다. 엔트로피 최소화는 로짓의 절대 수준을 무시하는 소프트맥스
+  분포에 작용하므로, 테스트 이미지의 약 13~15%에서 시그모이드 출력이 여전히 exactly-one을 위반합니다.
+  의미 손실은 exactly-one 준수율을 99% 이상으로 올립니다.
+- 라벨 100장에서의 의미 손실 결과는 Xu et al. (2018)이 보고한 98.38%보다 훨씬 낮습니다.
+  아래 "원 논문 설정 재현"을 참고하세요.
 
-## Reproducing the paper's protocol
+## 원 논문 설정 재현
 
-`semloss/paper_protocol.py` ports the official code (github.com/UCLA-StarAI/Semantic-Loss,
-`semi_supervised/semantic.py`, `mnist_input.py`) to PyTorch: per-image standardisation, Gaussian noise 0.3 and a
-random 25×25 crop (training only), MLP with ReLU, Glorot init, dropout 0.5 and no effective batch norm, sigmoid
-cross-entropy for the labeled part, semantic loss on every image, half-labeled/half-unlabeled batches, Adam 1e-4,
-50,000 steps. Differences from the paper text found in the code: the crop augmentation (the paper calls the task
-permutation-invariant), lr 1e-4 instead of 0.002, 50,000 steps instead of 20 epochs, no validation set, and test
-accuracy printed during training. The official README itself warns that the 100-label results are "very volatile".
+`semloss/paper_protocol.py`는 공식 코드(github.com/UCLA-StarAI/Semantic-Loss의 `semi_supervised/semantic.py`,
+`mnist_input.py`)를 PyTorch로 옮긴 것입니다. 이미지별 표준화, 가우시안 잡음 0.3과 무작위 25×25 크롭(학습 시만),
+ReLU MLP, Glorot 초기화, 드롭아웃 0.5(배치 정규화는 사실상 비활성), 라벨 있는 부분에 시그모이드 교차 엔트로피,
+모든 이미지에 의미 손실, 라벨 있는 이미지와 없는 이미지를 반씩 섞은 배치, Adam 1e-4, 50,000 스텝입니다.
 
-`run_paper_protocol.py` tunes batch size ∈ {10, 32, 128} and the loss weight ∈ {0.0005, 0.005, 0.05, 0.5, 1}
-per method on our 5,000-image validation split (seed 0), then runs 5 seeds; only the final-step test accuracy
-is reported.
+코드에서 확인한 논문 본문과의 차이: 크롭 증강(논문은 이 과제를 순열 불변이라고 설명), 학습률 0.002가 아닌 1e-4,
+20 에폭이 아닌 50,000 스텝, 검증셋 없음, 학습 중 테스트 정확도 출력. 공식 README도 라벨 100장 결과가
+"매우 불안정하다(very volatile)"고 경고합니다.
 
-| labels | method | selected (batch, weight) | test acc (final step) | paper (Table 1) |
+`run_paper_protocol.py`는 방법별로 배치 크기 ∈ {10, 32, 128}와 손실 가중치 ∈ {0.0005, 0.005, 0.05, 0.5, 1}를
+검증셋 5,000장(시드 0)에서 고른 뒤 시드 5개로 실행합니다. 테스트 정확도는 마지막 스텝 값만 보고합니다.
+
+| 라벨 수 | 방법 | 선택 설정 (배치, 가중치) | 테스트 정확도 (마지막 스텝) | 논문 (표 1) |
 |---|---|---|---|---|
-| 100 | CE (sigmoid) | 32, — | 84.48 ± 2.55 | 78.46 ± 1.94 |
-| 100 | + entropy | 128, 0.5 | 84.21 ± 3.52 | 96.27 ± 0.64 |
-| 100 | + semantic loss | 32, 1.0 | 85.42 ± 2.84 | **98.38 ± 0.51** |
-| 1,000 | CE (sigmoid) | 128, — | 95.63 ± 0.43 | 94.26 ± 0.31 |
-| 1,000 | + entropy | 128, 0.05 | 95.52 ± 0.34 | 98.32 ± 0.34 |
-| 1,000 | + semantic loss | 10, 1.0 | 95.29 ± 0.42 | 98.78 ± 0.17 |
+| 100 | CE (시그모이드) | 32, — | 84.48 ± 2.55 | 78.46 ± 1.94 |
+| 100 | + 엔트로피 | 128, 0.5 | 84.21 ± 3.52 | 96.27 ± 0.64 |
+| 100 | + 의미 손실 | 32, 1.0 | 85.42 ± 2.84 | **98.38 ± 0.51** |
+| 1,000 | CE (시그모이드) | 128, — | 95.63 ± 0.43 | 94.26 ± 0.31 |
+| 1,000 | + 엔트로피 | 128, 0.05 | 95.52 ± 0.34 | 98.32 ± 0.34 |
+| 1,000 | + 의미 손실 | 10, 1.0 | 95.29 ± 0.42 | 98.78 ± 0.17 |
 
-- The port's baselines match or exceed the paper's baselines, but neither unlabeled-data regulariser comes close
-  to the reported 96–99 %. The semantic loss is ahead of CE in all 5 seeds at 100 labels, by only +0.9 points.
-- Even the best test accuracy seen anywhere on the training curve (test-set peeking) averages 87.8 % at
-  100 labels, so reporting the best intermediate test accuracy would not explain the gap either.
-- With sigmoid cross-entropy the supervised loss already pushes the outputs toward one-hot (Pr(exactly-one)
-  0.96 for plain CE), leaving the semantic loss little to add.
-- Not covered: noise std and learning-rate tuning, TensorFlow-1 numerical details, 10 seeds / 10,000 validation
-  images as in the paper. We cannot rule out that some setting reproduces the paper; we did not find one.
-  Full per-seed numbers: `results_paper/`.
+- 이식한 코드의 기준선은 논문 기준선과 같거나 더 높지만, 라벨 없는 데이터를 쓰는 두 정규화 항 모두 보고된
+  96~99%에 크게 못 미칩니다. 라벨 100장에서 의미 손실은 5개 시드 모두 CE보다 높지만 차이는 +0.9%p뿐입니다.
+- 학습 곡선 전체에서 가장 높은 테스트 정확도를 골라도(테스트셋 엿보기) 라벨 100장에서 평균 87.8%입니다.
+  그래서 학습 중 최고값을 보고했다고 해도 이 차이는 설명되지 않습니다.
+- 시그모이드 교차 엔트로피를 쓰면 지도 손실이 이미 출력을 원-핫 쪽으로 밉니다(CE만 써도 Pr(exactly-one) 0.96).
+  그래서 의미 손실이 더할 여지가 거의 없습니다.
+- 다루지 않은 것: 잡음 크기와 학습률 튜닝, TensorFlow 1의 수치 세부, 논문과 같은 시드 10개와 검증셋 10,000장.
+  어떤 설정에서 논문 수치가 재현될 가능성을 배제할 수는 없지만, 우리가 시도한 범위에서는 찾지 못했습니다.
+  시드별 전체 수치는 `results_paper/`에 있습니다.
 
-## Running
+## 실행
 
 ```bash
 python3 -m pytest -q tests
-python3 run_experiments.py      # ~30 min on Apple M4 Max (MPS), resumable
+python3 run_experiments.py      # Apple M4 Max(MPS)에서 약 30분, 중단 후 이어서 실행 가능
 python3 summarize.py            # -> results/summary.md
-python3 run_paper_protocol.py   # official-code protocol, ~2.5 h, -> results_paper/
+python3 run_paper_protocol.py   # 공식 코드 설정, 약 2.5시간, -> results_paper/
 ```
 
-Requires only `torch` and `numpy`; MNIST is downloaded from the torchvision S3 mirror and MD5-checked.
-
-## Rebuilding the lecture deck
-
-```bash
-cd lecture/src
-npm install
-node build.js ../SemanticLoss_MNIST_Lecture.pptx
-```
-
-The generator reads the numbers from `results/`. Theme colors are written only when `APPLY_THEME_JS` points to
-an `apply_theme.js` module; otherwise the deck is built with Office's default theme colors.
+`torch`와 `numpy`만 필요합니다. MNIST는 torchvision이 쓰는 S3 미러에서 내려받고 MD5로 검증합니다.

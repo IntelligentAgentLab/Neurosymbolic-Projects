@@ -1,115 +1,118 @@
-# Semantic Loss with an attribute knowledge base on AwA2 (five animals)
+# AwA2 동물 5종의 속성 지식 베이스와 의미 손실
 
-Third project of the series: a richer propositional knowledge base, generated from the Animals with Attributes 2
-class-attribute matrix, on a small five-animal image subset. Compared with the MNIST (exactly-one) and
-CIFAR-100 (hierarchy) projects, the rules here are not a single structural constraint but a set of
-commonsense implications, and the semantic loss is computed exactly for an arbitrary CNF by enumerating its
-satisfying worlds.
+한국어 | [English](README_en.md)
 
-## Data
+시리즈의 세 번째 프로젝트입니다. Animals with Attributes 2(AwA2)의 동물-속성 행렬에서 더 풍부한 명제
+지식 베이스를 자동으로 만들고, 작은 동물 5종 이미지 부분 집합에 적용합니다. MNIST(exactly-one)와
+CIFAR-100(계층) 프로젝트와 달리, 여기서 규칙은 하나의 구조적 제약이 아니라 상식적인 함의들의 집합입니다.
+의미 손실은 임의의 CNF에 대해 만족하는 세계를 나열해 정확하게 계산합니다.
 
-- AwA2 (Xian et al., TPAMI 2018): 37,322 images, 50 classes, 85 attributes per class.
-- Subset: **zebra, tiger, giraffe, leopard, dolphin** — stripes/spots × hooves/paws form a 2×2 grid, dolphin is
-  the outlier (flippers, water, no legs).
-- 700 random images per class (3,500 ≈ 1/10 of AwA2), 96×96 (shorter side resized, center crop), stratified
-  60/20/20 train/val/test split.
-- `prepare_data.py` reads the 13.9 GB `AwA2-data.zip` with HTTP range requests and downloads only the selected
-  images and their license files (~1.4 GB) into `~/.cache/semloss-awa2/` (outside Dropbox); the resized array
-  goes to `data/awa2_5_96.npz` (86 MB, not tracked).
+## 데이터
 
-## Knowledge base (`semloss/kb.py`, `make_rules.py` → `kb/rules.json`)
+- AwA2 (Xian et al., TPAMI 2018): 이미지 37,322장, 동물 50종, 동물마다 속성 85개.
+- 부분 집합: **얼룩말, 호랑이, 기린, 표범, 돌고래**. 줄무늬/반점 × 발굽/발(패드)이 2×2를 이루고,
+  돌고래는 예외(지느러미, 물, 다리 없음)입니다.
+- 종마다 무작위 700장(3,500장 ≈ AwA2의 1/10), 96×96(짧은 변 축소 후 가운데 자르기),
+  종별 층화로 학습/검증/테스트 60/20/20 분할.
+- `prepare_data.py`는 13.9GB `AwA2-data.zip`을 HTTP Range 요청으로 읽어, 선택한 이미지와 그 라이선스 파일만
+  (약 1.4GB) `~/.cache/semloss-awa2/`(Dropbox 밖)로 내려받습니다. 크기를 줄인 배열은
+  `data/awa2_5_96.npz`(86MB, git 제외)에 저장합니다.
 
-15 Boolean variables = 5 classes + 10 attributes
-(stripes, spots, hooves, paws, longneck, flippers, furry, quadrapedal, water, meatteeth).
+## 지식 베이스 (`semloss/kb.py`, `make_rules.py` → `kb/rules.json`)
 
-| family | meaning | how it is generated | clauses |
+불리언 변수 15개 = 동물 5개 + 속성 10개
+(줄무늬, 반점, 발굽, 발(패드), 긴 목, 지느러미, 털, 네발, 물, 육식 이빨).
+
+| 종류 | 의미 | 만드는 방법 | 절 수 |
 |---|---|---|---|
-| R1 | exactly one class | fixed | 11 |
-| R2 | class → (¬)attribute | AwA2 continuous scores: ≥ 50 present, ≤ 10 absent, otherwise unknown | 44 |
-| R3 | attribute → OR of classes | derived within the subset (e.g. stripes → zebra ∨ tiger) | 10 |
-| R4 | attribute → (¬)attribute | exceptionless on **all 50** AwA2 classes, premise support ≥ 5 | 15 |
+| R1 | 동물은 정확히 하나 | 고정 | 11 |
+| R2 | 동물 → (¬)속성 | AwA2 연속값: 50 이상이면 있음, 10 이하이면 없음, 그 사이는 미정 | 44 |
+| R3 | 속성 → 동물들의 OR | 부분 집합 안에서 유도 (예: 줄무늬 → 얼룩말 ∨ 호랑이) | 10 |
+| R4 | 속성 → (¬)속성 | AwA2 **50종 전체**에서 예외 없이 성립, 전제 지지 수 5 이상 | 15 |
 
-| rule set | clauses | satisfying worlds (of 2¹⁵ = 32,768) |
+| 규칙 묶음 | 절 수 | 만족 세계 수 (전체 2¹⁵ = 32,768개 중) |
 |---|---|---|
 | R1 | 11 | 5,120 |
 | R1+R2 | 55 | 13 |
 | R1+R4 | 26 | 580 |
 | R1+R2+R3+R4 | 80 | 10 |
 
-Every class's own attribute vector satisfies every rule set. R2 leaves gaps where annotators disagreed
-(e.g. giraffe hooves 48); general commonsense from R4 fills some of them (longneck → hooves).
+5종 각각의 실제 속성 조합은 모든 규칙 묶음을 만족합니다(규칙 사이에 모순 없음). R2에는 사람들의 판단이
+엇갈린 곳에 빈칸이 있는데(예: 기린의 발굽 48), R4의 일반 상식이 그중 일부를 채웁니다(긴 목 → 발굽).
 
-## Semantic loss for an arbitrary CNF (`semloss/losses.py`)
+## 임의의 CNF에 대한 의미 손실 (`semloss/losses.py`)
 
-With the satisfying worlds W (S × 15) listed once,
-`log Pr(α) = logsumexp_s [ W_s · logσ(z) + (1 − W_s) · logσ(−z) ]` — one matrix product, exact for any rule set,
-no hand derivation. The constrained MAP prediction is the arg-max world. Tests compare against brute-force
-enumeration (penguin example, exactly-one closed form, random CNFs, gradients).
+만족 세계 W(S × 15)를 한 번 나열해 두면
+`log Pr(α) = logsumexp_s [ W_s · logσ(z) + (1 − W_s) · logσ(−z) ]` — 행렬곱 한 번으로, 어떤 규칙 묶음이든
+손 유도 없이 정확하게 계산합니다. 제약 아래 MAP 예측은 확률이 가장 큰 세계입니다. 테스트에서 전수 계산과
+대조합니다(펭귄 예제, exactly-one 닫힌 형태, 무작위 CNF, 기울기).
 
-## Experiments
+## 실험
 
-Small CNN (4 conv blocks, 1.2 M parameters) trained from scratch, 1,500 steps, batch 32 class-labeled + 64 other
-images, SGD one-cycle. λ tuned on validation (seed 0) over {0.03, 0.1, 0.3, 1, 3}; test results over 5 seeds.
+처음부터 학습하는 작은 CNN(합성곱 블록 4개, 파라미터 약 120만 개), 1,500 스텝, 배치 = 종 라벨 32장 +
+나머지 64장, SGD one-cycle. λ는 검증셋(시드 0)에서 {0.03, 0.1, 0.3, 1, 3} 중 고르고, 테스트는 시드 5개로 합니다.
 
-- **semi**: 10 % of training images (42 per class) have a class label; the rest have nothing.
-- **weak**: 10 % have a class label; every other image has answers to **2 random attribute questions** only.
+- **semi**: 학습 이미지의 10%(종당 42장)만 종 라벨, 나머지는 아무 정보 없음.
+- **weak**: 10%만 종 라벨, 나머지 이미지마다 **무작위 속성 질문 2개의 답**만 있음.
 
-Methods: `ce` (class CE) · `ce_attr` (+ attribute BCE) · `+ent` (entropy minimisation, control) · `+eo`
-(semantic loss R1) · `+r12`, `+r14`, `+all` (semantic loss with that rule set).
+방법: `ce`(종 CE) · `ce_attr`(+ 속성 BCE) · `+ent`(엔트로피 최소화, 대조군) · `+eo`(의미 손실 R1) ·
+`+r12`, `+r14`, `+all`(해당 규칙 묶음의 의미 손실).
 
-### Results (test, 5 seeds, %)
+### 결과 (테스트, 시드 5개, %)
 
-| method | semi: class acc | semi: KB consistency | weak: class acc | weak: KB consistency |
+| 방법 | semi: 종 정확도 | semi: 규칙 준수율 | weak: 종 정확도 | weak: 규칙 준수율 |
 |---|---|---|---|---|
 | ce | 89.94 ± 0.52 | 0.8 | 90.00 ± 0.72 | 0.8 |
 | ce_attr | 90.46 ± 0.57 | 79.0 | 95.20 ± 0.39 | 81.5 |
-| + entropy (λ 3 / 1) | 92.63 ± 0.63 | 78.3 | 94.97 ± 0.89 | 81.9 |
+| + 엔트로피 (λ 3 / 1) | 92.63 ± 0.63 | 78.3 | 94.97 ± 0.89 | 81.9 |
 | + SL R1 (λ 3 / 0.03) | 94.14 ± 1.18 | 78.0 | 95.40 ± 0.80 | 82.5 |
 | + SL R1+R2 (λ 0.3) | **94.97 ± 0.54** | 91.3 | **97.09 ± 0.26** | 90.1 |
 | + SL R1+R4 (λ 1) | 94.49 ± 1.11 | 91.4 | 96.49 ± 0.76 | 94.7 |
-| + SL all (λ 0.3) | 94.77 ± 0.79 | **97.3** | 96.09 ± 0.47 | **98.1** |
+| + SL 전체 (λ 0.3) | 94.77 ± 0.79 | **97.3** | 96.09 ± 0.47 | **98.1** |
 
-KB consistency = share of test images whose hard prediction (arg-max class, attributes > 0.5) satisfies the
-full rule set. Full per-class tables and λ tuning: `results/summary.md`.
+규칙 준수율 = 예측(최고 확률 종, 0.5를 넘는 속성)이 전체 규칙을 만족하는 테스트 이미지의 비율.
+동물별 정확도와 λ 튜닝 표는 `results/summary.md`에 있습니다.
 
-Paired differences (same seed):
+같은 시드끼리 짝지은 비교:
 
-| comparison | semi | weak |
+| 비교 | semi | weak |
 |---|---|---|
-| SL R1 − entropy | +1.51 (4/5 seeds) | +0.43 (5/5) |
+| SL R1 − 엔트로피 | +1.51 (4/5 시드) | +0.43 (5/5) |
 | SL R1+R2 − SL R1 | +0.83 (4/5) | **+1.69 (5/5)** |
 | SL R1+R4 − SL R1 | +0.34 (2/5) | +1.09 (5/5) |
-| SL all − SL R1 | +0.63 (4/5) | +0.69 (4/5) |
+| SL 전체 − SL R1 | +0.63 (4/5) | +0.69 (4/5) |
 
-Observations:
-- Unlike MNIST and CIFAR-100, the attribute rules add accuracy **on top of** exactly-one, most clearly in the
-  `weak` setting, where cheap attribute answers and the rules together identify the class
-  (R1+R2: +1.7 points over R1, every seed). Tiger and leopard, the most confused pair, gain the most.
-- The rules raise rule compliance from ~78–82 % (entropy, R1) to 91–98 %, as in the earlier projects.
-- Stronger rule sets collapse at large λ (R1+R2 and the full set: 39–57 % validation accuracy at λ = 3), looser
-  ones (R1, R1+R4) do not.
-- The general-commonsense set R1+R4, which contains no class-specific knowledge, already helps in `weak`.
+관찰:
+- MNIST·CIFAR-100과 달리, 속성 규칙이 exactly-one **위에 추가로** 정확도를 올립니다. 가장 뚜렷한 것은 `weak`
+  설정으로, 싼 속성 답과 규칙이 결합해 종을 좁혀 줍니다(R1+R2가 R1보다 +1.7%p, 모든 시드).
+  가장 헷갈리는 쌍인 호랑이와 표범이 가장 많이 좋아집니다.
+- 규칙은 규칙 준수율을 약 78~82%(엔트로피, R1)에서 91~98%로 올립니다. 앞의 두 프로젝트와 같은 패턴입니다.
+- 강한 규칙 묶음은 큰 λ에서 무너집니다(R1+R2와 전체 규칙: λ = 3에서 검증 정확도 39~57%).
+  느슨한 규칙(R1, R1+R4)은 무너지지 않습니다.
+- 동물별 지식이 전혀 없는 일반 상식 묶음 R1+R4만으로도 `weak`에서 효과가 있습니다.
+- 데이터 품질: AwA2의 *표범* 클래스에는 눈표범 사진도 섞여 있습니다(무작위 3장 중 2장). 표범이 가장 어려운
+  클래스인 이유 중 하나일 수 있습니다.
 
-### Zero-shot (negative result)
+### 제로샷 (부정적 결과)
 
-One class is removed from training; the other four are fully labeled; at test time the class is the MAP world
-of the full rule set given the attribute logits only. Over 5 held-out classes × 5 seeds, unseen-class accuracy
-is **0.5–2.2 %** for all three methods (seen-class accuracy 98–99 %). With only four seen classes each attribute
-is carried by one or two classes, so the network learns "stripes" as a proxy for *tiger*: unseen zebras are
-labeled tiger, unseen tigers leopard. Attributes that only the unseen class has (dolphin: flippers, water) are
-never predicted, so its worlds are never chosen. Rules cannot supply a concept the network never learned; the
-standard remedy is more seen classes per attribute (e.g. other AwA2 animals with hooves, stripes or spots).
+한 종을 학습에서 빼고 나머지 4종은 라벨을 전부 씁니다. 테스트에서는 속성 로짓만으로 전체 규칙의 MAP 세계를
+골라 종을 판정합니다. 빼는 종 5개 × 시드 5개에서, 빠진 종의 정확도는 세 방법 모두 **0.5~2.2%**입니다
+(학습한 종은 98~99%). 학습 종이 4개뿐이면 각 속성을 가진 종이 한두 개라서, 신경망은 "줄무늬"를 *호랑이*의
+대리 표시로 배웁니다. 그래서 빠진 얼룩말은 호랑이로, 빠진 호랑이는 표범으로 분류됩니다. 빠진 종에만 있는
+속성(돌고래의 지느러미, 물)은 한 번도 "있음"으로 예측되지 않아, 그 종의 세계는 선택될 수 없습니다.
+규칙은 신경망이 배우지 못한 개념을 대신해 주지 못합니다. 표준 해법은 속성마다 학습 종을 늘리는 것입니다
+(예: 발굽, 줄무늬, 반점을 가진 AwA2의 다른 동물 추가).
 
-## Running
+## 실행
 
 ```bash
-python3 make_rules.py            # knowledge base report -> kb/rules.json (needs data/Animals_with_Attributes2)
-python3 prepare_data.py          # ~20 min download, -> data/awa2_5_96.npz
+python3 make_rules.py            # 지식 베이스 보고서 -> kb/rules.json
+python3 prepare_data.py          # 약 20분 다운로드, -> data/awa2_5_96.npz
 python3 -m pytest -q tests
-python3 pilot_resolution.py      # 64x64 vs 96x96 pilot
-python3 run_experiments.py       # ~3.5 h on Apple M4 Max (MPS), resumable
+python3 pilot_resolution.py      # 64x64와 96x96 시험 학습
+python3 run_experiments.py       # Apple M4 Max(MPS)에서 약 3.5시간, 중단 후 이어서 실행 가능
 python3 summarize.py             # -> results/summary.md
 ```
 
-`make_rules.py` downloads `AwA2-base.zip` (32 KB) into `data/` if it is missing. Images are Flickr photos
-licensed for free use and redistribution; per-image license files are downloaded alongside the images.
+`make_rules.py`는 `AwA2-base.zip`(32KB)이 없으면 `data/`로 내려받습니다. 이미지는 자유 이용과 재배포가
+허용된 Flickr 사진이며, 이미지마다 라이선스 파일을 함께 내려받습니다.

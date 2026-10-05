@@ -6,3 +6,6 @@ __pycache__/
 .pytest_cache/
 node_modules/
 .DS_Store
+
+# Lecture materials are kept locally, not on GitHub
+lecture/

@@ -1,63 +1,65 @@
-# Semantic Loss on CIFAR-100 with a class hierarchy
+# CIFAR-100 클래스 계층에 대한 의미 손실
 
-Implements the semantic loss of Xu et al. (2018) for the CIFAR-100 superclass hierarchy and
-measures when the rule "fine class ⇒ its superclass" (e.g. *maple ⇒ tree*) helps.
+한국어 | [English](README_en.md)
 
-## Constraint
+CIFAR-100의 상위 클래스 계층에 Xu et al. (2018)의 의미 손실(semantic loss)을 적용하고,
+"세부 클래스 ⇒ 그 상위 클래스" 규칙(예: *단풍나무 ⇒ 나무*)이 언제 도움이 되는지 측정합니다.
 
-The network has 120 sigmoid outputs: 100 fine classes `f` and 20 coarse classes `c`.
+## 제약
+
+신경망 출력은 시그모이드 120개입니다. 세부 클래스 100개 `f`와 상위 클래스 20개 `c`입니다.
 
 ```
 alpha = EO(f) ∧ EO(c) ∧ ⋀_i (f_i → c_par(i))
 ```
 
-Exactly 100 worlds satisfy `alpha` (the fine class fixes the coarse class), which gives the closed form
+`alpha`를 만족하는 세계는 정확히 100개입니다(세부 클래스가 정해지면 상위 클래스도 정해짐). 그래서 다음 닫힌 형태가 나옵니다.
 
 ```
 log Pr(alpha) = logsumexp_i(f_i + c_par(i)) − Σ softplus(f) − Σ softplus(c)
 L^s = −log Pr(alpha)
 ```
 
-(`semloss/losses.py`; checked against brute-force 2^n enumeration in `tests/test_losses.py`).
-The supervised terms are softmax cross-entropies over the same logits, as in Xu et al.
+구현은 `semloss/losses.py`에 있고, `tests/test_losses.py`에서 2^n 전수 계산과 대조해 검증합니다.
+지도 학습 항은 Xu et al.과 같이 같은 로짓에 대한 소프트맥스 교차 엔트로피입니다.
 
-## Settings (label availability on the 45k training split)
+## 설정 (학습 이미지 45,000장 중 라벨이 있는 비율)
 
-| setting | fine labels | coarse labels | unlabeled |
+| 설정 | 세부 라벨 | 상위 라벨 | 라벨 없음 |
 |---|---|---|---|
 | `full` | 100% | 100% | — |
-| `semi` | 10% | same 10% | 90% |
+| `semi` | 10% | 같은 10% | 90% |
 | `weak` | 10% | 100% | — |
 
-5,000 training images (50 per class) are held out as a fixed validation split, used only to pick λ.
+학습 이미지 5,000장(클래스당 50장)은 고정 검증셋으로 떼어 두고, λ 선택에만 씁니다.
 
-## Methods
+## 방법
 
-| method | loss |
+| 방법 | 손실 |
 |---|---|
-| `ce_fine` | CE(fine) on fine-labeled images |
-| `ce_both` | + CE(coarse) on coarse-labeled images (multi-task control) |
-| `ce_both_sl` | + λ · L^s on **every** image, λ warmed up linearly over 5 epochs |
+| `ce_fine` | 세부 라벨이 있는 이미지에 CE(세부) |
+| `ce_both` | + 상위 라벨이 있는 이미지에 CE(상위) (멀티태스크 대조군) |
+| `ce_both_sl` | + **모든** 이미지에 λ · L^s, λ는 처음 5 에폭 동안 선형으로 증가 |
 
-`ce_both` separates the effect of the coarse labels from the effect of the rule.
+`ce_both`는 상위 라벨 자체의 효과와 규칙의 효과를 분리하기 위한 대조군입니다.
 
-## Metrics (test set)
+## 평가 지표 (테스트셋)
 
-- `fine_acc`, `coarse_acc`: argmax of each head.
-- `fine_acc_joint`: MAP world under the constraint, `argmax_i (f_i + c_par(i))`.
-- `fine_acc_masked`: fine argmax restricted to children of the predicted coarse class (inference-time rule).
-- `coarse_acc_via_fine`: parent of the fine prediction vs. true coarse class.
-- `consistency`: parent(argmax f) == argmax c.
-- `mean_log_pr_alpha`: average log Pr(alpha) under the sigmoid outputs.
-- `within_superclass_err`: share of fine errors that stay inside the true superclass.
+- `fine_acc`, `coarse_acc`: 각 헤드의 argmax 정확도
+- `fine_acc_joint`: 제약 아래 MAP 세계, `argmax_i (f_i + c_par(i))`
+- `fine_acc_masked`: 예측한 상위 클래스의 자식 중에서 고른 세부 클래스 (추론 시 규칙 적용)
+- `coarse_acc_via_fine`: 세부 예측의 부모가 정답 상위 클래스와 같은 비율
+- `consistency` (일관성): parent(argmax f) == argmax c
+- `mean_log_pr_alpha`: 시그모이드 출력 기준 평균 log Pr(alpha)
+- `within_superclass_err`: 세부 클래스 오답 중 정답 상위 클래스 안에서 틀린 비율
 
-## Training
+## 학습
 
-ResNet-9, SGD (Nesterov, momentum 0.9, weight decay 5e-4), one-cycle LR (max 0.1), batch 256,
-30 epochs, bf16 autocast, random crop + flip done on the GPU. Each epoch passes over all 45k images, so every
-method takes the same number of steps.
+ResNet-9, SGD(Nesterov, momentum 0.9, weight decay 5e-4), one-cycle 학습률(최대 0.1), 배치 256,
+30 에폭, bf16 autocast, GPU에서 무작위 크롭과 좌우 반전. 에폭마다 45,000장 전체를 순회하므로 모든 방법의
+학습 스텝 수가 같습니다.
 
-## Running
+## 실행
 
 ```bash
 python3 -m pytest -q tests
@@ -66,55 +68,40 @@ python3 run_experiments.py
 python3 summarize.py
 ```
 
-`run_experiments.py` downloads CIFAR-100 to `data/` (MD5-checked), tunes λ ∈ {0.005, 0.02, 0.1, 0.5, 1, 2, 5} per setting
-on validation (seed 0), and then runs 3 settings × 3 methods × 3 seeds. Each run is cached as
-`results/*.json`, so an interrupted run resumes where it stopped. Requires only `torch` and `numpy`.
+`run_experiments.py`는 CIFAR-100을 `data/`로 내려받고(MD5 검증), 설정별로 검증셋(시드 0)에서
+λ ∈ {0.005, 0.02, 0.1, 0.5, 1, 2, 5}를 고른 뒤, 3개 설정 × 3개 방법 × 3개 시드를 실행합니다. 실행마다
+`results/*.json`으로 저장하므로 중단되어도 이어서 실행됩니다. `torch`와 `numpy`만 필요합니다.
 
-## Results (10% labels, 30 epochs, 3 seeds; test %, mean ± std)
+## 결과 (라벨 10%, 30 에폭, 시드 3개, 테스트 %, 평균 ± 표준편차)
 
-Fine accuracy:
+세부 클래스 정확도:
 
-| setting | ce_fine | ce_both | ce_both_eo (EO only) | ce_both_sl (hierarchy) |
+| 설정 | ce_fine | ce_both | ce_both_eo (EO만) | ce_both_sl (계층) |
 |---|---|---|---|---|
 | full | 73.74 ± 0.26 | 73.20 ± 0.17 | 74.07 ± 0.19 | **74.11 ± 0.04** |
 | semi | 36.84 ± 0.84 | 36.29 ± 1.46 | **39.84 ± 0.93** | 38.16 ± 1.00 |
 | weak | 36.84 ± 0.84 | 52.16 ± 1.97 | 57.39 ± 0.48 | **57.84 ± 0.53** |
 
-Consistency (parent(argmax f) == argmax c):
+일관성 (parent(argmax f) == argmax c):
 
-| setting | ce_both | ce_both_eo | ce_both_sl |
+| 설정 | ce_both | ce_both_eo | ce_both_sl |
 |---|---|---|---|
 | full | 90.85 ± 0.34 | 90.87 ± 0.20 | **92.51 ± 0.26** |
 | semi | 71.21 ± 1.41 | 73.82 ± 0.14 | **81.66 ± 0.21** |
 | weak | 75.93 ± 1.43 | 82.57 ± 0.25 | **90.19 ± 0.44** |
 
-Selected λ (validation, seed 0): hierarchy SL full 2 / semi 1 / weak 2; EO-only full 2 / semi 1 / weak 2.
+선택된 λ (검증셋, 시드 0): 계층 의미 손실 full 2 / semi 1 / weak 2, EO만 full 2 / semi 1 / weak 2.
 
-Observations and caveats:
-- The semantic loss helps more as supervision shrinks, but **most of the accuracy gain comes from the
-  exactly-one part** (EO(f) ∧ EO(c)), i.e. from making outputs confidently one-hot. The 100 implications add
-  +0.0 (full), −1.7 (semi), +0.5 (weak) points of fine accuracy over the EO-only ablation.
-- **The implications are what raise rule compliance**: consistency +1.6 (full), +7.8 (semi), +7.6 (weak) points
-  over EO-only, and a larger share of the remaining errors stays inside the true superclass.
-- The initial hypothesis (the rule propagates coarse labels into the fine head and raises accuracy) is not
-  supported; the EO-only ablation was needed to see this. A natural next comparison is entropy minimisation /
-  pseudo-labelling.
-- λ has a sharp upper cliff: λ = 5 collapses training (val fine acc 6–64%), and in `semi` λ = 2 already hurts.
-- `mean log Pr(α)` for the CE-only models is very negative because softmax training leaves the absolute logit level
-  free, so their sigmoids are not calibrated as independent probabilities; compare it only among SL models.
-
-## Lecture deck
-
-`lecture/SemanticLoss_Lecture.pptx` (60 slides, ~80 min, Korean, speaker notes with timing). It is generated by
-`lecture/src/build.js` (pptxgenjs + MathJax), which reads the numbers from `results/`.
-
-## Rebuilding the lecture deck
-
-```bash
-cd lecture/src
-npm install
-node build.js ../SemanticLoss_Lecture.pptx
-```
-
-The generator reads the numbers from `results/`. Theme colors are written only when `APPLY_THEME_JS` points to
-an `apply_theme.js` module; otherwise the deck is built with Office's default theme colors.
+관찰과 주의할 점:
+- 의미 손실은 라벨이 적을수록 더 도움이 됩니다. 그러나 **정확도 이득의 대부분은 exactly-one 부분**
+  (EO(f) ∧ EO(c)), 즉 출력을 원-핫으로 확신하게 만드는 데서 옵니다. 함의 100개가 EO만 쓴 대조군 대비
+  더해 주는 세부 정확도는 +0.0(full), −1.7(semi), +0.5(weak)%p입니다.
+- **규칙 준수를 올리는 것은 함의 규칙입니다.** EO만 쓴 경우보다 일관성이 +1.6(full), +7.8(semi), +7.6(weak)%p
+  높고, 남은 오답도 정답 상위 클래스 안에서 틀리는 비율이 더 높습니다.
+- 처음 가설(규칙이 상위 라벨 정보를 세부 헤드로 전파해 정확도를 올린다)은 지지되지 않았습니다.
+  이 점은 EO만 쓴 대조 실험이 있어야 알 수 있었습니다. 다음 비교 대상으로는 엔트로피 최소화나
+  의사 라벨(pseudo-labelling)이 자연스럽습니다.
+- λ에는 급격한 상한이 있습니다. λ = 5에서 학습이 붕괴하고(검증 세부 정확도 6~64%), `semi`에서는 λ = 2부터
+  이미 성능이 떨어집니다.
+- CE만 쓴 모델의 `mean log Pr(α)`는 매우 낮게 나옵니다. 소프트맥스 학습은 로짓의 절대 수준을 정하지 않아
+  시그모이드 값이 독립 확률로 보정되어 있지 않기 때문입니다. 이 지표는 의미 손실 모델끼리만 비교해야 합니다.
