@@ -1,0 +1,679 @@
+=== tune/n100_ce_b10_w0.0_seed0
+  step  10000 | test acc 0.8598 Pr(EO) 0.926 | 17s
+  step  20000 | test acc 0.8570 Pr(EO) 0.940 | 33s
+  step  30000 | test acc 0.8696 Pr(EO) 0.955 | 49s
+  step  40000 | test acc 0.8722 Pr(EO) 0.963 | 66s
+  step  50000 | test acc 0.8668 Pr(EO) 0.959 | 82s
+    val 0.8564  test 0.8668  (82s)
+=== tune/n100_ce_b32_w0.0_seed0
+  step  10000 | test acc 0.8551 Pr(EO) 0.935 | 16s
+  step  20000 | test acc 0.8488 Pr(EO) 0.946 | 34s
+  step  30000 | test acc 0.8644 Pr(EO) 0.952 | 50s
+  step  40000 | test acc 0.8698 Pr(EO) 0.961 | 67s
+  step  50000 | test acc 0.8699 Pr(EO) 0.967 | 83s
+    val 0.8566  test 0.8699  (83s)
+=== tune/n100_ce_b128_w0.0_seed0
+  step  10000 | test acc 0.8768 Pr(EO) 0.939 | 17s
+  step  20000 | test acc 0.8754 Pr(EO) 0.951 | 34s
+  step  30000 | test acc 0.8727 Pr(EO) 0.951 | 50s
+  step  40000 | test acc 0.8601 Pr(EO) 0.952 | 67s
+  step  50000 | test acc 0.8639 Pr(EO) 0.957 | 84s
+    val 0.8498  test 0.8639  (84s)
+*** n=100 ce: best batch=32 weight=0.0 val=0.8566
+=== tune/n100_ce_eo_b10_w0.0005_seed0
+  step  10000 | test acc 0.8617 Pr(EO) 0.928 | 17s
+  step  20000 | test acc 0.8703 Pr(EO) 0.947 | 34s
+  step  30000 | test acc 0.8839 Pr(EO) 0.958 | 52s
+  step  40000 | test acc 0.8647 Pr(EO) 0.962 | 69s
+  step  50000 | test acc 0.8668 Pr(EO) 0.967 | 86s
+    val 0.8636  test 0.8668  (86s)
+=== tune/n100_ce_eo_b10_w0.005_seed0
+  step  10000 | test acc 0.8519 Pr(EO) 0.922 | 17s
+  step  20000 | test acc 0.8641 Pr(EO) 0.947 | 34s
+  step  30000 | test acc 0.8682 Pr(EO) 0.967 | 52s
+  step  40000 | test acc 0.8640 Pr(EO) 0.972 | 69s
+  step  50000 | test acc 0.8754 Pr(EO) 0.976 | 86s
+    val 0.8664  test 0.8754  (86s)
+=== tune/n100_ce_eo_b10_w0.05_seed0
+  step  10000 | test acc 0.8457 Pr(EO) 0.943 | 17s
+  step  20000 | test acc 0.8825 Pr(EO) 0.968 | 35s
+  step  30000 | test acc 0.8926 Pr(EO) 0.975 | 52s
+  step  40000 | test acc 0.8865 Pr(EO) 0.979 | 69s
+  step  50000 | test acc 0.8795 Pr(EO) 0.984 | 86s
+    val 0.8732  test 0.8795  (86s)
+=== tune/n100_ce_eo_b10_w0.5_seed0
+  step  10000 | test acc 0.8765 Pr(EO) 0.965 | 17s
+  step  20000 | test acc 0.8870 Pr(EO) 0.980 | 34s
+  step  30000 | test acc 0.8727 Pr(EO) 0.984 | 51s
+  step  40000 | test acc 0.8831 Pr(EO) 0.986 | 69s
+  step  50000 | test acc 0.8885 Pr(EO) 0.991 | 87s
+    val 0.8772  test 0.8885  (87s)
+=== tune/n100_ce_eo_b10_w1.0_seed0
+  step  10000 | test acc 0.8822 Pr(EO) 0.968 | 18s
+  step  20000 | test acc 0.8838 Pr(EO) 0.982 | 35s
+  step  30000 | test acc 0.8674 Pr(EO) 0.982 | 53s
+  step  40000 | test acc 0.8611 Pr(EO) 0.986 | 70s
+  step  50000 | test acc 0.8569 Pr(EO) 0.990 | 88s
+    val 0.8474  test 0.8569  (88s)
+=== tune/n100_ce_eo_b32_w0.0005_seed0
+  step  10000 | test acc 0.8730 Pr(EO) 0.928 | 17s
+  step  20000 | test acc 0.8738 Pr(EO) 0.953 | 34s
+  step  30000 | test acc 0.8732 Pr(EO) 0.969 | 52s
+  step  40000 | test acc 0.8552 Pr(EO) 0.956 | 69s
+  step  50000 | test acc 0.8705 Pr(EO) 0.975 | 87s
+    val 0.8612  test 0.8705  (87s)
+=== tune/n100_ce_eo_b32_w0.005_seed0
+  step  10000 | test acc 0.8818 Pr(EO) 0.951 | 17s
+  step  20000 | test acc 0.8870 Pr(EO) 0.973 | 34s
+  step  30000 | test acc 0.8834 Pr(EO) 0.975 | 51s
+  step  40000 | test acc 0.8800 Pr(EO) 0.980 | 68s
+  step  50000 | test acc 0.8663 Pr(EO) 0.980 | 85s
+    val 0.8466  test 0.8663  (85s)
+=== tune/n100_ce_eo_b32_w0.05_seed0
+  step  10000 | test acc 0.8918 Pr(EO) 0.966 | 17s
+  step  20000 | test acc 0.8988 Pr(EO) 0.979 | 34s
+  step  30000 | test acc 0.8904 Pr(EO) 0.984 | 51s
+  step  40000 | test acc 0.8892 Pr(EO) 0.987 | 69s
+  step  50000 | test acc 0.8924 Pr(EO) 0.988 | 86s
+    val 0.8788  test 0.8924  (86s)
+=== tune/n100_ce_eo_b32_w0.5_seed0
+  step  10000 | test acc 0.8826 Pr(EO) 0.978 | 17s
+  step  20000 | test acc 0.8700 Pr(EO) 0.984 | 34s
+  step  30000 | test acc 0.8746 Pr(EO) 0.989 | 51s
+  step  40000 | test acc 0.8796 Pr(EO) 0.991 | 68s
+  step  50000 | test acc 0.8767 Pr(EO) 0.993 | 85s
+    val 0.8694  test 0.8767  (85s)
+=== tune/n100_ce_eo_b32_w1.0_seed0
+  step  10000 | test acc 0.8993 Pr(EO) 0.982 | 17s
+  step  20000 | test acc 0.8681 Pr(EO) 0.987 | 34s
+  step  30000 | test acc 0.8675 Pr(EO) 0.989 | 51s
+  step  40000 | test acc 0.8892 Pr(EO) 0.992 | 69s
+  step  50000 | test acc 0.8927 Pr(EO) 0.994 | 86s
+    val 0.8900  test 0.8927  (86s)
+=== tune/n100_ce_eo_b128_w0.0005_seed0
+  step  10000 | test acc 0.8732 Pr(EO) 0.943 | 18s
+  step  20000 | test acc 0.8787 Pr(EO) 0.970 | 36s
+  step  30000 | test acc 0.8538 Pr(EO) 0.966 | 53s
+  step  40000 | test acc 0.8780 Pr(EO) 0.977 | 71s
+  step  50000 | test acc 0.8740 Pr(EO) 0.980 | 88s
+    val 0.8570  test 0.8740  (88s)
+=== tune/n100_ce_eo_b128_w0.005_seed0
+  step  10000 | test acc 0.8897 Pr(EO) 0.965 | 17s
+  step  20000 | test acc 0.8950 Pr(EO) 0.980 | 35s
+  step  30000 | test acc 0.8848 Pr(EO) 0.985 | 52s
+  step  40000 | test acc 0.8900 Pr(EO) 0.986 | 70s
+  step  50000 | test acc 0.8944 Pr(EO) 0.988 | 87s
+    val 0.8876  test 0.8944  (87s)
+=== tune/n100_ce_eo_b128_w0.05_seed0
+  step  10000 | test acc 0.9087 Pr(EO) 0.981 | 17s
+  step  20000 | test acc 0.8906 Pr(EO) 0.988 | 35s
+  step  30000 | test acc 0.9020 Pr(EO) 0.992 | 52s
+  step  40000 | test acc 0.9035 Pr(EO) 0.991 | 70s
+  step  50000 | test acc 0.8828 Pr(EO) 0.994 | 87s
+    val 0.8796  test 0.8828  (87s)
+=== tune/n100_ce_eo_b128_w0.5_seed0
+  step  10000 | test acc 0.9068 Pr(EO) 0.986 | 18s
+  step  20000 | test acc 0.9048 Pr(EO) 0.993 | 35s
+  step  30000 | test acc 0.8808 Pr(EO) 0.993 | 53s
+  step  40000 | test acc 0.8862 Pr(EO) 0.996 | 70s
+  step  50000 | test acc 0.8881 Pr(EO) 0.995 | 88s
+    val 0.8796  test 0.8881  (88s)
+=== tune/n100_ce_eo_b128_w1.0_seed0
+  step  10000 | test acc 0.8933 Pr(EO) 0.989 | 17s
+  step  20000 | test acc 0.8900 Pr(EO) 0.993 | 35s
+  step  30000 | test acc 0.8849 Pr(EO) 0.994 | 52s
+  step  40000 | test acc 0.8849 Pr(EO) 0.996 | 70s
+  step  50000 | test acc 0.8726 Pr(EO) 0.996 | 87s
+    val 0.8654  test 0.8726  (87s)
+*** n=100 ce_eo: best batch=32 weight=1.0 val=0.8900
+=== tune/n100_ce_ent_b10_w0.0005_seed0
+  step  10000 | test acc 0.8594 Pr(EO) 0.927 | 17s
+  step  20000 | test acc 0.8652 Pr(EO) 0.943 | 34s
+  step  30000 | test acc 0.8706 Pr(EO) 0.954 | 52s
+  step  40000 | test acc 0.8503 Pr(EO) 0.958 | 69s
+  step  50000 | test acc 0.8408 Pr(EO) 0.952 | 86s
+    val 0.8350  test 0.8408  (86s)
+=== tune/n100_ce_ent_b10_w0.005_seed0
+  step  10000 | test acc 0.8568 Pr(EO) 0.929 | 17s
+  step  20000 | test acc 0.8603 Pr(EO) 0.951 | 34s
+  step  30000 | test acc 0.8683 Pr(EO) 0.958 | 51s
+  step  40000 | test acc 0.8782 Pr(EO) 0.963 | 68s
+  step  50000 | test acc 0.8636 Pr(EO) 0.964 | 85s
+    val 0.8466  test 0.8636  (85s)
+=== tune/n100_ce_ent_b10_w0.05_seed0
+  step  10000 | test acc 0.8664 Pr(EO) 0.934 | 17s
+  step  20000 | test acc 0.8564 Pr(EO) 0.945 | 34s
+  step  30000 | test acc 0.8671 Pr(EO) 0.963 | 52s
+  step  40000 | test acc 0.8694 Pr(EO) 0.970 | 69s
+  step  50000 | test acc 0.8596 Pr(EO) 0.974 | 86s
+    val 0.8478  test 0.8596  (86s)
+=== tune/n100_ce_ent_b10_w0.5_seed0
+  step  10000 | test acc 0.8646 Pr(EO) 0.944 | 17s
+  step  20000 | test acc 0.8577 Pr(EO) 0.966 | 34s
+  step  30000 | test acc 0.8447 Pr(EO) 0.964 | 51s
+  step  40000 | test acc 0.8717 Pr(EO) 0.978 | 68s
+  step  50000 | test acc 0.8768 Pr(EO) 0.979 | 86s
+    val 0.8598  test 0.8768  (86s)
+=== tune/n100_ce_ent_b10_w1.0_seed0
+  step  10000 | test acc 0.8669 Pr(EO) 0.947 | 17s
+  step  20000 | test acc 0.8628 Pr(EO) 0.965 | 34s
+  step  30000 | test acc 0.8324 Pr(EO) 0.966 | 51s
+  step  40000 | test acc 0.8425 Pr(EO) 0.976 | 68s
+  step  50000 | test acc 0.8696 Pr(EO) 0.981 | 85s
+    val 0.8496  test 0.8696  (85s)
+=== tune/n100_ce_ent_b32_w0.0005_seed0
+  step  10000 | test acc 0.8615 Pr(EO) 0.931 | 17s
+  step  20000 | test acc 0.8774 Pr(EO) 0.948 | 34s
+  step  30000 | test acc 0.8688 Pr(EO) 0.958 | 51s
+  step  40000 | test acc 0.8532 Pr(EO) 0.954 | 69s
+  step  50000 | test acc 0.8660 Pr(EO) 0.964 | 86s
+    val 0.8562  test 0.8660  (86s)
+=== tune/n100_ce_ent_b32_w0.005_seed0
+  step  10000 | test acc 0.8775 Pr(EO) 0.941 | 17s
+  step  20000 | test acc 0.8664 Pr(EO) 0.948 | 34s
+  step  30000 | test acc 0.8396 Pr(EO) 0.952 | 52s
+  step  40000 | test acc 0.8742 Pr(EO) 0.965 | 69s
+  step  50000 | test acc 0.8708 Pr(EO) 0.972 | 87s
+    val 0.8640  test 0.8708  (87s)
+=== tune/n100_ce_ent_b32_w0.05_seed0
+  step  10000 | test acc 0.8690 Pr(EO) 0.946 | 17s
+  step  20000 | test acc 0.8667 Pr(EO) 0.963 | 35s
+  step  30000 | test acc 0.8745 Pr(EO) 0.974 | 52s
+  step  40000 | test acc 0.8795 Pr(EO) 0.974 | 70s
+  step  50000 | test acc 0.8764 Pr(EO) 0.978 | 87s
+    val 0.8730  test 0.8764  (87s)
+=== tune/n100_ce_ent_b32_w0.5_seed0
+  step  10000 | test acc 0.8762 Pr(EO) 0.956 | 18s
+  step  20000 | test acc 0.8722 Pr(EO) 0.974 | 35s
+  step  30000 | test acc 0.8620 Pr(EO) 0.978 | 52s
+  step  40000 | test acc 0.8755 Pr(EO) 0.979 | 69s
+  step  50000 | test acc 0.8798 Pr(EO) 0.986 | 86s
+    val 0.8636  test 0.8798  (86s)
+=== tune/n100_ce_ent_b32_w1.0_seed0
+  step  10000 | test acc 0.8746 Pr(EO) 0.960 | 17s
+  step  20000 | test acc 0.8920 Pr(EO) 0.977 | 34s
+  step  30000 | test acc 0.8634 Pr(EO) 0.979 | 51s
+  step  40000 | test acc 0.8714 Pr(EO) 0.983 | 68s
+  step  50000 | test acc 0.8462 Pr(EO) 0.983 | 85s
+    val 0.8444  test 0.8462  (85s)
+=== tune/n100_ce_ent_b128_w0.0005_seed0
+  step  10000 | test acc 0.8715 Pr(EO) 0.926 | 17s
+  step  20000 | test acc 0.8629 Pr(EO) 0.953 | 35s
+  step  30000 | test acc 0.8673 Pr(EO) 0.963 | 52s
+  step  40000 | test acc 0.8796 Pr(EO) 0.969 | 70s
+  step  50000 | test acc 0.8861 Pr(EO) 0.971 | 87s
+    val 0.8706  test 0.8861  (87s)
+=== tune/n100_ce_ent_b128_w0.005_seed0
+  step  10000 | test acc 0.8767 Pr(EO) 0.938 | 17s
+  step  20000 | test acc 0.8706 Pr(EO) 0.952 | 35s
+  step  30000 | test acc 0.8807 Pr(EO) 0.968 | 52s
+  step  40000 | test acc 0.8701 Pr(EO) 0.976 | 70s
+  step  50000 | test acc 0.8600 Pr(EO) 0.973 | 87s
+    val 0.8492  test 0.8600  (87s)
+=== tune/n100_ce_ent_b128_w0.05_seed0
+  step  10000 | test acc 0.8844 Pr(EO) 0.954 | 18s
+  step  20000 | test acc 0.8762 Pr(EO) 0.971 | 35s
+  step  30000 | test acc 0.8512 Pr(EO) 0.968 | 53s
+  step  40000 | test acc 0.8744 Pr(EO) 0.978 | 70s
+  step  50000 | test acc 0.8763 Pr(EO) 0.984 | 88s
+    val 0.8684  test 0.8763  (88s)
+=== tune/n100_ce_ent_b128_w0.5_seed0
+  step  10000 | test acc 0.8807 Pr(EO) 0.965 | 18s
+  step  20000 | test acc 0.8858 Pr(EO) 0.977 | 35s
+  step  30000 | test acc 0.8667 Pr(EO) 0.979 | 53s
+  step  40000 | test acc 0.8738 Pr(EO) 0.983 | 70s
+  step  50000 | test acc 0.8830 Pr(EO) 0.989 | 88s
+    val 0.8738  test 0.8830  (88s)
+=== tune/n100_ce_ent_b128_w1.0_seed0
+  step  10000 | test acc 0.8659 Pr(EO) 0.965 | 18s
+  step  20000 | test acc 0.8566 Pr(EO) 0.973 | 35s
+  step  30000 | test acc 0.8572 Pr(EO) 0.980 | 53s
+  step  40000 | test acc 0.8446 Pr(EO) 0.980 | 70s
+  step  50000 | test acc 0.8488 Pr(EO) 0.985 | 87s
+    val 0.8402  test 0.8488  (87s)
+*** n=100 ce_ent: best batch=128 weight=0.5 val=0.8738
+=== tune/n1000_ce_b10_w0.0_seed0
+  step  10000 | test acc 0.9409 Pr(EO) 0.961 | 17s
+  step  20000 | test acc 0.9466 Pr(EO) 0.973 | 33s
+  step  30000 | test acc 0.9540 Pr(EO) 0.982 | 49s
+  step  40000 | test acc 0.9498 Pr(EO) 0.984 | 66s
+  step  50000 | test acc 0.9536 Pr(EO) 0.983 | 82s
+    val 0.9454  test 0.9536  (82s)
+=== tune/n1000_ce_b32_w0.0_seed0
+  step  10000 | test acc 0.9516 Pr(EO) 0.974 | 17s
+  step  20000 | test acc 0.9514 Pr(EO) 0.980 | 34s
+  step  30000 | test acc 0.9546 Pr(EO) 0.985 | 51s
+  step  40000 | test acc 0.9555 Pr(EO) 0.985 | 67s
+  step  50000 | test acc 0.9487 Pr(EO) 0.983 | 84s
+    val 0.9418  test 0.9487  (84s)
+=== tune/n1000_ce_b128_w0.0_seed0
+  step  10000 | test acc 0.9582 Pr(EO) 0.981 | 17s
+  step  20000 | test acc 0.9574 Pr(EO) 0.985 | 33s
+  step  30000 | test acc 0.9622 Pr(EO) 0.987 | 50s
+  step  40000 | test acc 0.9589 Pr(EO) 0.989 | 67s
+  step  50000 | test acc 0.9549 Pr(EO) 0.988 | 84s
+    val 0.9502  test 0.9549  (84s)
+*** n=1000 ce: best batch=128 weight=0.0 val=0.9502
+=== tune/n1000_ce_eo_b10_w0.0005_seed0
+  step  10000 | test acc 0.9484 Pr(EO) 0.967 | 17s
+  step  20000 | test acc 0.9539 Pr(EO) 0.978 | 35s
+  step  30000 | test acc 0.9357 Pr(EO) 0.974 | 52s
+  step  40000 | test acc 0.9506 Pr(EO) 0.982 | 69s
+  step  50000 | test acc 0.9530 Pr(EO) 0.985 | 86s
+    val 0.9540  test 0.9530  (86s)
+=== tune/n1000_ce_eo_b10_w0.005_seed0
+  step  10000 | test acc 0.9385 Pr(EO) 0.962 | 17s
+  step  20000 | test acc 0.9505 Pr(EO) 0.974 | 34s
+  step  30000 | test acc 0.9505 Pr(EO) 0.979 | 52s
+  step  40000 | test acc 0.9504 Pr(EO) 0.982 | 69s
+  step  50000 | test acc 0.9458 Pr(EO) 0.980 | 86s
+    val 0.9416  test 0.9458  (86s)
+=== tune/n1000_ce_eo_b10_w0.05_seed0
+  step  10000 | test acc 0.9485 Pr(EO) 0.968 | 17s
+  step  20000 | test acc 0.9552 Pr(EO) 0.980 | 35s
+  step  30000 | test acc 0.9444 Pr(EO) 0.981 | 52s
+  step  40000 | test acc 0.9554 Pr(EO) 0.985 | 69s
+  step  50000 | test acc 0.9551 Pr(EO) 0.986 | 86s
+    val 0.9500  test 0.9551  (86s)
+=== tune/n1000_ce_eo_b10_w0.5_seed0
+  step  10000 | test acc 0.9500 Pr(EO) 0.974 | 17s
+  step  20000 | test acc 0.9512 Pr(EO) 0.982 | 35s
+  step  30000 | test acc 0.9499 Pr(EO) 0.984 | 52s
+  step  40000 | test acc 0.9451 Pr(EO) 0.987 | 70s
+  step  50000 | test acc 0.9507 Pr(EO) 0.989 | 87s
+    val 0.9448  test 0.9507  (87s)
+=== tune/n1000_ce_eo_b10_w1.0_seed0
+  step  10000 | test acc 0.9503 Pr(EO) 0.979 | 17s
+  step  20000 | test acc 0.9538 Pr(EO) 0.985 | 34s
+  step  30000 | test acc 0.9468 Pr(EO) 0.987 | 51s
+  step  40000 | test acc 0.9505 Pr(EO) 0.989 | 69s
+  step  50000 | test acc 0.9576 Pr(EO) 0.993 | 86s
+    val 0.9548  test 0.9576  (86s)
+=== tune/n1000_ce_eo_b32_w0.0005_seed0
+  step  10000 | test acc 0.9567 Pr(EO) 0.978 | 17s
+  step  20000 | test acc 0.9523 Pr(EO) 0.981 | 35s
+  step  30000 | test acc 0.9504 Pr(EO) 0.983 | 52s
+  step  40000 | test acc 0.9543 Pr(EO) 0.986 | 69s
+  step  50000 | test acc 0.9563 Pr(EO) 0.986 | 86s
+    val 0.9490  test 0.9563  (86s)
+=== tune/n1000_ce_eo_b32_w0.005_seed0
+  step  10000 | test acc 0.9475 Pr(EO) 0.975 | 17s
+  step  20000 | test acc 0.9491 Pr(EO) 0.981 | 35s
+  step  30000 | test acc 0.9498 Pr(EO) 0.982 | 52s
+  step  40000 | test acc 0.9450 Pr(EO) 0.983 | 69s
+  step  50000 | test acc 0.9554 Pr(EO) 0.987 | 86s
+    val 0.9464  test 0.9554  (86s)
+=== tune/n1000_ce_eo_b32_w0.05_seed0
+  step  10000 | test acc 0.9559 Pr(EO) 0.979 | 17s
+  step  20000 | test acc 0.9546 Pr(EO) 0.985 | 34s
+  step  30000 | test acc 0.9575 Pr(EO) 0.989 | 52s
+  step  40000 | test acc 0.9523 Pr(EO) 0.987 | 69s
+  step  50000 | test acc 0.9548 Pr(EO) 0.991 | 86s
+    val 0.9506  test 0.9548  (86s)
+=== tune/n1000_ce_eo_b32_w0.5_seed0
+  step  10000 | test acc 0.9585 Pr(EO) 0.984 | 17s
+  step  20000 | test acc 0.9569 Pr(EO) 0.989 | 35s
+  step  30000 | test acc 0.9532 Pr(EO) 0.990 | 52s
+  step  40000 | test acc 0.9578 Pr(EO) 0.992 | 69s
+  step  50000 | test acc 0.9564 Pr(EO) 0.994 | 87s
+    val 0.9536  test 0.9564  (87s)
+=== tune/n1000_ce_eo_b32_w1.0_seed0
+  step  10000 | test acc 0.9549 Pr(EO) 0.984 | 17s
+  step  20000 | test acc 0.9525 Pr(EO) 0.990 | 35s
+  step  30000 | test acc 0.9505 Pr(EO) 0.991 | 52s
+  step  40000 | test acc 0.9564 Pr(EO) 0.992 | 69s
+  step  50000 | test acc 0.9531 Pr(EO) 0.993 | 87s
+    val 0.9476  test 0.9531  (87s)
+=== tune/n1000_ce_eo_b128_w0.0005_seed0
+  step  10000 | test acc 0.9472 Pr(EO) 0.979 | 18s
+  step  20000 | test acc 0.9524 Pr(EO) 0.984 | 35s
+  step  30000 | test acc 0.9562 Pr(EO) 0.986 | 53s
+  step  40000 | test acc 0.9510 Pr(EO) 0.988 | 70s
+  step  50000 | test acc 0.9464 Pr(EO) 0.985 | 88s
+    val 0.9434  test 0.9464  (88s)
+=== tune/n1000_ce_eo_b128_w0.005_seed0
+  step  10000 | test acc 0.9568 Pr(EO) 0.985 | 17s
+  step  20000 | test acc 0.9584 Pr(EO) 0.986 | 35s
+  step  30000 | test acc 0.9556 Pr(EO) 0.986 | 52s
+  step  40000 | test acc 0.9563 Pr(EO) 0.989 | 70s
+  step  50000 | test acc 0.9579 Pr(EO) 0.990 | 87s
+    val 0.9484  test 0.9579  (87s)
+=== tune/n1000_ce_eo_b128_w0.05_seed0
+  step  10000 | test acc 0.9530 Pr(EO) 0.981 | 17s
+  step  20000 | test acc 0.9550 Pr(EO) 0.988 | 35s
+  step  30000 | test acc 0.9595 Pr(EO) 0.990 | 52s
+  step  40000 | test acc 0.9632 Pr(EO) 0.992 | 70s
+  step  50000 | test acc 0.9596 Pr(EO) 0.993 | 87s
+    val 0.9546  test 0.9596  (87s)
+=== tune/n1000_ce_eo_b128_w0.5_seed0
+  step  10000 | test acc 0.9613 Pr(EO) 0.990 | 17s
+  step  20000 | test acc 0.9574 Pr(EO) 0.993 | 35s
+  step  30000 | test acc 0.9530 Pr(EO) 0.994 | 52s
+  step  40000 | test acc 0.9590 Pr(EO) 0.995 | 70s
+  step  50000 | test acc 0.9553 Pr(EO) 0.995 | 87s
+    val 0.9504  test 0.9553  (87s)
+=== tune/n1000_ce_eo_b128_w1.0_seed0
+  step  10000 | test acc 0.9545 Pr(EO) 0.989 | 17s
+  step  20000 | test acc 0.9616 Pr(EO) 0.995 | 35s
+  step  30000 | test acc 0.9560 Pr(EO) 0.995 | 53s
+  step  40000 | test acc 0.9600 Pr(EO) 0.996 | 70s
+  step  50000 | test acc 0.9592 Pr(EO) 0.996 | 88s
+    val 0.9538  test 0.9592  (88s)
+*** n=1000 ce_eo: best batch=10 weight=1.0 val=0.9548
+=== tune/n1000_ce_ent_b10_w0.0005_seed0
+  step  10000 | test acc 0.9449 Pr(EO) 0.963 | 17s
+  step  20000 | test acc 0.9530 Pr(EO) 0.977 | 35s
+  step  30000 | test acc 0.9462 Pr(EO) 0.980 | 52s
+  step  40000 | test acc 0.9538 Pr(EO) 0.982 | 69s
+  step  50000 | test acc 0.9454 Pr(EO) 0.984 | 86s
+    val 0.9400  test 0.9454  (86s)
+=== tune/n1000_ce_ent_b10_w0.005_seed0
+  step  10000 | test acc 0.9446 Pr(EO) 0.964 | 17s
+  step  20000 | test acc 0.9490 Pr(EO) 0.975 | 34s
+  step  30000 | test acc 0.9460 Pr(EO) 0.977 | 51s
+  step  40000 | test acc 0.9537 Pr(EO) 0.985 | 68s
+  step  50000 | test acc 0.9514 Pr(EO) 0.984 | 86s
+    val 0.9456  test 0.9514  (86s)
+=== tune/n1000_ce_ent_b10_w0.05_seed0
+  step  10000 | test acc 0.9337 Pr(EO) 0.960 | 17s
+  step  20000 | test acc 0.9519 Pr(EO) 0.978 | 34s
+  step  30000 | test acc 0.9505 Pr(EO) 0.980 | 52s
+  step  40000 | test acc 0.9406 Pr(EO) 0.981 | 70s
+  step  50000 | test acc 0.9544 Pr(EO) 0.983 | 87s
+    val 0.9462  test 0.9544  (87s)
+=== tune/n1000_ce_ent_b10_w0.5_seed0
+  step  10000 | test acc 0.9461 Pr(EO) 0.973 | 17s
+  step  20000 | test acc 0.9498 Pr(EO) 0.979 | 35s
+  step  30000 | test acc 0.9421 Pr(EO) 0.982 | 52s
+  step  40000 | test acc 0.9337 Pr(EO) 0.983 | 70s
+  step  50000 | test acc 0.9531 Pr(EO) 0.988 | 88s
+    val 0.9474  test 0.9531  (88s)
+=== tune/n1000_ce_ent_b10_w1.0_seed0
+  step  10000 | test acc 0.9507 Pr(EO) 0.973 | 18s
+  step  20000 | test acc 0.9506 Pr(EO) 0.978 | 35s
+  step  30000 | test acc 0.9490 Pr(EO) 0.984 | 53s
+  step  40000 | test acc 0.9561 Pr(EO) 0.987 | 70s
+  step  50000 | test acc 0.9528 Pr(EO) 0.990 | 87s
+    val 0.9450  test 0.9528  (87s)
+=== tune/n1000_ce_ent_b32_w0.0005_seed0
+  step  10000 | test acc 0.9543 Pr(EO) 0.975 | 18s
+  step  20000 | test acc 0.9495 Pr(EO) 0.980 | 35s
+  step  30000 | test acc 0.9501 Pr(EO) 0.984 | 52s
+  step  40000 | test acc 0.9582 Pr(EO) 0.986 | 69s
+  step  50000 | test acc 0.9523 Pr(EO) 0.984 | 87s
+    val 0.9482  test 0.9523  (87s)
+=== tune/n1000_ce_ent_b32_w0.005_seed0
+  step  10000 | test acc 0.9481 Pr(EO) 0.973 | 17s
+  step  20000 | test acc 0.9407 Pr(EO) 0.980 | 34s
+  step  30000 | test acc 0.9600 Pr(EO) 0.987 | 52s
+  step  40000 | test acc 0.9541 Pr(EO) 0.984 | 69s
+  step  50000 | test acc 0.9562 Pr(EO) 0.988 | 87s
+    val 0.9492  test 0.9562  (87s)
+=== tune/n1000_ce_ent_b32_w0.05_seed0
+  step  10000 | test acc 0.9545 Pr(EO) 0.976 | 18s
+  step  20000 | test acc 0.9527 Pr(EO) 0.982 | 35s
+  step  30000 | test acc 0.9525 Pr(EO) 0.983 | 52s
+  step  40000 | test acc 0.9488 Pr(EO) 0.985 | 70s
+  step  50000 | test acc 0.9415 Pr(EO) 0.982 | 87s
+    val 0.9366  test 0.9415  (87s)
+=== tune/n1000_ce_ent_b32_w0.5_seed0
+  step  10000 | test acc 0.9528 Pr(EO) 0.977 | 17s
+  step  20000 | test acc 0.9528 Pr(EO) 0.984 | 34s
+  step  30000 | test acc 0.9525 Pr(EO) 0.987 | 52s
+  step  40000 | test acc 0.9548 Pr(EO) 0.990 | 69s
+  step  50000 | test acc 0.9516 Pr(EO) 0.990 | 87s
+    val 0.9476  test 0.9516  (87s)
+=== tune/n1000_ce_ent_b32_w1.0_seed0
+  step  10000 | test acc 0.9449 Pr(EO) 0.979 | 18s
+  step  20000 | test acc 0.9477 Pr(EO) 0.984 | 36s
+  step  30000 | test acc 0.9529 Pr(EO) 0.988 | 53s
+  step  40000 | test acc 0.9565 Pr(EO) 0.990 | 70s
+  step  50000 | test acc 0.9551 Pr(EO) 0.992 | 87s
+    val 0.9528  test 0.9551  (87s)
+=== tune/n1000_ce_ent_b128_w0.0005_seed0
+  step  10000 | test acc 0.9546 Pr(EO) 0.980 | 18s
+  step  20000 | test acc 0.9528 Pr(EO) 0.982 | 35s
+  step  30000 | test acc 0.9554 Pr(EO) 0.986 | 53s
+  step  40000 | test acc 0.9500 Pr(EO) 0.987 | 70s
+  step  50000 | test acc 0.9548 Pr(EO) 0.990 | 87s
+    val 0.9508  test 0.9548  (87s)
+=== tune/n1000_ce_ent_b128_w0.005_seed0
+  step  10000 | test acc 0.9567 Pr(EO) 0.981 | 18s
+  step  20000 | test acc 0.9559 Pr(EO) 0.986 | 35s
+  step  30000 | test acc 0.9555 Pr(EO) 0.985 | 53s
+  step  40000 | test acc 0.9602 Pr(EO) 0.989 | 70s
+  step  50000 | test acc 0.9554 Pr(EO) 0.988 | 87s
+    val 0.9496  test 0.9554  (87s)
+=== tune/n1000_ce_ent_b128_w0.05_seed0
+  step  10000 | test acc 0.9540 Pr(EO) 0.979 | 18s
+  step  20000 | test acc 0.9562 Pr(EO) 0.984 | 35s
+  step  30000 | test acc 0.9583 Pr(EO) 0.989 | 53s
+  step  40000 | test acc 0.9613 Pr(EO) 0.989 | 70s
+  step  50000 | test acc 0.9609 Pr(EO) 0.990 | 88s
+    val 0.9566  test 0.9609  (88s)
+=== tune/n1000_ce_ent_b128_w0.5_seed0
+  step  10000 | test acc 0.9607 Pr(EO) 0.983 | 17s
+  step  20000 | test acc 0.9490 Pr(EO) 0.988 | 35s
+  step  30000 | test acc 0.9613 Pr(EO) 0.992 | 52s
+  step  40000 | test acc 0.9534 Pr(EO) 0.992 | 70s
+  step  50000 | test acc 0.9559 Pr(EO) 0.994 | 87s
+    val 0.9534  test 0.9559  (87s)
+=== tune/n1000_ce_ent_b128_w1.0_seed0
+  step  10000 | test acc 0.9514 Pr(EO) 0.984 | 18s
+  step  20000 | test acc 0.9533 Pr(EO) 0.988 | 35s
+  step  30000 | test acc 0.9574 Pr(EO) 0.993 | 53s
+  step  40000 | test acc 0.9596 Pr(EO) 0.992 | 70s
+  step  50000 | test acc 0.9586 Pr(EO) 0.994 | 88s
+    val 0.9510  test 0.9586  (88s)
+*** n=1000 ce_ent: best batch=128 weight=0.05 val=0.9566
+=== n100_ce_b32_w0.0_seed0
+  step  10000 | test acc 0.8551 Pr(EO) 0.935 | 17s
+  step  20000 | test acc 0.8488 Pr(EO) 0.946 | 33s
+  step  30000 | test acc 0.8644 Pr(EO) 0.952 | 50s
+  step  40000 | test acc 0.8698 Pr(EO) 0.961 | 66s
+  step  50000 | test acc 0.8699 Pr(EO) 0.967 | 83s
+    val 0.8566  test 0.8699  (83s)
+=== n100_ce_eo_b32_w1.0_seed0
+  step  10000 | test acc 0.8993 Pr(EO) 0.982 | 17s
+  step  20000 | test acc 0.8681 Pr(EO) 0.987 | 35s
+  step  30000 | test acc 0.8675 Pr(EO) 0.989 | 52s
+  step  40000 | test acc 0.8892 Pr(EO) 0.992 | 69s
+  step  50000 | test acc 0.8927 Pr(EO) 0.994 | 86s
+    val 0.8900  test 0.8927  (86s)
+=== n100_ce_ent_b128_w0.5_seed0
+  step  10000 | test acc 0.8807 Pr(EO) 0.965 | 18s
+  step  20000 | test acc 0.8858 Pr(EO) 0.977 | 35s
+  step  30000 | test acc 0.8667 Pr(EO) 0.979 | 53s
+  step  40000 | test acc 0.8738 Pr(EO) 0.983 | 70s
+  step  50000 | test acc 0.8830 Pr(EO) 0.989 | 88s
+    val 0.8738  test 0.8830  (88s)
+=== n1000_ce_b128_w0.0_seed0
+  step  10000 | test acc 0.9582 Pr(EO) 0.981 | 17s
+  step  20000 | test acc 0.9574 Pr(EO) 0.985 | 33s
+  step  30000 | test acc 0.9622 Pr(EO) 0.987 | 50s
+  step  40000 | test acc 0.9589 Pr(EO) 0.989 | 67s
+  step  50000 | test acc 0.9549 Pr(EO) 0.988 | 84s
+    val 0.9502  test 0.9549  (84s)
+=== n1000_ce_eo_b10_w1.0_seed0
+  step  10000 | test acc 0.9503 Pr(EO) 0.979 | 17s
+  step  20000 | test acc 0.9538 Pr(EO) 0.985 | 35s
+  step  30000 | test acc 0.9468 Pr(EO) 0.987 | 52s
+  step  40000 | test acc 0.9505 Pr(EO) 0.989 | 69s
+  step  50000 | test acc 0.9576 Pr(EO) 0.993 | 86s
+    val 0.9548  test 0.9576  (86s)
+=== n1000_ce_ent_b128_w0.05_seed0
+  step  10000 | test acc 0.9540 Pr(EO) 0.979 | 18s
+  step  20000 | test acc 0.9562 Pr(EO) 0.984 | 35s
+  step  30000 | test acc 0.9583 Pr(EO) 0.989 | 53s
+  step  40000 | test acc 0.9613 Pr(EO) 0.989 | 70s
+  step  50000 | test acc 0.9609 Pr(EO) 0.990 | 88s
+    val 0.9566  test 0.9609  (88s)
+=== n100_ce_b32_w0.0_seed1
+  step  10000 | test acc 0.8472 Pr(EO) 0.930 | 17s
+  step  20000 | test acc 0.8344 Pr(EO) 0.947 | 33s
+  step  30000 | test acc 0.8426 Pr(EO) 0.952 | 49s
+  step  40000 | test acc 0.8366 Pr(EO) 0.951 | 66s
+  step  50000 | test acc 0.8473 Pr(EO) 0.954 | 82s
+    val 0.8330  test 0.8473  (82s)
+=== n100_ce_eo_b32_w1.0_seed1
+  step  10000 | test acc 0.8601 Pr(EO) 0.980 | 17s
+  step  20000 | test acc 0.8297 Pr(EO) 0.984 | 35s
+  step  30000 | test acc 0.8528 Pr(EO) 0.990 | 52s
+  step  40000 | test acc 0.8425 Pr(EO) 0.992 | 69s
+  step  50000 | test acc 0.8518 Pr(EO) 0.993 | 86s
+    val 0.8420  test 0.8518  (86s)
+=== n100_ce_ent_b128_w0.5_seed1
+  step  10000 | test acc 0.8560 Pr(EO) 0.966 | 18s
+  step  20000 | test acc 0.8420 Pr(EO) 0.972 | 35s
+  step  30000 | test acc 0.8530 Pr(EO) 0.982 | 53s
+  step  40000 | test acc 0.8340 Pr(EO) 0.982 | 70s
+  step  50000 | test acc 0.8153 Pr(EO) 0.978 | 88s
+    val 0.8014  test 0.8153  (88s)
+=== n1000_ce_b128_w0.0_seed1
+  step  10000 | test acc 0.9550 Pr(EO) 0.981 | 17s
+  step  20000 | test acc 0.9584 Pr(EO) 0.984 | 33s
+  step  30000 | test acc 0.9499 Pr(EO) 0.982 | 50s
+  step  40000 | test acc 0.9606 Pr(EO) 0.989 | 67s
+  step  50000 | test acc 0.9598 Pr(EO) 0.989 | 83s
+    val 0.9510  test 0.9598  (83s)
+=== n1000_ce_eo_b10_w1.0_seed1
+  step  10000 | test acc 0.9353 Pr(EO) 0.972 | 17s
+  step  20000 | test acc 0.9463 Pr(EO) 0.981 | 34s
+  step  30000 | test acc 0.9552 Pr(EO) 0.986 | 52s
+  step  40000 | test acc 0.9525 Pr(EO) 0.989 | 69s
+  step  50000 | test acc 0.9466 Pr(EO) 0.989 | 86s
+    val 0.9436  test 0.9466  (86s)
+=== n1000_ce_ent_b128_w0.05_seed1
+  step  10000 | test acc 0.9575 Pr(EO) 0.982 | 18s
+  step  20000 | test acc 0.9603 Pr(EO) 0.986 | 35s
+  step  30000 | test acc 0.9547 Pr(EO) 0.987 | 53s
+  step  40000 | test acc 0.9569 Pr(EO) 0.988 | 70s
+  step  50000 | test acc 0.9536 Pr(EO) 0.989 | 88s
+    val 0.9500  test 0.9536  (88s)
+=== n100_ce_b32_w0.0_seed2
+  step  10000 | test acc 0.8649 Pr(EO) 0.927 | 16s
+  step  20000 | test acc 0.8547 Pr(EO) 0.944 | 33s
+  step  30000 | test acc 0.8509 Pr(EO) 0.951 | 49s
+  step  40000 | test acc 0.8557 Pr(EO) 0.962 | 66s
+  step  50000 | test acc 0.8655 Pr(EO) 0.964 | 82s
+    val 0.8446  test 0.8655  (82s)
+=== n100_ce_eo_b32_w1.0_seed2
+  step  10000 | test acc 0.8814 Pr(EO) 0.981 | 17s
+  step  20000 | test acc 0.8643 Pr(EO) 0.987 | 35s
+  step  30000 | test acc 0.8909 Pr(EO) 0.992 | 52s
+  step  40000 | test acc 0.8490 Pr(EO) 0.993 | 69s
+  step  50000 | test acc 0.8682 Pr(EO) 0.995 | 86s
+    val 0.8522  test 0.8682  (86s)
+=== n100_ce_ent_b128_w0.5_seed2
+  step  10000 | test acc 0.8839 Pr(EO) 0.966 | 18s
+  step  20000 | test acc 0.8715 Pr(EO) 0.977 | 35s
+  step  30000 | test acc 0.8777 Pr(EO) 0.984 | 53s
+  step  40000 | test acc 0.8838 Pr(EO) 0.987 | 70s
+  step  50000 | test acc 0.8765 Pr(EO) 0.989 | 88s
+    val 0.8660  test 0.8765  (88s)
+=== n1000_ce_b128_w0.0_seed2
+  step  10000 | test acc 0.9570 Pr(EO) 0.980 | 17s
+  step  20000 | test acc 0.9589 Pr(EO) 0.986 | 33s
+  step  30000 | test acc 0.9589 Pr(EO) 0.987 | 50s
+  step  40000 | test acc 0.9592 Pr(EO) 0.991 | 67s
+  step  50000 | test acc 0.9572 Pr(EO) 0.988 | 83s
+    val 0.9526  test 0.9572  (83s)
+=== n1000_ce_eo_b10_w1.0_seed2
+  step  10000 | test acc 0.9453 Pr(EO) 0.974 | 17s
+  step  20000 | test acc 0.9577 Pr(EO) 0.985 | 34s
+  step  30000 | test acc 0.9500 Pr(EO) 0.988 | 51s
+  step  40000 | test acc 0.9594 Pr(EO) 0.991 | 69s
+  step  50000 | test acc 0.9523 Pr(EO) 0.990 | 86s
+    val 0.9470  test 0.9523  (86s)
+=== n1000_ce_ent_b128_w0.05_seed2
+  step  10000 | test acc 0.9372 Pr(EO) 0.976 | 18s
+  step  20000 | test acc 0.9549 Pr(EO) 0.985 | 35s
+  step  30000 | test acc 0.9585 Pr(EO) 0.989 | 53s
+  step  40000 | test acc 0.9564 Pr(EO) 0.989 | 70s
+  step  50000 | test acc 0.9522 Pr(EO) 0.991 | 88s
+    val 0.9516  test 0.9522  (88s)
+=== n100_ce_b32_w0.0_seed3
+  step  10000 | test acc 0.8237 Pr(EO) 0.919 | 17s
+  step  20000 | test acc 0.8390 Pr(EO) 0.934 | 33s
+  step  30000 | test acc 0.8357 Pr(EO) 0.944 | 50s
+  step  40000 | test acc 0.8296 Pr(EO) 0.949 | 66s
+  step  50000 | test acc 0.8342 Pr(EO) 0.949 | 82s
+    val 0.8112  test 0.8342  (82s)
+=== n100_ce_eo_b32_w1.0_seed3
+  step  10000 | test acc 0.8425 Pr(EO) 0.979 | 17s
+  step  20000 | test acc 0.8492 Pr(EO) 0.986 | 35s
+  step  30000 | test acc 0.8353 Pr(EO) 0.989 | 52s
+  step  40000 | test acc 0.8348 Pr(EO) 0.993 | 69s
+  step  50000 | test acc 0.8409 Pr(EO) 0.994 | 87s
+    val 0.8354  test 0.8409  (87s)
+=== n100_ce_ent_b128_w0.5_seed3
+  step  10000 | test acc 0.8484 Pr(EO) 0.960 | 18s
+  step  20000 | test acc 0.8153 Pr(EO) 0.974 | 35s
+  step  30000 | test acc 0.8432 Pr(EO) 0.981 | 53s
+  step  40000 | test acc 0.8212 Pr(EO) 0.981 | 70s
+  step  50000 | test acc 0.8280 Pr(EO) 0.983 | 88s
+    val 0.8074  test 0.8280  (88s)
+=== n1000_ce_b128_w0.0_seed3
+  step  10000 | test acc 0.9471 Pr(EO) 0.974 | 17s
+  step  20000 | test acc 0.9539 Pr(EO) 0.985 | 33s
+  step  30000 | test acc 0.9453 Pr(EO) 0.982 | 50s
+  step  40000 | test acc 0.9539 Pr(EO) 0.987 | 67s
+  step  50000 | test acc 0.9496 Pr(EO) 0.987 | 83s
+    val 0.9466  test 0.9496  (83s)
+=== n1000_ce_eo_b10_w1.0_seed3
+  step  10000 | test acc 0.9497 Pr(EO) 0.976 | 17s
+  step  20000 | test acc 0.9473 Pr(EO) 0.983 | 34s
+  step  30000 | test acc 0.9523 Pr(EO) 0.986 | 52s
+  step  40000 | test acc 0.9497 Pr(EO) 0.988 | 69s
+  step  50000 | test acc 0.9524 Pr(EO) 0.990 | 86s
+    val 0.9454  test 0.9524  (86s)
+=== n1000_ce_ent_b128_w0.05_seed3
+  step  10000 | test acc 0.9538 Pr(EO) 0.977 | 17s
+  step  20000 | test acc 0.9545 Pr(EO) 0.983 | 35s
+  step  30000 | test acc 0.9534 Pr(EO) 0.987 | 52s
+  step  40000 | test acc 0.9532 Pr(EO) 0.987 | 70s
+  step  50000 | test acc 0.9535 Pr(EO) 0.989 | 87s
+    val 0.9486  test 0.9535  (87s)
+=== n100_ce_b32_w0.0_seed4
+  step  10000 | test acc 0.8346 Pr(EO) 0.919 | 17s
+  step  20000 | test acc 0.8118 Pr(EO) 0.937 | 33s
+  step  30000 | test acc 0.8167 Pr(EO) 0.946 | 49s
+  step  40000 | test acc 0.8077 Pr(EO) 0.954 | 66s
+  step  50000 | test acc 0.8071 Pr(EO) 0.960 | 82s
+    val 0.7990  test 0.8071  (82s)
+=== n100_ce_eo_b32_w1.0_seed4
+  step  10000 | test acc 0.8153 Pr(EO) 0.979 | 17s
+  step  20000 | test acc 0.8456 Pr(EO) 0.986 | 35s
+  step  30000 | test acc 0.8178 Pr(EO) 0.991 | 52s
+  step  40000 | test acc 0.8377 Pr(EO) 0.993 | 69s
+  step  50000 | test acc 0.8172 Pr(EO) 0.994 | 87s
+    val 0.8176  test 0.8172  (87s)
+=== n100_ce_ent_b128_w0.5_seed4
+  step  10000 | test acc 0.8424 Pr(EO) 0.964 | 18s
+  step  20000 | test acc 0.8152 Pr(EO) 0.976 | 35s
+  step  30000 | test acc 0.8099 Pr(EO) 0.981 | 53s
+  step  40000 | test acc 0.8031 Pr(EO) 0.975 | 70s
+  step  50000 | test acc 0.8077 Pr(EO) 0.986 | 88s
+    val 0.7994  test 0.8077  (88s)
+=== n1000_ce_b128_w0.0_seed4
+  step  10000 | test acc 0.9586 Pr(EO) 0.982 | 17s
+  step  20000 | test acc 0.9569 Pr(EO) 0.983 | 33s
+  step  30000 | test acc 0.9550 Pr(EO) 0.985 | 50s
+  step  40000 | test acc 0.9580 Pr(EO) 0.988 | 67s
+  step  50000 | test acc 0.9601 Pr(EO) 0.989 | 84s
+    val 0.9570  test 0.9601  (84s)
+=== n1000_ce_eo_b10_w1.0_seed4
+  step  10000 | test acc 0.9398 Pr(EO) 0.971 | 17s
+  step  20000 | test acc 0.9510 Pr(EO) 0.983 | 35s
+  step  30000 | test acc 0.9500 Pr(EO) 0.986 | 52s
+  step  40000 | test acc 0.9514 Pr(EO) 0.990 | 69s
+  step  50000 | test acc 0.9557 Pr(EO) 0.991 | 86s
+    val 0.9496  test 0.9557  (86s)
+=== n1000_ce_ent_b128_w0.05_seed4
+  step  10000 | test acc 0.9596 Pr(EO) 0.981 | 18s
+  step  20000 | test acc 0.9578 Pr(EO) 0.982 | 35s
+  step  30000 | test acc 0.9585 Pr(EO) 0.988 | 53s
+  step  40000 | test acc 0.9587 Pr(EO) 0.989 | 70s
+  step  50000 | test acc 0.9559 Pr(EO) 0.989 | 88s
+    val 0.9548  test 0.9559  (88s)
+ALL DONE

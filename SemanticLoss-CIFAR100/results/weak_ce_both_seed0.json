@@ -1,0 +1,31 @@
+{
+  "setting": "weak",
+  "method": "ce_both",
+  "seed": 0,
+  "lam": 0.0,
+  "label_frac": 0.1,
+  "epochs": 30,
+  "n_fine_labeled": 4500,
+  "n_coarse_labeled": 45000,
+  "train_seconds": 312.7623517513275,
+  "val": {
+    "fine_acc": 0.5333999991416931,
+    "coarse_acc": 0.7498000264167786,
+    "coarse_acc_via_fine": 0.6949999928474426,
+    "fine_acc_masked": 0.555400013923645,
+    "fine_acc_joint": 0.5565999746322632,
+    "consistency": 0.7689999938011169,
+    "mean_log_pr_alpha": -211.41603088378906,
+    "within_superclass_err": 0.34633520245552063
+  },
+  "test": {
+    "fine_acc": 0.5428000092506409,
+    "coarse_acc": 0.7465000152587891,
+    "coarse_acc_via_fine": 0.7045999765396118,
+    "fine_acc_masked": 0.5579000115394592,
+    "fine_acc_joint": 0.5623000264167786,
+    "consistency": 0.7731000185012817,
+    "mean_log_pr_alpha": -210.84744262695312,
+    "within_superclass_err": 0.3538932502269745
+  }
+}

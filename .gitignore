@@ -1,0 +1,8 @@
+# Datasets are downloaded by each project's code (MD5-checked)
+data/
+
+# Python / Node / OS
+__pycache__/
+.pytest_cache/
+node_modules/
+.DS_Store

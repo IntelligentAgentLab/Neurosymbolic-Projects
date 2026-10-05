@@ -1,0 +1,26 @@
+{
+ "100_ce": {
+  "batch_size": 32,
+  "weight": 0.0
+ },
+ "100_ce_eo": {
+  "batch_size": 32,
+  "weight": 1.0
+ },
+ "100_ce_ent": {
+  "batch_size": 128,
+  "weight": 0.5
+ },
+ "1000_ce": {
+  "batch_size": 128,
+  "weight": 0.0
+ },
+ "1000_ce_eo": {
+  "batch_size": 10,
+  "weight": 1.0
+ },
+ "1000_ce_ent": {
+  "batch_size": 128,
+  "weight": 0.05
+ }
+}

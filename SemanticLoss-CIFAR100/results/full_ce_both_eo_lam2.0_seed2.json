@@ -1,0 +1,31 @@
+{
+  "setting": "full",
+  "method": "ce_both_eo",
+  "seed": 2,
+  "lam": 2.0,
+  "label_frac": 0.1,
+  "epochs": 30,
+  "n_fine_labeled": 45000,
+  "n_coarse_labeled": 45000,
+  "train_seconds": 7463.5960257053375,
+  "val": {
+    "fine_acc": 0.7414000034332275,
+    "coarse_acc": 0.8446000218391418,
+    "coarse_acc_via_fine": 0.8424000144004822,
+    "fine_acc_masked": 0.734000027179718,
+    "fine_acc_joint": 0.7409999966621399,
+    "consistency": 0.9146000146865845,
+    "mean_log_pr_alpha": -0.9650815725326538,
+    "within_superclass_err": 0.39056459069252014
+  },
+  "test": {
+    "fine_acc": 0.7407000064849854,
+    "coarse_acc": 0.8355000019073486,
+    "coarse_acc_via_fine": 0.8395000100135803,
+    "fine_acc_masked": 0.7282999753952026,
+    "fine_acc_joint": 0.738099992275238,
+    "consistency": 0.9100000262260437,
+    "mean_log_pr_alpha": -0.997545599937439,
+    "within_superclass_err": 0.38102585077285767
+  }
+}

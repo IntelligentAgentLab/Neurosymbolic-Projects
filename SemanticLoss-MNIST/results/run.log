@@ -1,0 +1,781 @@
+=== n100_ce_eo_lam0.01_seed0
+  ep  1/30 | ce 0.441 reg 4.386 | val acc 0.7670 Pr(EO) 0.035 | 1s
+  ep  5/30 | ce 0.000 reg 0.202 | val acc 0.8566 Pr(EO) 0.873 | 3s
+  ep 10/30 | ce 0.001 reg 0.158 | val acc 0.7938 Pr(EO) 0.866 | 7s
+  ep 15/30 | ce 0.001 reg 0.114 | val acc 0.7856 Pr(EO) 0.890 | 10s
+  ep 20/30 | ce 0.000 reg 0.097 | val acc 0.7974 Pr(EO) 0.909 | 13s
+  ep 25/30 | ce 0.000 reg 0.085 | val acc 0.8100 Pr(EO) 0.919 | 16s
+  ep 30/30 | ce 0.000 reg 0.082 | val acc 0.8074 Pr(EO) 0.922 | 19s
+    test acc 0.8103  Pr(EO) 0.920  one-hot 0.962  (19s)
+=== n100_ce_eo_lam0.03_seed0
+  ep  1/30 | ce 0.441 reg 4.261 | val acc 0.7708 Pr(EO) 0.059 | 1s
+  ep  5/30 | ce 0.002 reg 0.151 | val acc 0.7954 Pr(EO) 0.874 | 3s
+  ep 10/30 | ce 0.002 reg 0.099 | val acc 0.7916 Pr(EO) 0.907 | 6s
+  ep 15/30 | ce 0.001 reg 0.079 | val acc 0.7900 Pr(EO) 0.929 | 9s
+  ep 20/30 | ce 0.000 reg 0.065 | val acc 0.8138 Pr(EO) 0.941 | 13s
+  ep 25/30 | ce 0.000 reg 0.056 | val acc 0.8200 Pr(EO) 0.948 | 16s
+  ep 30/30 | ce 0.000 reg 0.054 | val acc 0.8224 Pr(EO) 0.950 | 19s
+    test acc 0.8259  Pr(EO) 0.950  one-hot 0.981  (19s)
+=== n100_ce_eo_lam0.1_seed0
+  ep  1/30 | ce 0.441 reg 3.934 | val acc 0.7800 Pr(EO) 0.165 | 1s
+  ep  5/30 | ce 0.011 reg 0.102 | val acc 0.7832 Pr(EO) 0.901 | 3s
+  ep 10/30 | ce 0.004 reg 0.065 | val acc 0.8170 Pr(EO) 0.946 | 6s
+  ep 15/30 | ce 0.001 reg 0.045 | val acc 0.8310 Pr(EO) 0.961 | 10s
+  ep 20/30 | ce 0.001 reg 0.037 | val acc 0.8232 Pr(EO) 0.966 | 13s
+  ep 25/30 | ce 0.000 reg 0.032 | val acc 0.8404 Pr(EO) 0.972 | 16s
+  ep 30/30 | ce 0.000 reg 0.031 | val acc 0.8398 Pr(EO) 0.972 | 19s
+    test acc 0.8400  Pr(EO) 0.971  one-hot 0.992  (19s)
+=== n100_ce_eo_lam0.3_seed0
+  ep  1/30 | ce 0.440 reg 3.424 | val acc 0.7980 Pr(EO) 0.395 | 1s
+  ep  5/30 | ce 0.011 reg 0.066 | val acc 0.8158 Pr(EO) 0.943 | 3s
+  ep 10/30 | ce 0.008 reg 0.038 | val acc 0.8138 Pr(EO) 0.965 | 6s
+  ep 15/30 | ce 0.003 reg 0.029 | val acc 0.8320 Pr(EO) 0.976 | 9s
+  ep 20/30 | ce 0.002 reg 0.022 | val acc 0.8172 Pr(EO) 0.978 | 13s
+  ep 25/30 | ce 0.001 reg 0.020 | val acc 0.8342 Pr(EO) 0.982 | 16s
+  ep 30/30 | ce 0.000 reg 0.019 | val acc 0.8346 Pr(EO) 0.983 | 19s
+    test acc 0.8369  Pr(EO) 0.982  one-hot 0.995  (19s)
+=== n100_ce_eo_lam1.0_seed0
+  ep  1/30 | ce 0.442 reg 2.799 | val acc 0.8216 Pr(EO) 0.652 | 1s
+  ep  5/30 | ce 0.015 reg 0.042 | val acc 0.8268 Pr(EO) 0.967 | 3s
+  ep 10/30 | ce 0.012 reg 0.024 | val acc 0.8128 Pr(EO) 0.980 | 6s
+  ep 15/30 | ce 0.005 reg 0.017 | val acc 0.8160 Pr(EO) 0.983 | 10s
+  ep 20/30 | ce 0.002 reg 0.014 | val acc 0.8180 Pr(EO) 0.988 | 13s
+  ep 25/30 | ce 0.000 reg 0.011 | val acc 0.8204 Pr(EO) 0.990 | 16s
+  ep 30/30 | ce 0.001 reg 0.010 | val acc 0.8286 Pr(EO) 0.991 | 19s
+    test acc 0.8278  Pr(EO) 0.991  one-hot 0.998  (19s)
+=== n100_ce_eo_lam3.0_seed0
+  ep  1/30 | ce 0.452 reg 2.345 | val acc 0.8370 Pr(EO) 0.747 | 1s
+  ep  5/30 | ce 0.032 reg 0.029 | val acc 0.8290 Pr(EO) 0.975 | 3s
+  ep 10/30 | ce 0.019 reg 0.015 | val acc 0.8182 Pr(EO) 0.989 | 6s
+  ep 15/30 | ce 0.013 reg 0.011 | val acc 0.7992 Pr(EO) 0.992 | 9s
+  ep 20/30 | ce 0.005 reg 0.009 | val acc 0.8164 Pr(EO) 0.991 | 13s
+  ep 25/30 | ce 0.005 reg 0.007 | val acc 0.8242 Pr(EO) 0.994 | 16s
+  ep 30/30 | ce 0.003 reg 0.007 | val acc 0.8246 Pr(EO) 0.994 | 19s
+    test acc 0.8318  Pr(EO) 0.994  one-hot 0.999  (19s)
+*** n=100 ce_eo: val acc by lambda {0.01: 0.8073999881744385, 0.03: 0.8223999738693237, 0.1: 0.8398000001907349, 0.3: 0.8345999717712402, 1.0: 0.8285999894142151, 3.0: 0.8245999813079834} -> lambda=0.1
+=== n100_ce_ent_lam0.01_seed0
+  ep  1/30 | ce 0.442 reg 1.286 | val acc 0.7674 Pr(EO) 0.026 | 1s
+  ep  5/30 | ce 0.000 reg 0.130 | val acc 0.8624 Pr(EO) 0.173 | 3s
+  ep 10/30 | ce 0.001 reg 0.125 | val acc 0.8004 Pr(EO) 0.168 | 6s
+  ep 15/30 | ce 0.000 reg 0.079 | val acc 0.8038 Pr(EO) 0.291 | 9s
+  ep 20/30 | ce 0.000 reg 0.071 | val acc 0.8090 Pr(EO) 0.323 | 13s
+  ep 25/30 | ce 0.000 reg 0.062 | val acc 0.8116 Pr(EO) 0.372 | 16s
+  ep 30/30 | ce 0.000 reg 0.060 | val acc 0.8168 Pr(EO) 0.382 | 19s
+    test acc 0.8209  Pr(EO) 0.382  one-hot 0.611  (19s)
+=== n100_ce_ent_lam0.03_seed0
+  ep  1/30 | ce 0.441 reg 1.281 | val acc 0.7742 Pr(EO) 0.027 | 1s
+  ep  5/30 | ce 0.000 reg 0.112 | val acc 0.8134 Pr(EO) 0.196 | 3s
+  ep 10/30 | ce 0.002 reg 0.068 | val acc 0.8084 Pr(EO) 0.332 | 6s
+  ep 15/30 | ce 0.000 reg 0.051 | val acc 0.8134 Pr(EO) 0.431 | 9s
+  ep 20/30 | ce 0.001 reg 0.043 | val acc 0.8062 Pr(EO) 0.511 | 12s
+  ep 25/30 | ce 0.001 reg 0.038 | val acc 0.8232 Pr(EO) 0.565 | 15s
+  ep 30/30 | ce 0.000 reg 0.037 | val acc 0.8210 Pr(EO) 0.573 | 19s
+    test acc 0.8297  Pr(EO) 0.571  one-hot 0.748  (19s)
+=== n100_ce_ent_lam0.1_seed0
+  ep  1/30 | ce 0.441 reg 1.265 | val acc 0.7932 Pr(EO) 0.029 | 1s
+  ep  5/30 | ce 0.007 reg 0.071 | val acc 0.7760 Pr(EO) 0.277 | 3s
+  ep 10/30 | ce 0.005 reg 0.046 | val acc 0.8128 Pr(EO) 0.460 | 6s
+  ep 15/30 | ce 0.000 reg 0.034 | val acc 0.8156 Pr(EO) 0.594 | 9s
+  ep 20/30 | ce 0.001 reg 0.027 | val acc 0.8276 Pr(EO) 0.685 | 12s
+  ep 25/30 | ce 0.000 reg 0.023 | val acc 0.8282 Pr(EO) 0.731 | 15s
+  ep 30/30 | ce 0.000 reg 0.022 | val acc 0.8334 Pr(EO) 0.736 | 19s
+    test acc 0.8325  Pr(EO) 0.735  one-hot 0.816  (19s)
+=== n100_ce_ent_lam0.3_seed0
+  ep  1/30 | ce 0.440 reg 1.226 | val acc 0.8204 Pr(EO) 0.037 | 1s
+  ep  5/30 | ce 0.014 reg 0.053 | val acc 0.8100 Pr(EO) 0.414 | 3s
+  ep 10/30 | ce 0.004 reg 0.029 | val acc 0.8230 Pr(EO) 0.640 | 6s
+  ep 15/30 | ce 0.003 reg 0.025 | val acc 0.8080 Pr(EO) 0.682 | 9s
+  ep 20/30 | ce 0.002 reg 0.018 | val acc 0.8276 Pr(EO) 0.776 | 12s
+  ep 25/30 | ce 0.000 reg 0.016 | val acc 0.8318 Pr(EO) 0.808 | 15s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.8338 Pr(EO) 0.819 | 19s
+    test acc 0.8369  Pr(EO) 0.818  one-hot 0.853  (19s)
+=== n100_ce_ent_lam1.0_seed0
+  ep  1/30 | ce 0.437 reg 1.138 | val acc 0.8400 Pr(EO) 0.060 | 1s
+  ep  5/30 | ce 0.017 reg 0.031 | val acc 0.8070 Pr(EO) 0.599 | 3s
+  ep 10/30 | ce 0.013 reg 0.018 | val acc 0.8206 Pr(EO) 0.749 | 6s
+  ep 15/30 | ce 0.005 reg 0.014 | val acc 0.7928 Pr(EO) 0.787 | 9s
+  ep 20/30 | ce 0.002 reg 0.011 | val acc 0.8028 Pr(EO) 0.839 | 12s
+  ep 25/30 | ce 0.000 reg 0.010 | val acc 0.8186 Pr(EO) 0.863 | 16s
+  ep 30/30 | ce 0.000 reg 0.009 | val acc 0.8208 Pr(EO) 0.867 | 19s
+    test acc 0.8214  Pr(EO) 0.865  one-hot 0.873  (19s)
+=== n100_ce_ent_lam3.0_seed0
+  ep  1/30 | ce 0.432 reg 1.026 | val acc 0.8652 Pr(EO) 0.110 | 1s
+  ep  5/30 | ce 0.033 reg 0.022 | val acc 0.7942 Pr(EO) 0.734 | 3s
+  ep 10/30 | ce 0.026 reg 0.013 | val acc 0.7684 Pr(EO) 0.817 | 6s
+  ep 15/30 | ce 0.009 reg 0.009 | val acc 0.7984 Pr(EO) 0.865 | 9s
+  ep 20/30 | ce 0.010 reg 0.008 | val acc 0.7840 Pr(EO) 0.861 | 12s
+  ep 25/30 | ce 0.007 reg 0.007 | val acc 0.7780 Pr(EO) 0.869 | 16s
+  ep 30/30 | ce 0.003 reg 0.007 | val acc 0.7844 Pr(EO) 0.879 | 19s
+    test acc 0.7892  Pr(EO) 0.884  one-hot 0.886  (19s)
+*** n=100 ce_ent: val acc by lambda {0.01: 0.8167999982833862, 0.03: 0.8209999799728394, 0.1: 0.8334000110626221, 0.3: 0.8338000178337097, 1.0: 0.8208000063896179, 3.0: 0.7843999862670898} -> lambda=0.3
+=== n500_ce_eo_lam0.01_seed0
+  ep  1/30 | ce 0.671 reg 4.435 | val acc 0.8894 Pr(EO) 0.056 | 1s
+  ep  5/30 | ce 0.012 reg 0.181 | val acc 0.8788 Pr(EO) 0.872 | 3s
+  ep 10/30 | ce 0.007 reg 0.106 | val acc 0.8856 Pr(EO) 0.915 | 6s
+  ep 15/30 | ce 0.004 reg 0.083 | val acc 0.8922 Pr(EO) 0.926 | 9s
+  ep 20/30 | ce 0.001 reg 0.076 | val acc 0.9006 Pr(EO) 0.934 | 12s
+  ep 25/30 | ce 0.001 reg 0.066 | val acc 0.9016 Pr(EO) 0.941 | 16s
+  ep 30/30 | ce 0.000 reg 0.064 | val acc 0.9054 Pr(EO) 0.943 | 19s
+    test acc 0.9146  Pr(EO) 0.945  one-hot 0.977  (19s)
+=== n500_ce_eo_lam0.03_seed0
+  ep  1/30 | ce 0.670 reg 4.317 | val acc 0.8892 Pr(EO) 0.089 | 1s
+  ep  5/30 | ce 0.017 reg 0.126 | val acc 0.8920 Pr(EO) 0.905 | 3s
+  ep 10/30 | ce 0.006 reg 0.085 | val acc 0.8998 Pr(EO) 0.930 | 6s
+  ep 15/30 | ce 0.002 reg 0.066 | val acc 0.8986 Pr(EO) 0.944 | 10s
+  ep 20/30 | ce 0.002 reg 0.058 | val acc 0.9062 Pr(EO) 0.952 | 13s
+  ep 25/30 | ce 0.000 reg 0.050 | val acc 0.9088 Pr(EO) 0.956 | 16s
+  ep 30/30 | ce 0.000 reg 0.046 | val acc 0.9118 Pr(EO) 0.959 | 19s
+    test acc 0.9226  Pr(EO) 0.961  one-hot 0.984  (19s)
+=== n500_ce_eo_lam0.1_seed0
+  ep  1/30 | ce 0.669 reg 3.999 | val acc 0.8902 Pr(EO) 0.226 | 1s
+  ep  5/30 | ce 0.016 reg 0.096 | val acc 0.8852 Pr(EO) 0.928 | 3s
+  ep 10/30 | ce 0.015 reg 0.068 | val acc 0.8914 Pr(EO) 0.947 | 7s
+  ep 15/30 | ce 0.003 reg 0.047 | val acc 0.9030 Pr(EO) 0.959 | 10s
+  ep 20/30 | ce 0.003 reg 0.043 | val acc 0.9052 Pr(EO) 0.961 | 13s
+  ep 25/30 | ce 0.001 reg 0.035 | val acc 0.9088 Pr(EO) 0.971 | 16s
+  ep 30/30 | ce 0.001 reg 0.033 | val acc 0.9140 Pr(EO) 0.971 | 19s
+    test acc 0.9232  Pr(EO) 0.973  one-hot 0.990  (19s)
+=== n500_ce_eo_lam0.3_seed0
+  ep  1/30 | ce 0.668 reg 3.482 | val acc 0.8912 Pr(EO) 0.498 | 1s
+  ep  5/30 | ce 0.022 reg 0.068 | val acc 0.8896 Pr(EO) 0.946 | 3s
+  ep 10/30 | ce 0.014 reg 0.046 | val acc 0.9046 Pr(EO) 0.962 | 6s
+  ep 15/30 | ce 0.007 reg 0.034 | val acc 0.9090 Pr(EO) 0.972 | 10s
+  ep 20/30 | ce 0.003 reg 0.026 | val acc 0.9180 Pr(EO) 0.978 | 13s
+  ep 25/30 | ce 0.003 reg 0.022 | val acc 0.9218 Pr(EO) 0.981 | 16s
+  ep 30/30 | ce 0.001 reg 0.021 | val acc 0.9230 Pr(EO) 0.983 | 19s
+    test acc 0.9315  Pr(EO) 0.984  one-hot 0.996  (19s)
+=== n500_ce_eo_lam1.0_seed0
+  ep  1/30 | ce 0.671 reg 2.820 | val acc 0.8940 Pr(EO) 0.726 | 1s
+  ep  5/30 | ce 0.032 reg 0.046 | val acc 0.8934 Pr(EO) 0.966 | 4s
+  ep 10/30 | ce 0.021 reg 0.028 | val acc 0.9200 Pr(EO) 0.978 | 7s
+  ep 15/30 | ce 0.013 reg 0.021 | val acc 0.9062 Pr(EO) 0.982 | 10s
+  ep 20/30 | ce 0.006 reg 0.015 | val acc 0.9192 Pr(EO) 0.986 | 13s
+  ep 25/30 | ce 0.001 reg 0.013 | val acc 0.9262 Pr(EO) 0.989 | 16s
+  ep 30/30 | ce 0.001 reg 0.012 | val acc 0.9292 Pr(EO) 0.990 | 20s
+    test acc 0.9351  Pr(EO) 0.991  one-hot 0.998  (20s)
+=== n500_ce_eo_lam3.0_seed0
+  ep  1/30 | ce 0.691 reg 2.328 | val acc 0.8988 Pr(EO) 0.796 | 1s
+  ep  5/30 | ce 0.048 reg 0.031 | val acc 0.9046 Pr(EO) 0.980 | 3s
+  ep 10/30 | ce 0.032 reg 0.018 | val acc 0.9094 Pr(EO) 0.985 | 7s
+  ep 15/30 | ce 0.021 reg 0.013 | val acc 0.9090 Pr(EO) 0.989 | 10s
+  ep 20/30 | ce 0.016 reg 0.010 | val acc 0.9162 Pr(EO) 0.992 | 13s
+  ep 25/30 | ce 0.007 reg 0.008 | val acc 0.9136 Pr(EO) 0.993 | 16s
+  ep 30/30 | ce 0.001 reg 0.007 | val acc 0.9200 Pr(EO) 0.992 | 19s
+    test acc 0.9314  Pr(EO) 0.994  one-hot 0.998  (19s)
+*** n=500 ce_eo: val acc by lambda {0.01: 0.9053999781608582, 0.03: 0.9118000268936157, 0.1: 0.9139999747276306, 0.3: 0.9229999780654907, 1.0: 0.9291999936103821, 3.0: 0.9200000166893005} -> lambda=1.0
+=== n500_ce_ent_lam0.01_seed0
+  ep  1/30 | ce 0.671 reg 1.191 | val acc 0.8906 Pr(EO) 0.043 | 1s
+  ep  5/30 | ce 0.018 reg 0.104 | val acc 0.8920 Pr(EO) 0.183 | 3s
+  ep 10/30 | ce 0.011 reg 0.076 | val acc 0.8840 Pr(EO) 0.269 | 6s
+  ep 15/30 | ce 0.002 reg 0.058 | val acc 0.8974 Pr(EO) 0.354 | 9s
+  ep 20/30 | ce 0.001 reg 0.052 | val acc 0.8992 Pr(EO) 0.394 | 13s
+  ep 25/30 | ce 0.000 reg 0.045 | val acc 0.9054 Pr(EO) 0.452 | 16s
+  ep 30/30 | ce 0.000 reg 0.044 | val acc 0.9068 Pr(EO) 0.461 | 19s
+    test acc 0.9132  Pr(EO) 0.468  one-hot 0.768  (19s)
+=== n500_ce_ent_lam0.03_seed0
+  ep  1/30 | ce 0.670 reg 1.189 | val acc 0.8912 Pr(EO) 0.043 | 1s
+  ep  5/30 | ce 0.016 reg 0.091 | val acc 0.8904 Pr(EO) 0.207 | 3s
+  ep 10/30 | ce 0.010 reg 0.067 | val acc 0.8964 Pr(EO) 0.333 | 6s
+  ep 15/30 | ce 0.002 reg 0.044 | val acc 0.8964 Pr(EO) 0.419 | 9s
+  ep 20/30 | ce 0.001 reg 0.044 | val acc 0.8978 Pr(EO) 0.449 | 13s
+  ep 25/30 | ce 0.000 reg 0.037 | val acc 0.9072 Pr(EO) 0.518 | 16s
+  ep 30/30 | ce 0.000 reg 0.035 | val acc 0.9092 Pr(EO) 0.529 | 19s
+    test acc 0.9213  Pr(EO) 0.530  one-hot 0.786  (19s)
+=== n500_ce_ent_lam0.1_seed0
+  ep  1/30 | ce 0.669 reg 1.182 | val acc 0.8918 Pr(EO) 0.046 | 1s
+  ep  5/30 | ce 0.018 reg 0.069 | val acc 0.8918 Pr(EO) 0.254 | 3s
+  ep 10/30 | ce 0.011 reg 0.048 | val acc 0.8982 Pr(EO) 0.389 | 6s
+  ep 15/30 | ce 0.005 reg 0.037 | val acc 0.9018 Pr(EO) 0.485 | 9s
+  ep 20/30 | ce 0.003 reg 0.031 | val acc 0.9062 Pr(EO) 0.584 | 13s
+  ep 25/30 | ce 0.001 reg 0.025 | val acc 0.9074 Pr(EO) 0.659 | 16s
+  ep 30/30 | ce 0.001 reg 0.024 | val acc 0.9180 Pr(EO) 0.677 | 19s
+    test acc 0.9246  Pr(EO) 0.678  one-hot 0.835  (19s)
+=== n500_ce_ent_lam0.3_seed0
+  ep  1/30 | ce 0.666 reg 1.166 | val acc 0.8936 Pr(EO) 0.051 | 1s
+  ep  5/30 | ce 0.020 reg 0.051 | val acc 0.8892 Pr(EO) 0.399 | 3s
+  ep 10/30 | ce 0.017 reg 0.036 | val acc 0.9012 Pr(EO) 0.519 | 6s
+  ep 15/30 | ce 0.009 reg 0.024 | val acc 0.9082 Pr(EO) 0.625 | 9s
+  ep 20/30 | ce 0.003 reg 0.020 | val acc 0.9088 Pr(EO) 0.740 | 12s
+  ep 25/30 | ce 0.002 reg 0.016 | val acc 0.9136 Pr(EO) 0.790 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.9182 Pr(EO) 0.804 | 19s
+    test acc 0.9281  Pr(EO) 0.809  one-hot 0.871  (19s)
+=== n500_ce_ent_lam1.0_seed0
+  ep  1/30 | ce 0.658 reg 1.122 | val acc 0.8972 Pr(EO) 0.069 | 1s
+  ep  5/30 | ce 0.031 reg 0.034 | val acc 0.8950 Pr(EO) 0.563 | 3s
+  ep 10/30 | ce 0.021 reg 0.022 | val acc 0.9090 Pr(EO) 0.719 | 6s
+  ep 15/30 | ce 0.015 reg 0.015 | val acc 0.9006 Pr(EO) 0.715 | 9s
+  ep 20/30 | ce 0.003 reg 0.011 | val acc 0.9116 Pr(EO) 0.847 | 12s
+  ep 25/30 | ce 0.003 reg 0.010 | val acc 0.9164 Pr(EO) 0.863 | 15s
+  ep 30/30 | ce 0.002 reg 0.009 | val acc 0.9180 Pr(EO) 0.873 | 19s
+    test acc 0.9326  Pr(EO) 0.880  one-hot 0.900  (19s)
+=== n500_ce_ent_lam3.0_seed0
+  ep  1/30 | ce 0.646 reg 1.046 | val acc 0.9080 Pr(EO) 0.113 | 1s
+  ep  5/30 | ce 0.056 reg 0.024 | val acc 0.8886 Pr(EO) 0.705 | 3s
+  ep 10/30 | ce 0.036 reg 0.013 | val acc 0.9112 Pr(EO) 0.823 | 6s
+  ep 15/30 | ce 0.020 reg 0.011 | val acc 0.9058 Pr(EO) 0.852 | 9s
+  ep 20/30 | ce 0.015 reg 0.008 | val acc 0.9124 Pr(EO) 0.884 | 13s
+  ep 25/30 | ce 0.006 reg 0.007 | val acc 0.9178 Pr(EO) 0.886 | 16s
+  ep 30/30 | ce 0.004 reg 0.006 | val acc 0.9180 Pr(EO) 0.900 | 19s
+    test acc 0.9288  Pr(EO) 0.902  one-hot 0.909  (19s)
+*** n=500 ce_ent: val acc by lambda {0.01: 0.9067999720573425, 0.03: 0.9092000126838684, 0.1: 0.9179999828338623, 0.3: 0.9182000160217285, 1.0: 0.9179999828338623, 3.0: 0.9179999828338623} -> lambda=0.3
+=== n1000_ce_eo_lam0.01_seed0
+  ep  1/30 | ce 0.725 reg 4.454 | val acc 0.9040 Pr(EO) 0.058 | 1s
+  ep  5/30 | ce 0.016 reg 0.180 | val acc 0.9034 Pr(EO) 0.880 | 3s
+  ep 10/30 | ce 0.008 reg 0.094 | val acc 0.9202 Pr(EO) 0.930 | 6s
+  ep 15/30 | ce 0.006 reg 0.071 | val acc 0.9222 Pr(EO) 0.940 | 10s
+  ep 20/30 | ce 0.003 reg 0.064 | val acc 0.9286 Pr(EO) 0.949 | 13s
+  ep 25/30 | ce 0.001 reg 0.055 | val acc 0.9274 Pr(EO) 0.956 | 16s
+  ep 30/30 | ce 0.000 reg 0.052 | val acc 0.9286 Pr(EO) 0.957 | 19s
+    test acc 0.9417  Pr(EO) 0.958  one-hot 0.983  (19s)
+=== n1000_ce_eo_lam0.03_seed0
+  ep  1/30 | ce 0.724 reg 4.337 | val acc 0.9050 Pr(EO) 0.090 | 1s
+  ep  5/30 | ce 0.021 reg 0.117 | val acc 0.9214 Pr(EO) 0.922 | 3s
+  ep 10/30 | ce 0.011 reg 0.078 | val acc 0.9224 Pr(EO) 0.939 | 6s
+  ep 15/30 | ce 0.004 reg 0.061 | val acc 0.9244 Pr(EO) 0.953 | 9s
+  ep 20/30 | ce 0.004 reg 0.053 | val acc 0.9212 Pr(EO) 0.954 | 13s
+  ep 25/30 | ce 0.001 reg 0.043 | val acc 0.9306 Pr(EO) 0.963 | 16s
+  ep 30/30 | ce 0.001 reg 0.041 | val acc 0.9316 Pr(EO) 0.964 | 19s
+    test acc 0.9407  Pr(EO) 0.966  one-hot 0.987  (19s)
+=== n1000_ce_eo_lam0.1_seed0
+  ep  1/30 | ce 0.723 reg 4.018 | val acc 0.9050 Pr(EO) 0.228 | 1s
+  ep  5/30 | ce 0.033 reg 0.099 | val acc 0.9150 Pr(EO) 0.930 | 3s
+  ep 10/30 | ce 0.012 reg 0.065 | val acc 0.9236 Pr(EO) 0.954 | 6s
+  ep 15/30 | ce 0.007 reg 0.050 | val acc 0.9264 Pr(EO) 0.962 | 9s
+  ep 20/30 | ce 0.007 reg 0.039 | val acc 0.9312 Pr(EO) 0.968 | 13s
+  ep 25/30 | ce 0.001 reg 0.032 | val acc 0.9330 Pr(EO) 0.975 | 16s
+  ep 30/30 | ce 0.001 reg 0.030 | val acc 0.9332 Pr(EO) 0.975 | 19s
+    test acc 0.9457  Pr(EO) 0.976  one-hot 0.990  (19s)
+=== n1000_ce_eo_lam0.3_seed0
+  ep  1/30 | ce 0.722 reg 3.496 | val acc 0.9076 Pr(EO) 0.505 | 1s
+  ep  5/30 | ce 0.035 reg 0.071 | val acc 0.9070 Pr(EO) 0.947 | 3s
+  ep 10/30 | ce 0.020 reg 0.047 | val acc 0.9270 Pr(EO) 0.965 | 6s
+  ep 15/30 | ce 0.012 reg 0.036 | val acc 0.9254 Pr(EO) 0.970 | 9s
+  ep 20/30 | ce 0.003 reg 0.025 | val acc 0.9316 Pr(EO) 0.981 | 12s
+  ep 25/30 | ce 0.002 reg 0.021 | val acc 0.9386 Pr(EO) 0.982 | 16s
+  ep 30/30 | ce 0.001 reg 0.020 | val acc 0.9400 Pr(EO) 0.983 | 19s
+    test acc 0.9490  Pr(EO) 0.985  one-hot 0.994  (19s)
+=== n1000_ce_eo_lam1.0_seed0
+  ep  1/30 | ce 0.725 reg 2.829 | val acc 0.9092 Pr(EO) 0.736 | 1s
+  ep  5/30 | ce 0.039 reg 0.046 | val acc 0.9214 Pr(EO) 0.969 | 3s
+  ep 10/30 | ce 0.027 reg 0.028 | val acc 0.9292 Pr(EO) 0.979 | 6s
+  ep 15/30 | ce 0.011 reg 0.020 | val acc 0.9306 Pr(EO) 0.985 | 9s
+  ep 20/30 | ce 0.009 reg 0.015 | val acc 0.9342 Pr(EO) 0.988 | 13s
+  ep 25/30 | ce 0.004 reg 0.013 | val acc 0.9384 Pr(EO) 0.989 | 16s
+  ep 30/30 | ce 0.001 reg 0.012 | val acc 0.9382 Pr(EO) 0.990 | 19s
+    test acc 0.9495  Pr(EO) 0.991  one-hot 0.998  (19s)
+=== n1000_ce_eo_lam3.0_seed0
+  ep  1/30 | ce 0.745 reg 2.335 | val acc 0.9096 Pr(EO) 0.804 | 1s
+  ep  5/30 | ce 0.064 reg 0.032 | val acc 0.9174 Pr(EO) 0.977 | 3s
+  ep 10/30 | ce 0.037 reg 0.018 | val acc 0.9322 Pr(EO) 0.986 | 6s
+  ep 15/30 | ce 0.025 reg 0.013 | val acc 0.9332 Pr(EO) 0.990 | 9s
+  ep 20/30 | ce 0.016 reg 0.011 | val acc 0.9360 Pr(EO) 0.992 | 13s
+  ep 25/30 | ce 0.007 reg 0.008 | val acc 0.9388 Pr(EO) 0.993 | 16s
+  ep 30/30 | ce 0.004 reg 0.008 | val acc 0.9410 Pr(EO) 0.995 | 19s
+    test acc 0.9478  Pr(EO) 0.994  one-hot 0.998  (19s)
+*** n=1000 ce_eo: val acc by lambda {0.01: 0.928600013256073, 0.03: 0.9315999746322632, 0.1: 0.9332000017166138, 0.3: 0.9399999976158142, 1.0: 0.9381999969482422, 3.0: 0.9409999847412109} -> lambda=3.0
+=== n1000_ce_ent_lam0.01_seed0
+  ep  1/30 | ce 0.725 reg 1.179 | val acc 0.9046 Pr(EO) 0.044 | 1s
+  ep  5/30 | ce 0.024 reg 0.083 | val acc 0.9104 Pr(EO) 0.204 | 3s
+  ep 10/30 | ce 0.010 reg 0.060 | val acc 0.9250 Pr(EO) 0.298 | 6s
+  ep 15/30 | ce 0.006 reg 0.052 | val acc 0.9186 Pr(EO) 0.334 | 9s
+  ep 20/30 | ce 0.001 reg 0.043 | val acc 0.9288 Pr(EO) 0.414 | 13s
+  ep 25/30 | ce 0.001 reg 0.038 | val acc 0.9308 Pr(EO) 0.464 | 16s
+  ep 30/30 | ce 0.000 reg 0.037 | val acc 0.9320 Pr(EO) 0.475 | 19s
+    test acc 0.9398  Pr(EO) 0.480  one-hot 0.803  (19s)
+=== n1000_ce_ent_lam0.03_seed0
+  ep  1/30 | ce 0.724 reg 1.177 | val acc 0.9050 Pr(EO) 0.045 | 1s
+  ep  5/30 | ce 0.014 reg 0.075 | val acc 0.9154 Pr(EO) 0.247 | 3s
+  ep 10/30 | ce 0.013 reg 0.060 | val acc 0.9266 Pr(EO) 0.297 | 6s
+  ep 15/30 | ce 0.006 reg 0.047 | val acc 0.9238 Pr(EO) 0.354 | 9s
+  ep 20/30 | ce 0.003 reg 0.036 | val acc 0.9296 Pr(EO) 0.454 | 12s
+  ep 25/30 | ce 0.001 reg 0.033 | val acc 0.9264 Pr(EO) 0.501 | 16s
+  ep 30/30 | ce 0.001 reg 0.031 | val acc 0.9316 Pr(EO) 0.518 | 19s
+    test acc 0.9406  Pr(EO) 0.522  one-hot 0.801  (19s)
+=== n1000_ce_ent_lam0.1_seed0
+  ep  1/30 | ce 0.723 reg 1.171 | val acc 0.9060 Pr(EO) 0.047 | 1s
+  ep  5/30 | ce 0.023 reg 0.066 | val acc 0.9150 Pr(EO) 0.237 | 3s
+  ep 10/30 | ce 0.012 reg 0.044 | val acc 0.9280 Pr(EO) 0.376 | 6s
+  ep 15/30 | ce 0.006 reg 0.036 | val acc 0.9228 Pr(EO) 0.459 | 11s
+  ep 20/30 | ce 0.004 reg 0.028 | val acc 0.9282 Pr(EO) 0.528 | 14s
+  ep 25/30 | ce 0.002 reg 0.024 | val acc 0.9308 Pr(EO) 0.601 | 18s
+  ep 30/30 | ce 0.001 reg 0.023 | val acc 0.9336 Pr(EO) 0.629 | 21s
+    test acc 0.9453  Pr(EO) 0.632  one-hot 0.828  (21s)
+=== n1000_ce_ent_lam0.3_seed0
+  ep  1/30 | ce 0.719 reg 1.157 | val acc 0.9054 Pr(EO) 0.052 | 1s
+  ep  5/30 | ce 0.027 reg 0.052 | val acc 0.9202 Pr(EO) 0.328 | 3s
+  ep 10/30 | ce 0.012 reg 0.031 | val acc 0.9202 Pr(EO) 0.521 | 6s
+  ep 15/30 | ce 0.007 reg 0.024 | val acc 0.9246 Pr(EO) 0.602 | 9s
+  ep 20/30 | ce 0.004 reg 0.020 | val acc 0.9312 Pr(EO) 0.680 | 12s
+  ep 25/30 | ce 0.002 reg 0.015 | val acc 0.9346 Pr(EO) 0.767 | 16s
+  ep 30/30 | ce 0.001 reg 0.014 | val acc 0.9390 Pr(EO) 0.781 | 19s
+    test acc 0.9472  Pr(EO) 0.784  one-hot 0.878  (19s)
+=== n1000_ce_ent_lam1.0_seed0
+  ep  1/30 | ce 0.710 reg 1.117 | val acc 0.9080 Pr(EO) 0.068 | 1s
+  ep  5/30 | ce 0.045 reg 0.035 | val acc 0.9164 Pr(EO) 0.468 | 3s
+  ep 10/30 | ce 0.027 reg 0.022 | val acc 0.9256 Pr(EO) 0.633 | 6s
+  ep 15/30 | ce 0.019 reg 0.016 | val acc 0.9316 Pr(EO) 0.705 | 9s
+  ep 20/30 | ce 0.007 reg 0.012 | val acc 0.9318 Pr(EO) 0.835 | 12s
+  ep 25/30 | ce 0.005 reg 0.010 | val acc 0.9336 Pr(EO) 0.863 | 16s
+  ep 30/30 | ce 0.001 reg 0.009 | val acc 0.9376 Pr(EO) 0.877 | 19s
+    test acc 0.9465  Pr(EO) 0.883  one-hot 0.908  (19s)
+=== n1000_ce_ent_lam3.0_seed0
+  ep  1/30 | ce 0.696 reg 1.045 | val acc 0.9148 Pr(EO) 0.109 | 1s
+  ep  5/30 | ce 0.069 reg 0.024 | val acc 0.9072 Pr(EO) 0.669 | 3s
+  ep 10/30 | ce 0.045 reg 0.016 | val acc 0.9262 Pr(EO) 0.677 | 6s
+  ep 15/30 | ce 0.020 reg 0.011 | val acc 0.9296 Pr(EO) 0.820 | 9s
+  ep 20/30 | ce 0.015 reg 0.008 | val acc 0.9280 Pr(EO) 0.885 | 12s
+  ep 25/30 | ce 0.005 reg 0.007 | val acc 0.9330 Pr(EO) 0.902 | 15s
+  ep 30/30 | ce 0.003 reg 0.006 | val acc 0.9348 Pr(EO) 0.908 | 19s
+    test acc 0.9449  Pr(EO) 0.909  one-hot 0.922  (19s)
+*** n=1000 ce_ent: val acc by lambda {0.01: 0.9319999814033508, 0.03: 0.9315999746322632, 0.1: 0.9336000084877014, 0.3: 0.9390000104904175, 1.0: 0.9376000165939331, 3.0: 0.9348000288009644} -> lambda=0.3
+=== n100_ce_seed0
+  ep  1/30 | ce 0.442 reg 0.000 | val acc 0.7652 Pr(EO) 0.025 | 1s
+  ep  5/30 | ce 0.003 reg 0.000 | val acc 0.7864 Pr(EO) 0.120 | 3s
+  ep 10/30 | ce 0.007 reg 0.000 | val acc 0.7378 Pr(EO) 0.131 | 6s
+  ep 15/30 | ce 0.001 reg 0.000 | val acc 0.7724 Pr(EO) 0.204 | 9s
+  ep 20/30 | ce 0.000 reg 0.000 | val acc 0.7764 Pr(EO) 0.245 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.7816 Pr(EO) 0.253 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.7814 Pr(EO) 0.257 | 18s
+    test acc 0.7884  Pr(EO) 0.256  one-hot 0.607  (18s)
+=== n100_ce_eo_lam0.1_seed0
+  ep  1/30 | ce 0.441 reg 3.934 | val acc 0.7800 Pr(EO) 0.165 | 1s
+  ep  5/30 | ce 0.011 reg 0.102 | val acc 0.7832 Pr(EO) 0.901 | 3s
+  ep 10/30 | ce 0.004 reg 0.065 | val acc 0.8170 Pr(EO) 0.946 | 6s
+  ep 15/30 | ce 0.001 reg 0.045 | val acc 0.8310 Pr(EO) 0.961 | 9s
+  ep 20/30 | ce 0.001 reg 0.037 | val acc 0.8232 Pr(EO) 0.966 | 13s
+  ep 25/30 | ce 0.000 reg 0.032 | val acc 0.8404 Pr(EO) 0.972 | 16s
+  ep 30/30 | ce 0.000 reg 0.031 | val acc 0.8398 Pr(EO) 0.972 | 19s
+    test acc 0.8400  Pr(EO) 0.971  one-hot 0.992  (19s)
+=== n100_ce_ent_lam0.3_seed0
+  ep  1/30 | ce 0.440 reg 1.226 | val acc 0.8204 Pr(EO) 0.037 | 1s
+  ep  5/30 | ce 0.014 reg 0.053 | val acc 0.8100 Pr(EO) 0.414 | 3s
+  ep 10/30 | ce 0.004 reg 0.029 | val acc 0.8230 Pr(EO) 0.640 | 6s
+  ep 15/30 | ce 0.003 reg 0.025 | val acc 0.8080 Pr(EO) 0.682 | 9s
+  ep 20/30 | ce 0.002 reg 0.018 | val acc 0.8276 Pr(EO) 0.776 | 12s
+  ep 25/30 | ce 0.000 reg 0.016 | val acc 0.8318 Pr(EO) 0.808 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.8338 Pr(EO) 0.819 | 19s
+    test acc 0.8369  Pr(EO) 0.818  one-hot 0.853  (19s)
+=== n500_ce_seed0
+  ep  1/30 | ce 0.671 reg 0.000 | val acc 0.8902 Pr(EO) 0.042 | 1s
+  ep  5/30 | ce 0.010 reg 0.000 | val acc 0.8912 Pr(EO) 0.194 | 3s
+  ep 10/30 | ce 0.009 reg 0.000 | val acc 0.8886 Pr(EO) 0.257 | 6s
+  ep 15/30 | ce 0.005 reg 0.000 | val acc 0.8898 Pr(EO) 0.306 | 9s
+  ep 20/30 | ce 0.001 reg 0.000 | val acc 0.8960 Pr(EO) 0.331 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.9002 Pr(EO) 0.366 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.9002 Pr(EO) 0.372 | 18s
+    test acc 0.9104  Pr(EO) 0.374  one-hot 0.743  (18s)
+=== n500_ce_eo_lam1.0_seed0
+  ep  1/30 | ce 0.671 reg 2.820 | val acc 0.8940 Pr(EO) 0.726 | 1s
+  ep  5/30 | ce 0.032 reg 0.046 | val acc 0.8934 Pr(EO) 0.966 | 3s
+  ep 10/30 | ce 0.021 reg 0.028 | val acc 0.9200 Pr(EO) 0.978 | 6s
+  ep 15/30 | ce 0.013 reg 0.021 | val acc 0.9062 Pr(EO) 0.982 | 9s
+  ep 20/30 | ce 0.006 reg 0.015 | val acc 0.9192 Pr(EO) 0.986 | 12s
+  ep 25/30 | ce 0.001 reg 0.013 | val acc 0.9262 Pr(EO) 0.989 | 16s
+  ep 30/30 | ce 0.001 reg 0.012 | val acc 0.9292 Pr(EO) 0.990 | 19s
+    test acc 0.9351  Pr(EO) 0.991  one-hot 0.998  (19s)
+=== n500_ce_ent_lam0.3_seed0
+  ep  1/30 | ce 0.666 reg 1.166 | val acc 0.8936 Pr(EO) 0.051 | 1s
+  ep  5/30 | ce 0.020 reg 0.051 | val acc 0.8892 Pr(EO) 0.399 | 3s
+  ep 10/30 | ce 0.017 reg 0.036 | val acc 0.9012 Pr(EO) 0.519 | 6s
+  ep 15/30 | ce 0.009 reg 0.024 | val acc 0.9082 Pr(EO) 0.625 | 9s
+  ep 20/30 | ce 0.003 reg 0.020 | val acc 0.9088 Pr(EO) 0.740 | 13s
+  ep 25/30 | ce 0.002 reg 0.016 | val acc 0.9136 Pr(EO) 0.790 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.9182 Pr(EO) 0.804 | 19s
+    test acc 0.9281  Pr(EO) 0.809  one-hot 0.871  (19s)
+=== n1000_ce_seed0
+  ep  1/30 | ce 0.725 reg 0.000 | val acc 0.9052 Pr(EO) 0.044 | 1s
+  ep  5/30 | ce 0.020 reg 0.000 | val acc 0.9136 Pr(EO) 0.216 | 3s
+  ep 10/30 | ce 0.009 reg 0.000 | val acc 0.9270 Pr(EO) 0.283 | 6s
+  ep 15/30 | ce 0.004 reg 0.000 | val acc 0.9280 Pr(EO) 0.355 | 9s
+  ep 20/30 | ce 0.004 reg 0.000 | val acc 0.9278 Pr(EO) 0.386 | 12s
+  ep 25/30 | ce 0.001 reg 0.000 | val acc 0.9308 Pr(EO) 0.413 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.9312 Pr(EO) 0.425 | 18s
+    test acc 0.9392  Pr(EO) 0.430  one-hot 0.777  (18s)
+=== n1000_ce_eo_lam3.0_seed0
+  ep  1/30 | ce 0.745 reg 2.335 | val acc 0.9096 Pr(EO) 0.804 | 1s
+  ep  5/30 | ce 0.064 reg 0.032 | val acc 0.9174 Pr(EO) 0.977 | 3s
+  ep 10/30 | ce 0.037 reg 0.018 | val acc 0.9322 Pr(EO) 0.986 | 6s
+  ep 15/30 | ce 0.025 reg 0.013 | val acc 0.9332 Pr(EO) 0.990 | 9s
+  ep 20/30 | ce 0.016 reg 0.011 | val acc 0.9360 Pr(EO) 0.992 | 13s
+  ep 25/30 | ce 0.007 reg 0.008 | val acc 0.9388 Pr(EO) 0.993 | 16s
+  ep 30/30 | ce 0.004 reg 0.008 | val acc 0.9410 Pr(EO) 0.995 | 19s
+    test acc 0.9478  Pr(EO) 0.994  one-hot 0.998  (19s)
+=== n1000_ce_ent_lam0.3_seed0
+  ep  1/30 | ce 0.719 reg 1.157 | val acc 0.9054 Pr(EO) 0.052 | 1s
+  ep  5/30 | ce 0.027 reg 0.052 | val acc 0.9202 Pr(EO) 0.328 | 3s
+  ep 10/30 | ce 0.012 reg 0.031 | val acc 0.9202 Pr(EO) 0.521 | 6s
+  ep 15/30 | ce 0.007 reg 0.024 | val acc 0.9246 Pr(EO) 0.602 | 9s
+  ep 20/30 | ce 0.004 reg 0.020 | val acc 0.9312 Pr(EO) 0.680 | 13s
+  ep 25/30 | ce 0.002 reg 0.015 | val acc 0.9346 Pr(EO) 0.767 | 16s
+  ep 30/30 | ce 0.001 reg 0.014 | val acc 0.9390 Pr(EO) 0.781 | 19s
+    test acc 0.9472  Pr(EO) 0.784  one-hot 0.878  (19s)
+=== nall_ce_seed0
+  ep  1/30 | ce 0.843 reg 0.000 | val acc 0.9272 Pr(EO) 0.036 | 1s
+  ep  5/30 | ce 0.164 reg 0.000 | val acc 0.9660 Pr(EO) 0.086 | 3s
+  ep 10/30 | ce 0.105 reg 0.000 | val acc 0.9756 Pr(EO) 0.144 | 6s
+  ep 15/30 | ce 0.078 reg 0.000 | val acc 0.9786 Pr(EO) 0.185 | 9s
+  ep 20/30 | ce 0.056 reg 0.000 | val acc 0.9828 Pr(EO) 0.239 | 12s
+  ep 25/30 | ce 0.036 reg 0.000 | val acc 0.9870 Pr(EO) 0.288 | 15s
+  ep 30/30 | ce 0.032 reg 0.000 | val acc 0.9880 Pr(EO) 0.298 | 18s
+    test acc 0.9884  Pr(EO) 0.296  one-hot 0.494  (18s)
+=== n100_ce_seed1
+  ep  1/30 | ce 0.430 reg 0.000 | val acc 0.7172 Pr(EO) 0.032 | 1s
+  ep  5/30 | ce 0.000 reg 0.000 | val acc 0.7206 Pr(EO) 0.148 | 3s
+  ep 10/30 | ce 0.015 reg 0.000 | val acc 0.7062 Pr(EO) 0.185 | 6s
+  ep 15/30 | ce 0.000 reg 0.000 | val acc 0.7346 Pr(EO) 0.241 | 9s
+  ep 20/30 | ce 0.000 reg 0.000 | val acc 0.7388 Pr(EO) 0.261 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.7382 Pr(EO) 0.271 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.7434 Pr(EO) 0.273 | 18s
+    test acc 0.7581  Pr(EO) 0.275  one-hot 0.653  (18s)
+=== n100_ce_eo_lam0.1_seed1
+  ep  1/30 | ce 0.429 reg 3.586 | val acc 0.7262 Pr(EO) 0.173 | 1s
+  ep  5/30 | ce 0.008 reg 0.109 | val acc 0.7694 Pr(EO) 0.898 | 3s
+  ep 10/30 | ce 0.005 reg 0.070 | val acc 0.7618 Pr(EO) 0.938 | 6s
+  ep 15/30 | ce 0.000 reg 0.046 | val acc 0.7608 Pr(EO) 0.953 | 9s
+  ep 20/30 | ce 0.002 reg 0.038 | val acc 0.7644 Pr(EO) 0.963 | 13s
+  ep 25/30 | ce 0.000 reg 0.034 | val acc 0.7712 Pr(EO) 0.967 | 16s
+  ep 30/30 | ce 0.000 reg 0.033 | val acc 0.7780 Pr(EO) 0.969 | 19s
+    test acc 0.7871  Pr(EO) 0.971  one-hot 0.992  (19s)
+=== n100_ce_ent_lam0.3_seed1
+  ep  1/30 | ce 0.428 reg 1.224 | val acc 0.7468 Pr(EO) 0.046 | 1s
+  ep  5/30 | ce 0.008 reg 0.048 | val acc 0.7446 Pr(EO) 0.435 | 3s
+  ep 10/30 | ce 0.005 reg 0.030 | val acc 0.7468 Pr(EO) 0.562 | 6s
+  ep 15/30 | ce 0.008 reg 0.023 | val acc 0.7632 Pr(EO) 0.612 | 9s
+  ep 20/30 | ce 0.003 reg 0.017 | val acc 0.7542 Pr(EO) 0.763 | 12s
+  ep 25/30 | ce 0.000 reg 0.015 | val acc 0.7682 Pr(EO) 0.786 | 15s
+  ep 30/30 | ce 0.001 reg 0.013 | val acc 0.7664 Pr(EO) 0.794 | 19s
+    test acc 0.7785  Pr(EO) 0.799  one-hot 0.840  (19s)
+=== n500_ce_seed1
+  ep  1/30 | ce 0.650 reg 0.000 | val acc 0.8774 Pr(EO) 0.059 | 1s
+  ep  5/30 | ce 0.013 reg 0.000 | val acc 0.8720 Pr(EO) 0.238 | 3s
+  ep 10/30 | ce 0.004 reg 0.000 | val acc 0.8892 Pr(EO) 0.299 | 6s
+  ep 15/30 | ce 0.003 reg 0.000 | val acc 0.8882 Pr(EO) 0.354 | 9s
+  ep 20/30 | ce 0.002 reg 0.000 | val acc 0.8902 Pr(EO) 0.382 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.8874 Pr(EO) 0.398 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.8892 Pr(EO) 0.412 | 18s
+    test acc 0.9076  Pr(EO) 0.424  one-hot 0.762  (18s)
+=== n500_ce_eo_lam1.0_seed1
+  ep  1/30 | ce 0.649 reg 2.601 | val acc 0.8836 Pr(EO) 0.726 | 1s
+  ep  5/30 | ce 0.038 reg 0.049 | val acc 0.9062 Pr(EO) 0.965 | 3s
+  ep 10/30 | ce 0.023 reg 0.029 | val acc 0.9120 Pr(EO) 0.977 | 6s
+  ep 15/30 | ce 0.017 reg 0.020 | val acc 0.9038 Pr(EO) 0.983 | 9s
+  ep 20/30 | ce 0.009 reg 0.016 | val acc 0.9136 Pr(EO) 0.988 | 12s
+  ep 25/30 | ce 0.001 reg 0.012 | val acc 0.9216 Pr(EO) 0.989 | 16s
+  ep 30/30 | ce 0.002 reg 0.012 | val acc 0.9204 Pr(EO) 0.989 | 19s
+    test acc 0.9322  Pr(EO) 0.991  one-hot 0.998  (19s)
+=== n500_ce_ent_lam0.3_seed1
+  ep  1/30 | ce 0.645 reg 1.160 | val acc 0.8828 Pr(EO) 0.070 | 1s
+  ep  5/30 | ce 0.021 reg 0.054 | val acc 0.9000 Pr(EO) 0.416 | 3s
+  ep 10/30 | ce 0.012 reg 0.034 | val acc 0.9014 Pr(EO) 0.545 | 6s
+  ep 15/30 | ce 0.005 reg 0.025 | val acc 0.9006 Pr(EO) 0.676 | 9s
+  ep 20/30 | ce 0.004 reg 0.021 | val acc 0.9080 Pr(EO) 0.719 | 12s
+  ep 25/30 | ce 0.001 reg 0.016 | val acc 0.9168 Pr(EO) 0.796 | 15s
+  ep 30/30 | ce 0.002 reg 0.015 | val acc 0.9190 Pr(EO) 0.807 | 19s
+    test acc 0.9292  Pr(EO) 0.822  one-hot 0.875  (19s)
+=== n1000_ce_seed1
+  ep  1/30 | ce 0.735 reg 0.000 | val acc 0.8946 Pr(EO) 0.058 | 1s
+  ep  5/30 | ce 0.024 reg 0.000 | val acc 0.9134 Pr(EO) 0.213 | 3s
+  ep 10/30 | ce 0.010 reg 0.000 | val acc 0.9130 Pr(EO) 0.295 | 6s
+  ep 15/30 | ce 0.003 reg 0.000 | val acc 0.9260 Pr(EO) 0.384 | 9s
+  ep 20/30 | ce 0.002 reg 0.000 | val acc 0.9244 Pr(EO) 0.434 | 12s
+  ep 25/30 | ce 0.001 reg 0.000 | val acc 0.9244 Pr(EO) 0.436 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.9278 Pr(EO) 0.454 | 18s
+    test acc 0.9386  Pr(EO) 0.468  one-hot 0.790  (18s)
+=== n1000_ce_eo_lam3.0_seed1
+  ep  1/30 | ce 0.752 reg 2.152 | val acc 0.9026 Pr(EO) 0.794 | 1s
+  ep  5/30 | ce 0.066 reg 0.033 | val acc 0.9264 Pr(EO) 0.976 | 3s
+  ep 10/30 | ce 0.038 reg 0.019 | val acc 0.9342 Pr(EO) 0.987 | 6s
+  ep 15/30 | ce 0.033 reg 0.014 | val acc 0.9368 Pr(EO) 0.990 | 9s
+  ep 20/30 | ce 0.020 reg 0.011 | val acc 0.9350 Pr(EO) 0.991 | 13s
+  ep 25/30 | ce 0.007 reg 0.009 | val acc 0.9422 Pr(EO) 0.992 | 16s
+  ep 30/30 | ce 0.004 reg 0.008 | val acc 0.9436 Pr(EO) 0.993 | 19s
+    test acc 0.9515  Pr(EO) 0.995  one-hot 0.999  (19s)
+=== n1000_ce_ent_lam0.3_seed1
+  ep  1/30 | ce 0.730 reg 1.173 | val acc 0.8968 Pr(EO) 0.067 | 1s
+  ep  5/30 | ce 0.029 reg 0.055 | val acc 0.9208 Pr(EO) 0.342 | 3s
+  ep 10/30 | ce 0.013 reg 0.034 | val acc 0.9260 Pr(EO) 0.566 | 6s
+  ep 15/30 | ce 0.011 reg 0.026 | val acc 0.9244 Pr(EO) 0.655 | 9s
+  ep 20/30 | ce 0.007 reg 0.021 | val acc 0.9330 Pr(EO) 0.713 | 12s
+  ep 25/30 | ce 0.002 reg 0.017 | val acc 0.9334 Pr(EO) 0.752 | 16s
+  ep 30/30 | ce 0.001 reg 0.016 | val acc 0.9366 Pr(EO) 0.771 | 19s
+    test acc 0.9465  Pr(EO) 0.783  one-hot 0.869  (19s)
+=== nall_ce_seed1
+  ep  1/30 | ce 0.859 reg 0.000 | val acc 0.9244 Pr(EO) 0.050 | 1s
+  ep  5/30 | ce 0.164 reg 0.000 | val acc 0.9670 Pr(EO) 0.090 | 3s
+  ep 10/30 | ce 0.107 reg 0.000 | val acc 0.9754 Pr(EO) 0.162 | 6s
+  ep 15/30 | ce 0.080 reg 0.000 | val acc 0.9798 Pr(EO) 0.213 | 9s
+  ep 20/30 | ce 0.057 reg 0.000 | val acc 0.9836 Pr(EO) 0.292 | 12s
+  ep 25/30 | ce 0.037 reg 0.000 | val acc 0.9856 Pr(EO) 0.334 | 15s
+  ep 30/30 | ce 0.030 reg 0.000 | val acc 0.9868 Pr(EO) 0.350 | 18s
+    test acc 0.9887  Pr(EO) 0.347  one-hot 0.568  (18s)
+=== n100_ce_seed2
+  ep  1/30 | ce 0.443 reg 0.000 | val acc 0.7502 Pr(EO) 0.020 | 1s
+  ep  5/30 | ce 0.001 reg 0.000 | val acc 0.7450 Pr(EO) 0.101 | 3s
+  ep 10/30 | ce 0.001 reg 0.000 | val acc 0.7436 Pr(EO) 0.165 | 6s
+  ep 15/30 | ce 0.001 reg 0.000 | val acc 0.7402 Pr(EO) 0.188 | 9s
+  ep 20/30 | ce 0.000 reg 0.000 | val acc 0.7464 Pr(EO) 0.225 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.7550 Pr(EO) 0.238 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.7562 Pr(EO) 0.243 | 18s
+    test acc 0.7781  Pr(EO) 0.251  one-hot 0.642  (18s)
+=== n100_ce_eo_lam0.1_seed2
+  ep  1/30 | ce 0.442 reg 4.105 | val acc 0.7608 Pr(EO) 0.150 | 1s
+  ep  5/30 | ce 0.002 reg 0.093 | val acc 0.7926 Pr(EO) 0.929 | 3s
+  ep 10/30 | ce 0.003 reg 0.067 | val acc 0.7852 Pr(EO) 0.940 | 6s
+  ep 15/30 | ce 0.001 reg 0.047 | val acc 0.8004 Pr(EO) 0.955 | 9s
+  ep 20/30 | ce 0.002 reg 0.037 | val acc 0.8142 Pr(EO) 0.964 | 13s
+  ep 25/30 | ce 0.000 reg 0.033 | val acc 0.8186 Pr(EO) 0.969 | 16s
+  ep 30/30 | ce 0.000 reg 0.031 | val acc 0.8224 Pr(EO) 0.971 | 19s
+    test acc 0.8393  Pr(EO) 0.974  one-hot 0.993  (19s)
+=== n100_ce_ent_lam0.3_seed2
+  ep  1/30 | ce 0.441 reg 1.227 | val acc 0.7896 Pr(EO) 0.029 | 1s
+  ep  5/30 | ce 0.009 reg 0.048 | val acc 0.7670 Pr(EO) 0.359 | 3s
+  ep 10/30 | ce 0.008 reg 0.033 | val acc 0.7640 Pr(EO) 0.543 | 6s
+  ep 15/30 | ce 0.005 reg 0.022 | val acc 0.7700 Pr(EO) 0.665 | 10s
+  ep 20/30 | ce 0.003 reg 0.017 | val acc 0.7776 Pr(EO) 0.751 | 13s
+  ep 25/30 | ce 0.000 reg 0.015 | val acc 0.8054 Pr(EO) 0.800 | 16s
+  ep 30/30 | ce 0.000 reg 0.013 | val acc 0.8086 Pr(EO) 0.809 | 19s
+    test acc 0.8213  Pr(EO) 0.810  one-hot 0.854  (19s)
+=== n500_ce_seed2
+  ep  1/30 | ce 0.658 reg 0.000 | val acc 0.8824 Pr(EO) 0.037 | 1s
+  ep  5/30 | ce 0.013 reg 0.000 | val acc 0.8836 Pr(EO) 0.177 | 3s
+  ep 10/30 | ce 0.005 reg 0.000 | val acc 0.8740 Pr(EO) 0.252 | 6s
+  ep 15/30 | ce 0.004 reg 0.000 | val acc 0.8884 Pr(EO) 0.286 | 9s
+  ep 20/30 | ce 0.001 reg 0.000 | val acc 0.8874 Pr(EO) 0.324 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.8974 Pr(EO) 0.349 | 15s
+  ep 30/30 | ce 0.001 reg 0.000 | val acc 0.8972 Pr(EO) 0.358 | 18s
+    test acc 0.9087  Pr(EO) 0.368  one-hot 0.755  (18s)
+=== n500_ce_eo_lam1.0_seed2
+  ep  1/30 | ce 0.660 reg 2.933 | val acc 0.8944 Pr(EO) 0.717 | 1s
+  ep  5/30 | ce 0.035 reg 0.047 | val acc 0.8944 Pr(EO) 0.965 | 3s
+  ep 10/30 | ce 0.015 reg 0.027 | val acc 0.9024 Pr(EO) 0.980 | 6s
+  ep 15/30 | ce 0.010 reg 0.019 | val acc 0.9036 Pr(EO) 0.984 | 9s
+  ep 20/30 | ce 0.010 reg 0.016 | val acc 0.9052 Pr(EO) 0.987 | 12s
+  ep 25/30 | ce 0.003 reg 0.013 | val acc 0.9138 Pr(EO) 0.989 | 16s
+  ep 30/30 | ce 0.000 reg 0.012 | val acc 0.9166 Pr(EO) 0.989 | 19s
+    test acc 0.9231  Pr(EO) 0.990  one-hot 0.997  (19s)
+=== n500_ce_ent_lam0.3_seed2
+  ep  1/30 | ce 0.654 reg 1.162 | val acc 0.8894 Pr(EO) 0.043 | 1s
+  ep  5/30 | ce 0.023 reg 0.052 | val acc 0.8914 Pr(EO) 0.324 | 3s
+  ep 10/30 | ce 0.008 reg 0.033 | val acc 0.8948 Pr(EO) 0.539 | 6s
+  ep 15/30 | ce 0.006 reg 0.027 | val acc 0.9054 Pr(EO) 0.607 | 9s
+  ep 20/30 | ce 0.003 reg 0.020 | val acc 0.9046 Pr(EO) 0.687 | 12s
+  ep 25/30 | ce 0.001 reg 0.017 | val acc 0.9138 Pr(EO) 0.757 | 16s
+  ep 30/30 | ce 0.001 reg 0.016 | val acc 0.9146 Pr(EO) 0.775 | 19s
+    test acc 0.9217  Pr(EO) 0.783  one-hot 0.863  (19s)
+=== n1000_ce_seed2
+  ep  1/30 | ce 0.743 reg 0.000 | val acc 0.9028 Pr(EO) 0.033 | 1s
+  ep  5/30 | ce 0.021 reg 0.000 | val acc 0.9220 Pr(EO) 0.182 | 3s
+  ep 10/30 | ce 0.008 reg 0.000 | val acc 0.9196 Pr(EO) 0.249 | 6s
+  ep 15/30 | ce 0.009 reg 0.000 | val acc 0.9240 Pr(EO) 0.265 | 9s
+  ep 20/30 | ce 0.002 reg 0.000 | val acc 0.9314 Pr(EO) 0.352 | 12s
+  ep 25/30 | ce 0.001 reg 0.000 | val acc 0.9308 Pr(EO) 0.378 | 15s
+  ep 30/30 | ce 0.001 reg 0.000 | val acc 0.9338 Pr(EO) 0.383 | 18s
+    test acc 0.9410  Pr(EO) 0.396  one-hot 0.743  (18s)
+=== n1000_ce_eo_lam3.0_seed2
+  ep  1/30 | ce 0.767 reg 2.430 | val acc 0.9142 Pr(EO) 0.789 | 1s
+  ep  5/30 | ce 0.066 reg 0.034 | val acc 0.9272 Pr(EO) 0.977 | 3s
+  ep 10/30 | ce 0.034 reg 0.019 | val acc 0.9340 Pr(EO) 0.986 | 6s
+  ep 15/30 | ce 0.026 reg 0.015 | val acc 0.9402 Pr(EO) 0.989 | 9s
+  ep 20/30 | ce 0.019 reg 0.011 | val acc 0.9408 Pr(EO) 0.992 | 13s
+  ep 25/30 | ce 0.005 reg 0.008 | val acc 0.9464 Pr(EO) 0.992 | 16s
+  ep 30/30 | ce 0.003 reg 0.008 | val acc 0.9462 Pr(EO) 0.993 | 19s
+    test acc 0.9494  Pr(EO) 0.994  one-hot 0.999  (19s)
+=== n1000_ce_ent_lam0.3_seed2
+  ep  1/30 | ce 0.737 reg 1.173 | val acc 0.9082 Pr(EO) 0.039 | 1s
+  ep  5/30 | ce 0.033 reg 0.056 | val acc 0.9270 Pr(EO) 0.321 | 3s
+  ep 10/30 | ce 0.018 reg 0.034 | val acc 0.9318 Pr(EO) 0.442 | 6s
+  ep 15/30 | ce 0.010 reg 0.027 | val acc 0.9280 Pr(EO) 0.562 | 9s
+  ep 20/30 | ce 0.005 reg 0.020 | val acc 0.9384 Pr(EO) 0.677 | 13s
+  ep 25/30 | ce 0.002 reg 0.016 | val acc 0.9410 Pr(EO) 0.731 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.9452 Pr(EO) 0.749 | 19s
+    test acc 0.9501  Pr(EO) 0.759  one-hot 0.867  (19s)
+=== nall_ce_seed2
+  ep  1/30 | ce 0.860 reg 0.000 | val acc 0.9350 Pr(EO) 0.025 | 1s
+  ep  5/30 | ce 0.165 reg 0.000 | val acc 0.9644 Pr(EO) 0.057 | 3s
+  ep 10/30 | ce 0.102 reg 0.000 | val acc 0.9768 Pr(EO) 0.124 | 6s
+  ep 15/30 | ce 0.083 reg 0.000 | val acc 0.9792 Pr(EO) 0.159 | 9s
+  ep 20/30 | ce 0.054 reg 0.000 | val acc 0.9828 Pr(EO) 0.212 | 12s
+  ep 25/30 | ce 0.038 reg 0.000 | val acc 0.9866 Pr(EO) 0.235 | 15s
+  ep 30/30 | ce 0.026 reg 0.000 | val acc 0.9870 Pr(EO) 0.266 | 18s
+    test acc 0.9871  Pr(EO) 0.266  one-hot 0.469  (18s)
+=== n100_ce_seed3
+  ep  1/30 | ce 0.456 reg 0.000 | val acc 0.6994 Pr(EO) 0.025 | 1s
+  ep  5/30 | ce 0.002 reg 0.000 | val acc 0.6928 Pr(EO) 0.106 | 3s
+  ep 10/30 | ce 0.002 reg 0.000 | val acc 0.7154 Pr(EO) 0.178 | 6s
+  ep 15/30 | ce 0.001 reg 0.000 | val acc 0.6948 Pr(EO) 0.198 | 9s
+  ep 20/30 | ce 0.000 reg 0.000 | val acc 0.7068 Pr(EO) 0.222 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.7094 Pr(EO) 0.239 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.7094 Pr(EO) 0.241 | 18s
+    test acc 0.7316  Pr(EO) 0.252  one-hot 0.619  (18s)
+=== n100_ce_eo_lam0.1_seed3
+  ep  1/30 | ce 0.456 reg 3.867 | val acc 0.7086 Pr(EO) 0.160 | 1s
+  ep  5/30 | ce 0.006 reg 0.108 | val acc 0.7226 Pr(EO) 0.897 | 3s
+  ep 10/30 | ce 0.003 reg 0.066 | val acc 0.7380 Pr(EO) 0.939 | 6s
+  ep 15/30 | ce 0.001 reg 0.052 | val acc 0.7502 Pr(EO) 0.951 | 9s
+  ep 20/30 | ce 0.002 reg 0.037 | val acc 0.7560 Pr(EO) 0.964 | 12s
+  ep 25/30 | ce 0.001 reg 0.032 | val acc 0.7696 Pr(EO) 0.969 | 16s
+  ep 30/30 | ce 0.000 reg 0.032 | val acc 0.7724 Pr(EO) 0.970 | 19s
+    test acc 0.7842  Pr(EO) 0.969  one-hot 0.991  (19s)
+=== n100_ce_ent_lam0.3_seed3
+  ep  1/30 | ce 0.455 reg 1.253 | val acc 0.7356 Pr(EO) 0.034 | 1s
+  ep  5/30 | ce 0.014 reg 0.057 | val acc 0.7600 Pr(EO) 0.380 | 3s
+  ep 10/30 | ce 0.005 reg 0.030 | val acc 0.7736 Pr(EO) 0.625 | 6s
+  ep 15/30 | ce 0.002 reg 0.023 | val acc 0.7596 Pr(EO) 0.660 | 9s
+  ep 20/30 | ce 0.001 reg 0.017 | val acc 0.7692 Pr(EO) 0.761 | 12s
+  ep 25/30 | ce 0.000 reg 0.015 | val acc 0.7680 Pr(EO) 0.785 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.7728 Pr(EO) 0.792 | 19s
+    test acc 0.7891  Pr(EO) 0.802  one-hot 0.831  (19s)
+=== n500_ce_seed3
+  ep  1/30 | ce 0.667 reg 0.000 | val acc 0.8724 Pr(EO) 0.041 | 1s
+  ep  5/30 | ce 0.010 reg 0.000 | val acc 0.8760 Pr(EO) 0.219 | 3s
+  ep 10/30 | ce 0.009 reg 0.000 | val acc 0.8834 Pr(EO) 0.270 | 6s
+  ep 15/30 | ce 0.003 reg 0.000 | val acc 0.8854 Pr(EO) 0.321 | 9s
+  ep 20/30 | ce 0.002 reg 0.000 | val acc 0.8914 Pr(EO) 0.362 | 12s
+  ep 25/30 | ce 0.001 reg 0.000 | val acc 0.8914 Pr(EO) 0.391 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.8906 Pr(EO) 0.395 | 18s
+    test acc 0.9004  Pr(EO) 0.402  one-hot 0.757  (18s)
+=== n500_ce_eo_lam1.0_seed3
+  ep  1/30 | ce 0.668 reg 2.784 | val acc 0.8810 Pr(EO) 0.713 | 1s
+  ep  5/30 | ce 0.035 reg 0.048 | val acc 0.8856 Pr(EO) 0.961 | 3s
+  ep 10/30 | ce 0.013 reg 0.027 | val acc 0.9024 Pr(EO) 0.978 | 6s
+  ep 15/30 | ce 0.008 reg 0.021 | val acc 0.9076 Pr(EO) 0.982 | 9s
+  ep 20/30 | ce 0.006 reg 0.015 | val acc 0.9190 Pr(EO) 0.988 | 13s
+  ep 25/30 | ce 0.001 reg 0.012 | val acc 0.9200 Pr(EO) 0.989 | 16s
+  ep 30/30 | ce 0.001 reg 0.011 | val acc 0.9202 Pr(EO) 0.989 | 19s
+    test acc 0.9258  Pr(EO) 0.991  one-hot 0.998  (19s)
+=== n500_ce_ent_lam0.3_seed3
+  ep  1/30 | ce 0.662 reg 1.175 | val acc 0.8792 Pr(EO) 0.049 | 1s
+  ep  5/30 | ce 0.018 reg 0.053 | val acc 0.8814 Pr(EO) 0.395 | 3s
+  ep 10/30 | ce 0.014 reg 0.031 | val acc 0.8878 Pr(EO) 0.535 | 6s
+  ep 15/30 | ce 0.006 reg 0.024 | val acc 0.8986 Pr(EO) 0.656 | 9s
+  ep 20/30 | ce 0.002 reg 0.020 | val acc 0.9116 Pr(EO) 0.739 | 12s
+  ep 25/30 | ce 0.001 reg 0.016 | val acc 0.9108 Pr(EO) 0.788 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.9144 Pr(EO) 0.796 | 19s
+    test acc 0.9170  Pr(EO) 0.805  one-hot 0.869  (19s)
+=== n1000_ce_seed3
+  ep  1/30 | ce 0.732 reg 0.000 | val acc 0.9016 Pr(EO) 0.042 | 1s
+  ep  5/30 | ce 0.025 reg 0.000 | val acc 0.9070 Pr(EO) 0.192 | 3s
+  ep 10/30 | ce 0.009 reg 0.000 | val acc 0.9238 Pr(EO) 0.298 | 6s
+  ep 15/30 | ce 0.005 reg 0.000 | val acc 0.9264 Pr(EO) 0.343 | 9s
+  ep 20/30 | ce 0.002 reg 0.000 | val acc 0.9232 Pr(EO) 0.388 | 12s
+  ep 25/30 | ce 0.002 reg 0.000 | val acc 0.9288 Pr(EO) 0.417 | 15s
+  ep 30/30 | ce 0.001 reg 0.000 | val acc 0.9288 Pr(EO) 0.421 | 18s
+    test acc 0.9354  Pr(EO) 0.423  one-hot 0.784  (18s)
+=== n1000_ce_eo_lam3.0_seed3
+  ep  1/30 | ce 0.755 reg 2.307 | val acc 0.9068 Pr(EO) 0.790 | 1s
+  ep  5/30 | ce 0.065 reg 0.033 | val acc 0.9278 Pr(EO) 0.980 | 3s
+  ep 10/30 | ce 0.053 reg 0.020 | val acc 0.9256 Pr(EO) 0.985 | 6s
+  ep 15/30 | ce 0.025 reg 0.013 | val acc 0.9356 Pr(EO) 0.990 | 9s
+  ep 20/30 | ce 0.011 reg 0.010 | val acc 0.9342 Pr(EO) 0.989 | 13s
+  ep 25/30 | ce 0.007 reg 0.009 | val acc 0.9414 Pr(EO) 0.993 | 16s
+  ep 30/30 | ce 0.005 reg 0.008 | val acc 0.9410 Pr(EO) 0.993 | 19s
+    test acc 0.9481  Pr(EO) 0.994  one-hot 0.998  (19s)
+=== n1000_ce_ent_lam0.3_seed3
+  ep  1/30 | ce 0.727 reg 1.174 | val acc 0.9050 Pr(EO) 0.050 | 1s
+  ep  5/30 | ce 0.027 reg 0.051 | val acc 0.9054 Pr(EO) 0.338 | 3s
+  ep 10/30 | ce 0.026 reg 0.036 | val acc 0.9124 Pr(EO) 0.449 | 6s
+  ep 15/30 | ce 0.012 reg 0.029 | val acc 0.9278 Pr(EO) 0.568 | 9s
+  ep 20/30 | ce 0.003 reg 0.020 | val acc 0.9344 Pr(EO) 0.713 | 13s
+  ep 25/30 | ce 0.002 reg 0.015 | val acc 0.9430 Pr(EO) 0.785 | 16s
+  ep 30/30 | ce 0.001 reg 0.014 | val acc 0.9458 Pr(EO) 0.797 | 19s
+    test acc 0.9475  Pr(EO) 0.802  one-hot 0.879  (19s)
+=== nall_ce_seed3
+  ep  1/30 | ce 0.865 reg 0.000 | val acc 0.9282 Pr(EO) 0.032 | 1s
+  ep  5/30 | ce 0.165 reg 0.000 | val acc 0.9660 Pr(EO) 0.081 | 3s
+  ep 10/30 | ce 0.116 reg 0.000 | val acc 0.9734 Pr(EO) 0.133 | 6s
+  ep 15/30 | ce 0.079 reg 0.000 | val acc 0.9794 Pr(EO) 0.192 | 9s
+  ep 20/30 | ce 0.050 reg 0.000 | val acc 0.9838 Pr(EO) 0.266 | 12s
+  ep 25/30 | ce 0.036 reg 0.000 | val acc 0.9850 Pr(EO) 0.308 | 15s
+  ep 30/30 | ce 0.032 reg 0.000 | val acc 0.9866 Pr(EO) 0.330 | 18s
+    test acc 0.9890  Pr(EO) 0.329  one-hot 0.585  (18s)
+=== n100_ce_seed4
+  ep  1/30 | ce 0.422 reg 0.000 | val acc 0.7332 Pr(EO) 0.035 | 1s
+  ep  5/30 | ce 0.000 reg 0.000 | val acc 0.7384 Pr(EO) 0.149 | 3s
+  ep 10/30 | ce 0.001 reg 0.000 | val acc 0.7568 Pr(EO) 0.212 | 6s
+  ep 15/30 | ce 0.000 reg 0.000 | val acc 0.7660 Pr(EO) 0.248 | 9s
+  ep 20/30 | ce 0.000 reg 0.000 | val acc 0.7454 Pr(EO) 0.259 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.7460 Pr(EO) 0.274 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.7430 Pr(EO) 0.280 | 18s
+    test acc 0.7531  Pr(EO) 0.280  one-hot 0.684  (18s)
+=== n100_ce_eo_lam0.1_seed4
+  ep  1/30 | ce 0.421 reg 3.595 | val acc 0.7424 Pr(EO) 0.175 | 1s
+  ep  5/30 | ce 0.005 reg 0.094 | val acc 0.7526 Pr(EO) 0.922 | 3s
+  ep 10/30 | ce 0.005 reg 0.056 | val acc 0.7394 Pr(EO) 0.940 | 6s
+  ep 15/30 | ce 0.003 reg 0.052 | val acc 0.7500 Pr(EO) 0.955 | 9s
+  ep 20/30 | ce 0.001 reg 0.036 | val acc 0.7600 Pr(EO) 0.968 | 13s
+  ep 25/30 | ce 0.000 reg 0.030 | val acc 0.7630 Pr(EO) 0.972 | 16s
+  ep 30/30 | ce 0.000 reg 0.029 | val acc 0.7636 Pr(EO) 0.973 | 19s
+    test acc 0.7789  Pr(EO) 0.974  one-hot 0.993  (19s)
+=== n100_ce_ent_lam0.3_seed4
+  ep  1/30 | ce 0.421 reg 1.212 | val acc 0.7710 Pr(EO) 0.048 | 1s
+  ep  5/30 | ce 0.013 reg 0.051 | val acc 0.7338 Pr(EO) 0.453 | 3s
+  ep 10/30 | ce 0.003 reg 0.030 | val acc 0.7398 Pr(EO) 0.626 | 6s
+  ep 15/30 | ce 0.003 reg 0.021 | val acc 0.7334 Pr(EO) 0.713 | 9s
+  ep 20/30 | ce 0.003 reg 0.019 | val acc 0.7440 Pr(EO) 0.770 | 13s
+  ep 25/30 | ce 0.000 reg 0.015 | val acc 0.7406 Pr(EO) 0.816 | 16s
+  ep 30/30 | ce 0.000 reg 0.015 | val acc 0.7454 Pr(EO) 0.824 | 19s
+    test acc 0.7544  Pr(EO) 0.818  one-hot 0.849  (19s)
+=== n500_ce_seed4
+  ep  1/30 | ce 0.706 reg 0.000 | val acc 0.8916 Pr(EO) 0.061 | 1s
+  ep  5/30 | ce 0.016 reg 0.000 | val acc 0.8898 Pr(EO) 0.215 | 3s
+  ep 10/30 | ce 0.009 reg 0.000 | val acc 0.8896 Pr(EO) 0.294 | 6s
+  ep 15/30 | ce 0.003 reg 0.000 | val acc 0.9004 Pr(EO) 0.320 | 9s
+  ep 20/30 | ce 0.000 reg 0.000 | val acc 0.9080 Pr(EO) 0.385 | 12s
+  ep 25/30 | ce 0.000 reg 0.000 | val acc 0.9080 Pr(EO) 0.408 | 15s
+  ep 30/30 | ce 0.000 reg 0.000 | val acc 0.9046 Pr(EO) 0.412 | 18s
+    test acc 0.9155  Pr(EO) 0.420  one-hot 0.780  (18s)
+=== n500_ce_eo_lam1.0_seed4
+  ep  1/30 | ce 0.707 reg 2.612 | val acc 0.8974 Pr(EO) 0.726 | 1s
+  ep  5/30 | ce 0.028 reg 0.045 | val acc 0.9130 Pr(EO) 0.968 | 3s
+  ep 10/30 | ce 0.018 reg 0.028 | val acc 0.9130 Pr(EO) 0.979 | 6s
+  ep 15/30 | ce 0.016 reg 0.022 | val acc 0.9172 Pr(EO) 0.984 | 9s
+  ep 20/30 | ce 0.003 reg 0.016 | val acc 0.9278 Pr(EO) 0.987 | 13s
+  ep 25/30 | ce 0.002 reg 0.013 | val acc 0.9300 Pr(EO) 0.990 | 16s
+  ep 30/30 | ce 0.001 reg 0.012 | val acc 0.9340 Pr(EO) 0.990 | 19s
+    test acc 0.9340  Pr(EO) 0.989  one-hot 0.998  (19s)
+=== n500_ce_ent_lam0.3_seed4
+  ep  1/30 | ce 0.701 reg 1.187 | val acc 0.8962 Pr(EO) 0.071 | 1s
+  ep  5/30 | ce 0.023 reg 0.055 | val acc 0.9060 Pr(EO) 0.412 | 3s
+  ep 10/30 | ce 0.015 reg 0.035 | val acc 0.8938 Pr(EO) 0.519 | 6s
+  ep 15/30 | ce 0.010 reg 0.025 | val acc 0.9086 Pr(EO) 0.642 | 9s
+  ep 20/30 | ce 0.002 reg 0.021 | val acc 0.9172 Pr(EO) 0.716 | 13s
+  ep 25/30 | ce 0.000 reg 0.016 | val acc 0.9272 Pr(EO) 0.783 | 16s
+  ep 30/30 | ce 0.000 reg 0.016 | val acc 0.9280 Pr(EO) 0.793 | 19s
+    test acc 0.9339  Pr(EO) 0.802  one-hot 0.873  (19s)
+=== n1000_ce_seed4
+  ep  1/30 | ce 0.757 reg 0.000 | val acc 0.9218 Pr(EO) 0.057 | 1s
+  ep  5/30 | ce 0.026 reg 0.000 | val acc 0.9240 Pr(EO) 0.216 | 3s
+  ep 10/30 | ce 0.015 reg 0.000 | val acc 0.9206 Pr(EO) 0.302 | 6s
+  ep 15/30 | ce 0.006 reg 0.000 | val acc 0.9222 Pr(EO) 0.356 | 9s
+  ep 20/30 | ce 0.004 reg 0.000 | val acc 0.9246 Pr(EO) 0.404 | 12s
+  ep 25/30 | ce 0.001 reg 0.000 | val acc 0.9322 Pr(EO) 0.434 | 15s
+  ep 30/30 | ce 0.001 reg 0.000 | val acc 0.9340 Pr(EO) 0.448 | 18s
+    test acc 0.9407  Pr(EO) 0.454  one-hot 0.781  (18s)
+=== n1000_ce_eo_lam3.0_seed4
+  ep  1/30 | ce 0.776 reg 2.146 | val acc 0.9260 Pr(EO) 0.804 | 1s
+  ep  5/30 | ce 0.066 reg 0.033 | val acc 0.9276 Pr(EO) 0.977 | 3s
+  ep 10/30 | ce 0.044 reg 0.020 | val acc 0.9314 Pr(EO) 0.984 | 6s
+  ep 15/30 | ce 0.018 reg 0.014 | val acc 0.9374 Pr(EO) 0.990 | 10s
+  ep 20/30 | ce 0.017 reg 0.011 | val acc 0.9404 Pr(EO) 0.992 | 13s
+  ep 25/30 | ce 0.006 reg 0.008 | val acc 0.9438 Pr(EO) 0.992 | 16s
+  ep 30/30 | ce 0.007 reg 0.008 | val acc 0.9482 Pr(EO) 0.993 | 19s
+    test acc 0.9523  Pr(EO) 0.994  one-hot 0.999  (19s)
+=== n1000_ce_ent_lam0.3_seed4
+  ep  1/30 | ce 0.751 reg 1.175 | val acc 0.9224 Pr(EO) 0.065 | 1s
+  ep  5/30 | ce 0.034 reg 0.055 | val acc 0.9260 Pr(EO) 0.375 | 3s
+  ep 10/30 | ce 0.015 reg 0.034 | val acc 0.9246 Pr(EO) 0.497 | 6s
+  ep 15/30 | ce 0.010 reg 0.027 | val acc 0.9310 Pr(EO) 0.630 | 10s
+  ep 20/30 | ce 0.003 reg 0.020 | val acc 0.9414 Pr(EO) 0.716 | 13s
+  ep 25/30 | ce 0.002 reg 0.017 | val acc 0.9450 Pr(EO) 0.769 | 16s
+  ep 30/30 | ce 0.001 reg 0.016 | val acc 0.9440 Pr(EO) 0.784 | 19s
+    test acc 0.9489  Pr(EO) 0.793  one-hot 0.881  (19s)
+=== nall_ce_seed4
+  ep  1/30 | ce 0.850 reg 0.000 | val acc 0.9314 Pr(EO) 0.045 | 1s
+  ep  5/30 | ce 0.169 reg 0.000 | val acc 0.9634 Pr(EO) 0.106 | 3s
+  ep 10/30 | ce 0.113 reg 0.000 | val acc 0.9774 Pr(EO) 0.141 | 6s
+  ep 15/30 | ce 0.076 reg 0.000 | val acc 0.9802 Pr(EO) 0.236 | 9s
+  ep 20/30 | ce 0.055 reg 0.000 | val acc 0.9822 Pr(EO) 0.255 | 12s
+  ep 25/30 | ce 0.038 reg 0.000 | val acc 0.9858 Pr(EO) 0.335 | 15s
+  ep 30/30 | ce 0.032 reg 0.000 | val acc 0.9872 Pr(EO) 0.358 | 18s
+    test acc 0.9869  Pr(EO) 0.357  one-hot 0.598  (18s)
+ALL DONE
